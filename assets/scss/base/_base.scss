@@ -1,12 +1,30 @@
-.body-1{
+body{
+    letter-spacing: 1.5%;
+}
+h1, h2, h3, h4, h5, h6, p {
+	vertical-align: baseline;
+}
+a {
+	color: inherit;
+    display: inline-block;
+}
+img {
+	max-width: 100%;
+	height: auto;
+}
+.text-body-1{
     font-size: 16px !important;
 }
-.body-2{
+.text-body-2{
     font-size: 14px !important;
 }
-.body-3{
+.text-body-3{
     font-size: 12px !important;
 }
-.body-4{
+.text-body-4{
     font-size: 11px !important;
 }
+
+// *,*::after,*::before{
+//     outline: 1px solid red;
+// }

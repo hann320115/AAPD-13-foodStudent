@@ -1,0 +1,40 @@
+.cookBook-banner{
+    height: 266px;
+    max-width: 396px;
+    background-position: center;
+    
+}
+.cookBook-content{
+    border-top-left-radius: 28px;
+    border-top-right-radius: 28px;
+    margin-top: 238px;
+    
+}
+// 圓餅進度條
+.circle {
+    width: 90px;
+    height: 90px;
+    background: conic-gradient(#32967D calc(var(--progress, 0) * 1%),#ddd 0);
+    display: flex;
+}
+
+.circle::before {
+    content: '';
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    background: white;
+    border-radius: 50%;
+}
+
+.circle[data-progress="100"] {
+    --progress: 100;
+}
+
+.circle[data-progress="30"] {
+    --progress: 30;
+}
+
+.circle[data-progress="90"] {
+    --progress: 90;
+}
