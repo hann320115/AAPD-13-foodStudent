@@ -4,6 +4,9 @@ body{
 h1, h2, h3, h4, h5, h6, p {
 	vertical-align: baseline;
 }
+ul{
+    margin-bottom: 0;
+}
 a {
 	color: inherit;
     display: inline-block;
@@ -23,6 +26,9 @@ img {
 }
 .text-body-4{
     font-size: 11px !important;
+}
+.text-body-5{
+    font-size: 18px !important;
 }
 
 // *,*::after,*::before{
