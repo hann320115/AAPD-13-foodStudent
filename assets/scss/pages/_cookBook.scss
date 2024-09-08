@@ -8,7 +8,6 @@
     border-top-left-radius: 28px;
     border-top-right-radius: 28px;
     margin-top: 238px;
-    
 }
 // 圓餅進度條
 .circle {
@@ -17,7 +16,6 @@
     background: conic-gradient(#32967D calc(var(--progress, 0) * 1%),#ddd 0);
     display: flex;
 }
-
 .circle::before {
     content: '';
     position: absolute;
@@ -26,15 +24,94 @@
     background: white;
     border-radius: 50%;
 }
-
 .circle[data-progress="100"] {
     --progress: 100;
 }
-
 .circle[data-progress="30"] {
     --progress: 30;
 }
-
 .circle[data-progress="90"] {
     --progress: 90;
+}
+
+// 卡路里
+.circle-chart {
+    width: 120px;
+    height: 120px;
+    background: conic-gradient(
+      #65CB2B 0% 55%,  /* 蛋白質 */
+      #1E9DFE 55% 85%, /* 碳水化合物 */
+      #FFC802 85% 100% /* 脂肪 */
+    );
+    &::before {
+        content: '';
+        position: absolute;
+        width: 85px;
+        height: 85px;
+        background: white;
+        border-radius: 50%;
+        z-index:1;
+    }
+}
+.legend-color {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+}
+.circle-text{
+    z-index: 2;
+}
+// 補充教學
+.addTeaching-img,.recommendBook-img{
+    width: 160px;
+    height: 160px;
+}
+.border-radius-16px{
+    border-radius: 16px;
+    
+}
+.addTeaching,.recommendBook{
+    .swiper-slide{
+        width: 160px !important;
+    }
+}
+.py-2px{
+    padding-top: 2px !important;
+    padding-bottom: 2px !important;
+}
+.lh16{
+    line-height: 1.6 !important;
+}
+.btn-radiys-100{
+    border-radius: 100px;
+    
+}
+// 愛心
+.heart,.bookmark {
+    cursor: pointer;
+}
+.bi-heart-fill,.bi-bookmark-fill {
+    color: red; /* 實心愛心內部紅色 */
+}
+.bi-heart{
+    color: #fff;
+}
+.bi-bookmark,.dark-heart.bi-heart{
+    color: #2E2E2E;
+}
+li{
+    .dark-hear{
+        color: #2E2E2E;
+    }
+}
+.cookBook-topNavbar{
+    width: 396px;
+    position: relative;
+    z-index: 999999999;
+}
+
+
+.A{
+    background-size: cover;background-position: center;
 }
