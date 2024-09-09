@@ -14,14 +14,14 @@
   justify-content: center;
   align-items: center;
   height: 100%;
-}
-
-.image-title{
-  background-image: url('../images/進入頁/logo.png');
-  background-size: contain;
-  background-repeat: no-repeat;
-  width: 149px; /* 根據圖片大小調整寬高 */
-  height: 113px;
-  text-indent: -9999px; /* 隱藏文字 */
-  margin: 0 auto;
+  
+  .image-title{
+    background-image: url('../images/進入頁/logo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 149px; /* 根據圖片大小調整寬高 */
+    height: 113px;
+    text-indent: -9999px; /* 隱藏文字 */
+    margin: 0 auto;
+  }
 }
