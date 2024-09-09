@@ -1,17 +1,31 @@
 <!DOCTYPE html>
 <html lang="zh-hant">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>首頁</title>
-    <link rel="stylesheet" href="../assets/scss/all.scss">
-  </head>
-  <body>
-    <%- include('./layout/header'); -%>
 
-    <%- include('./layout/footer'); -%>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>首頁</title>
+  <link rel="stylesheet" href="../assets/scss/all.scss">
+</head>
 
-    <script type="module" src="../main.js"></script>
-  </body>
+<body>
+  <div class="background-image">
+    <div class="index position-relative">
+      <div class="d-flex flex-column align-items-center justify-content-center">
+        <h1 class="image-title mb-7">實習生</h1>
+        <img class="mb-10" src="../assets/images/進入頁/副標.png" alt="副標">
+        <a href="cookBook.html">
+          <button class="btn btn-gossamer-500 text-white fw-700 text-body-5 py-3 px-11"
+            style="border-radius: 99px;">開始動手做！</button>
+        </a>
+      </div>
+      <div class="position-absolute" style="bottom: 0;">
+        <img src="../assets/images/進入頁/進入頁03.png" alt="進入頁03">
+      </div>
+    </div>
+  </div>
+  <script type="module" src="../main.js"></script>
+</body>
+
 </html>
