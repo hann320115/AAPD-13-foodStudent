@@ -1,0 +1,27 @@
+// 預設輸入框背景色為灰色
+.input-gray {
+    background-color: #e0e0e0;
+}
+// 當輸入框獲得焦點時變為白色
+.input-gray:focus {
+    background-color: #ffffff;
+}
+#messageForm {
+    position: fixed;
+    bottom: 0;
+    width: 390px;
+    background-color: #fff; /* 背景色選擇，方便視覺效果 */
+    border: 1px solid #ccc; /* 邊框顏色選擇，方便視覺效果 */
+    z-index: 1000; /* 確保表單在其他內容之上 */
+    padding: 10px; /* 調整內邊距 */
+}
+.border-radius-12px{
+    border-radius: 12px;
+}
+.messageSwiper{
+    .swiper-slide{
+        max-width: 220px;
+        height: 220px;
+        
+    }
+}
