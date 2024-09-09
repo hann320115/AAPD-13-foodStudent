@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="zh-hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>留言頁面</title>
+    <link rel="stylesheet" href="../assets/scss/all.scss">
+</head>
+<body>
+    <header class="container-self-full mb-4">
+        <div class="d-flex">
+            <button class="btn btn-transparent p-0" onclick="history.back()"><i class="bi bi-chevron-left fs-3"></i></button>
+            <div class="text-body-5 fw-700 align-self-center ms-32">所有留言</div>
+        </div>
+    </header>
+    <div class="container-self-full">
+        <!-- 留言板 -->
+        <div class="container-self pb-20">
+            <!-- 留言板-已留言(預設) -->
+            <div class="d-flex align-items-center">
+                <img class="rounded-circle me-2" src="../assets/images/Avatar/Avatar-3.png" alt="people-img" height="36" width="36">
+                <h6>Jenny</h6>
+                <p class="text-body-2 text-text-600 ms-auto">3天前</p>
+            </div>
+            <p class="mb-1 ms-11">沒想到我也可以做出這道菜！比想像中的簡單呢！</p>
+            <!-- 輪播 -->
+            <div class="swiper messageSwiper ms-11">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img class="border-radius-12px" src="../assets/images/教學食譜頁/comment-img-01.png" alt="pic">
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="border-radius-12px" src="../assets/images/教學食譜頁/comment-img-02.png" alt="pic">
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex align-items-center mb-3">
+                <button class="btn btn-transparent border-0 border p-0 ms-11 me-1"><i class="dark-heart bi bi-heart" id="heart14"></i></button>
+                <p class="me-4">000</p>
+                <button class="btn btn-transparent border-0 border p-0"><i class="bi bi-chat"></i></button>
+            </div>
+            <!-- 回覆 -->
+            <div class="d-flex flex-column ms-11 mb-4">
+                <div class="d-flex align-items-center">
+                    <img class="rounded-circle me-2" src="../assets/images/Avatar/Avatar-4.png" alt="people-img" height="36" width="36">
+                    <h6>Elena</h6>
+                </div>
+                <p class="ms-11">看起來好好吃呢 !</p>
+            </div>
+            <div id="messageList"></div>
+        </div>
+        <!--    輸入框    -->
+        <form id="messageForm" class="d-flex">
+            <button class="btn btn-transparent border-0 border"><i class="bi bi-camera fz-2"></i></button>
+            <input type="text" class="form-control input-gray" id="message" placeholder="發佈留言">
+            <button type="submit" class="btn btn-transparent"><i class="bi bi-send-fill"></i></button>
+        </form>
+    </div>
+
+<!-- JS -->
+    <script>
+        document.getElementById("messageForm").addEventListener("submit", function(event) {
+            event.preventDefault(); // 防止表單提交
+            const messageInput = document.getElementById("message");
+            const messageText = messageInput.value.trim();
+            
+            if (messageText !== "") {
+            // 創建新的留言項目
+            const messageItem = document.createElement("div");
+            messageItem.className = "d-flex flex-column";
+
+            // 用戶回覆
+            const userReply = document.createElement("div");
+            userReply.className = "d-flex align-items-center";
+            userReply.innerHTML = `
+                <img class="rounded-circle me-2" src="../assets/images/Avatar/Avatar-3.png" alt="people-img" height="36" width="36">
+                <h6>April</h6>
+                <div class="ms-auto">剛剛</div>
+            `;
+
+            // 留言內容
+            const messageContent = document.createElement("div");
+            messageContent.className = "my-2 ms-11";
+            messageContent.textContent = messageText;
+
+            // 愛心+留言
+            const heartReply = document.createElement("div");
+            heartReply.className = "d-flex align-items-center mb-4";
+            heartReply.innerHTML = `
+                <button class="btn btn-transparent border-0 border p-0 ms-11 me-1"><i class="dark-heart bi bi-heart" id="heart14"></i></button>
+                <p class="me-4">000</p>
+                <button class="btn btn-transparent border-0 border p-0"><i class="bi bi-chat"></i></button>
+            `;
+
+            // 把各部分加到留言項目中
+            messageItem.appendChild(userReply);
+            messageItem.appendChild(messageContent);
+            messageItem.appendChild(heartReply);
+
+            // 將留言項目添加到留言列表中
+            document.getElementById("messageList").appendChild(messageItem);
+
+            // 清空輸入框
+            messageInput.value = "";
+        }
+        });
+    </script>
+    <script type="module" src="../main.js"></script>
+</body>
+</html>

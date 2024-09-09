@@ -23,6 +23,25 @@ var swiper = new Swiper(".recommendBook", {
     slidesPerView: 'auto',
 });
 
+// 教學影片
+
+var swiper = new Swiper(".teachVideo", {
+    spaceBetween: 16, 
+    slidesPerView: 'auto',
+});
+// 教學影片
+
+var swiper = new Swiper(".knifeSkills", {
+    spaceBetween: 16, 
+    slidesPerView: 'auto',
+});
+// 留言
+
+var swiper = new Swiper(".messageSwiper", {
+    spaceBetween: 16, 
+    slidesPerView: 'auto',
+});
+
 //愛心
 function toggleHeart(heartIcon) {
     if (heartIcon.classList.contains('bi-heart')) {
@@ -71,7 +90,7 @@ document.querySelectorAll('.bookmark').forEach(element => {
             document.getElementById('counter').textContent = counter;
         }
     });
-// 置頂
+// 食譜navbar置頂
 document.addEventListener('scroll', function() {
     const navbar = document.querySelector('.cookBook-topNavbar');
     if (window.scrollY > 510) {
@@ -84,3 +103,17 @@ document.addEventListener('scroll', function() {
         navbar.style.top = '';
     }
 });
+// 教學navbar置頂
+document.addEventListener('scroll', function() {
+    const navbar = document.querySelector('.teach-topNavbar');
+    if (window.scrollY > 20) {
+        navbar.classList.remove('d-none');
+        navbar.style.position = 'fixed';
+        navbar.style.top = '0';
+    } else {
+        navbar.classList.add('d-none');
+        navbar.style.position = '';
+        navbar.style.top = '';
+    }
+});
+
