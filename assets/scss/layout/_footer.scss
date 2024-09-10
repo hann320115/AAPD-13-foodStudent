@@ -1,4 +1,18 @@
-.footer{
-  background: #69F0AE;
-  font-size: 64px;
+.footer {
+  .fill-icon .fill-path {
+    fill: none;
+    stroke: #888888;
+    /* 預設狀態的顏色 */
+  }
+
+  a:hover {
+    .fill-icon .fill-path {
+      fill: #32967d;
+      stroke: #32967d;
+    }
+    p {
+      color: #32967d !important;
+    }
+
+  }
 }

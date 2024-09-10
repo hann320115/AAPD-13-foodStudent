@@ -9,6 +9,12 @@ import "swiper/css/pagination";
 import'./assets/scss/all.scss';
 import "bootstrap/dist/js/bootstrap.min.js";
 
+// 首頁
+var swiper = new Swiper(".indexSwiper", {
+    slidesPerView: "auto",
+    spaceBetween: 16,
+  });
+
 // 食譜-補充教學
 
 var swiper = new Swiper(".addTeaching", {
@@ -84,3 +90,4 @@ document.addEventListener('scroll', function() {
         navbar.style.top = '';
     }
 });
+
