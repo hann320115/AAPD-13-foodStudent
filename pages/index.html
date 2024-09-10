@@ -12,6 +12,8 @@
 <body>
   <div class="index">
     <div class="background-image">
+      <!-- 讀取畫面 -->
+      <div class="card-loading-screen"></div>
       <p class="fs-2 text-white fw-700 pt-30 pb-6 ps-7">Hi Jenny
         <br>
         你想煮些什麼呢？
@@ -20,8 +22,10 @@
     <div class="main-background">
       <div class="card border-0 mb-4" style="border-radius: 12px;">
         <div class="position-relative">
+          <!-- 讀取畫面 -->
+          <div class="card-loading-screen" style="border-radius: 12px 12px 0 0;"></div>
           <img src="../assets/images/card-食譜教學/日式野菜溫沙拉.png" class="card-img-top" alt="日式野菜溫沙拉"
-            style="height: 164px; object-fit: cover; object-position: center;">
+            style="height: 164px; object-fit: cover; object-position: center; border-radius: 12px 12px 0 0;">
           <div class="position-absolute start-0 fs-4 fw-700 text-white py-2 px-4 bg-gossamer-500"
             style="top:16px; line-height: 1.2; border-radius: 0px 999px 999px 0px;">今日提案</div>
           <div class="position-absolute bottom-0 end-0 me-4 mb-4 d-flex align-items-center">
@@ -31,29 +35,44 @@
         </div>
         <div class="card-body" style="box-shadow: 0px 2px 16px 0px #00000026; border-radius:0 0 16px 16px;">
           <div class="card-text">
-            <div class="d-flex justify-content-between align-items-center pb-2">
-              <p class="fs-3 fw-700" style="line-height: 1.2;">日式野菜溫沙拉</p>
-              <i class="fs-2 bookmark bi bi-bookmark" style="line-height: 1;"></i>
+            <div class="loading-row">
+              <div class="loading-screen"></div>
+              <div class="d-flex justify-content-between align-items-center pb-2">
+                <p class="fs-3 fw-700" style="line-height: 1.2;">日式野菜溫沙拉</p>
+                <i class="fs-2 bookmark bi bi-bookmark" style="line-height: 1;"></i>
+              </div>
             </div>
-            <p class="text-body-1 text-text-600 text-ellipsis mb-2">
-              融合了新鮮蔬菜與溫暖的日式醬汁，透過輕柔的加熱，使口感更加豐富。這道沙拉展現了日式料理的簡約與健康，適合追求清新自然風味的人士。</p>
-          </div>
-          <div class="d-flex pb-2">
-            <p class="metrics text-body-2 text-text-600 pe-4">25 分鐘</p>
-            <p class="metrics text-body-2 text-text-600 px-4">難度：易</p>
-            <p class="text-body-2 text-text-600 ps-4">375 kcal</p>
-          </div>
-          <div class="d-flex align-items-center">
-            <img class="rounded-circle me-2" src="../assets/images/Avatar/Avatar-3.png" alt="people-img"
-              style="width: 28px;height: 28px;">
-            <p class="text-text-600 text-body-2 fw-700">blue_lady</p>
+            <div class="loading-row">
+              <div class="loading-screen"></div>
+              <p class="text-body-1 text-text-600 text-ellipsis mb-2">
+                融合了新鮮蔬菜與溫暖的日式醬汁，透過輕柔的加熱，使口感更加豐富。這道沙拉展現了日式料理的簡約與健康，適合追求清新自然風味的人士。</p>
+            </div>
+            <div class="loading-row">
+              <div class="loading-screen"></div>
+              <div class="d-flex pb-2">
+                <p class="metrics text-body-2 text-text-600 pe-4">25 分鐘</p>
+                <p class="metrics text-body-2 text-text-600 px-4">難度：易</p>
+                <p class="text-body-2 text-text-600 ps-4">375 kcal</p>
+              </div>
+            </div>
+            <div class="loading-row">
+              <div class="position-relative d-flex align-items-center">
+                <img class="rounded-circle me-2" src="../assets/images/Avatar/Avatar-3.png" alt="people-img"
+                  style="width: 28px;height: 28px;">
+                <!-- 只對 img 顯示讀取效果 -->
+                <div class="image-loading-screen"></div>
+                <p class="text-text-600 text-body-2 fw-700 text-wrapper">blue_lady</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
       <div class="card border-0 mb-4" style="border-radius: 12px;">
         <div class="position-relative">
+          <!-- 讀取畫面 -->
+          <div class="card-loading-screen" style="border-radius: 12px 12px 0 0;"></div>
           <img src="../assets/images/card-食譜教學/滾刀塊.png" class="card-img-top" alt="滾刀塊"
-            style="height: 164px; object-fit: cover; object-position: center;">
+            style="height: 164px; object-fit: cover; object-position: center; border-radius: 12px 12px 0 0;">
           <div class="position-absolute start-0 fs-4 fw-700 text-white py-2 px-4 bg-roman-500"
             style="top:16px; line-height: 1.2; border-radius: 0px 999px 999px 0px;">每日一招</div>
           <div class="position-absolute bottom-0 end-0 me-4 mb-4 d-flex align-items-center">
@@ -63,20 +82,31 @@
         </div>
         <div class="card-body" style="box-shadow: 0px 2px 16px 0px #00000026; border-radius:0 0 16px 16px;">
           <div class="card-text">
-            <div class="d-flex justify-content-between align-items-center pb-2">
-              <p class="fs-3 fw-700" style="line-height: 1.2;">滾刀塊</p>
-              <i class="fs-2 bookmark bi bi-bookmark" style="line-height: 1;"></i>
+            <div class="loading-row">
+              <div class="loading-screen"></div>
+              <div class="d-flex justify-content-between align-items-center pb-2">
+                <p class="fs-3 fw-700" style="line-height: 1.2;">滾刀塊</p>
+                <i class="fs-2 bookmark bi bi-bookmark" style="line-height: 1;"></i>
+              </div>
             </div>
-            <p class="text-body-1 text-text-600 text-ellipsis mb-2">滾刀塊又叫滾刀切，是常見的刀法之一。首先一手握着食材，一手持刀斜切，切一下便把食材滾動一次，直至切完。
-            </p>
-          </div>
-          <div class="d-flex pb-2">
-            <p class="text-body-2 text-text-600">難度：易</p>
-          </div>
-          <div class="d-flex align-items-center">
-            <img class="rounded-circle me-2" src="../assets/images/Avatar/Avatar-5.png" alt="people-img"
-              style="width: 28px;height: 28px;">
-            <p class="text-text-600 text-body-2 fw-700">Justin 廚藝教室</p>
+            <div class="loading-row">
+              <div class="loading-screen"></div>
+              <p class="text-body-1 text-text-600 text-ellipsis mb-2">
+                滾刀塊又叫滾刀切，是常見的刀法之一。首先一手握着食材，一手持刀斜切，切一下便把食材滾動一次，直至切完。</p>
+            </div>
+            <div class="loading-row">
+              <div class="loading-screen"></div>
+              <p class="text-body-2 text-text-600">難度：易</p>
+            </div>
+            <div class="loading-row">
+              <div class="position-relative d-flex align-items-center">
+                <img class="rounded-circle me-2" src="../assets/images/Avatar/Avatar-5.png" alt="people-img"
+                  style="width: 28px;height: 28px;">
+                <!-- 只對 img 顯示讀取效果 -->
+                <div class="image-loading-screen"></div>
+                <p class="text-text-600 text-body-2 fw-700 text-wrapper">Justin 廚藝教室</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -97,7 +127,7 @@
                 <div class="card border-0 mb-4" style="border-radius: 12px;">
                   <div class="position-relative">
                     <img src="../assets/images/card-食譜教學/燕麥核桃香蕉鬆餅.png" class="card-img-top" alt="燕麥核桃香蕉鬆餅"
-                      style="height: 164px; object-fit: cover; object-position: center;">
+                      style="height: 164px; object-fit: cover; object-position: center; border-radius: 16px 16px 0 0;">
                     <div class="position-absolute bottom-0 end-0 me-4 mb-4 d-flex align-items-center">
                       <i class="heart bi bi-heart me-1" id="heart1" style="height: 24px; width: 24px;"></i>
                       <p class="text-white" style="line-height: 1;">1327</p>
@@ -136,7 +166,7 @@
                 <div class="card border-0 mb-4" style="border-radius: 12px;">
                   <div class="position-relative">
                     <img src="../assets/images/card-食譜教學/草莓優格果昔.png" class="card-img-top" alt="草莓優格果昔"
-                      style="height: 164px; object-fit: cover; object-position: center;">
+                      style="height: 164px; object-fit: cover; object-position: center; border-radius: 16px 16px 0 0;">
                     <div class="position-absolute bottom-0 end-0 me-4 mb-4 d-flex align-items-center">
                       <i class="heart bi bi-heart me-1" id="heart1" style="height: 24px; width: 24px;"></i>
                       <p class="text-white" style="line-height: 1;">1251</p>
@@ -175,7 +205,7 @@
                 <div class="card border-0 mb-4" style="border-radius: 12px;">
                   <div class="position-relative">
                     <img src="../assets/images/card-食譜教學/夏日藜麥沙拉.png" class="card-img-top" alt="夏日藜麥沙拉"
-                      style="height: 164px; object-fit: cover; object-position: center;">
+                      style="height: 164px; object-fit: cover; object-position: center; border-radius: 16px 16px 0 0;">
                     <div class="position-absolute bottom-0 end-0 me-4 mb-4 d-flex align-items-center">
                       <i class="heart bi bi-heart me-1" id="heart1" style="height: 24px; width: 24px;"></i>
                       <p class="text-white" style="line-height: 1;">24</p>
@@ -214,7 +244,7 @@
                 <div class="card border-0 mb-4" style="border-radius: 12px;">
                   <div class="position-relative">
                     <img src="../assets/images/card-食譜教學/綠橄欖鷹嘴豆泥.png" class="card-img-top" alt="綠橄欖鷹嘴豆泥"
-                      style="height: 164px; object-fit: cover; object-position: center;">
+                      style="height: 164px; object-fit: cover; object-position: center; border-radius: 16px 16px 0 0;">
                     <div class="position-absolute bottom-0 end-0 me-4 mb-4 d-flex align-items-center">
                       <i class="heart bi bi-heart me-1" id="heart1" style="height: 24px; width: 24px;"></i>
                       <p class="text-white" style="line-height: 1;">821</p>
@@ -251,7 +281,7 @@
                 <div class="card border-0 mb-4" style="border-radius: 12px;">
                   <div class="position-relative">
                     <img src="../assets/images/card-食譜教學/肉末蘑菇奶油燉飯.png" class="card-img-top" alt="肉末蘑菇奶油燉飯"
-                      style="height: 164px; object-fit: cover; object-position: center;">
+                      style="height: 164px; object-fit: cover; object-position: center; border-radius: 16px 16px 0 0;">
                     <div class="position-absolute bottom-0 end-0 me-4 mb-4 d-flex align-items-center">
                       <i class="heart bi bi-heart me-1" id="heart1" style="height: 24px; width: 24px;"></i>
                       <p class="text-white" style="line-height: 1;">254</p>
@@ -288,7 +318,7 @@
                 <div class="card border-0 mb-4" style="border-radius: 12px;">
                   <div class="position-relative">
                     <img src="../assets/images/card-食譜教學/蜂蜜大蒜雞腿.png" class="card-img-top" alt="蜂蜜大蒜雞腿配胡蘿蔔和青花菜"
-                      style="height: 164px; object-fit: cover; object-position: center;">
+                      style="height: 164px; object-fit: cover; object-position: center; border-radius: 16px 16px 0 0;">
                     <div class="position-absolute bottom-0 end-0 me-4 mb-4 d-flex align-items-center">
                       <i class="heart bi bi-heart me-1" id="heart1" style="height: 24px; width: 24px;"></i>
                       <p class="text-white" style="line-height: 1;">344</p>
@@ -330,7 +360,7 @@
                 <div class="card border-0 mb-4" style="border-radius: 12px;">
                   <div class="position-relative">
                     <img src="../assets/images/card-食譜教學/切花.png" class="card-img-top" alt="切花"
-                      style="height: 164px; object-fit: cover; object-position: center;">
+                      style="height: 164px; object-fit: cover; object-position: center; border-radius: 16px 16px 0 0;">
                     <div class="position-absolute bottom-0 end-0 me-4 mb-4 d-flex align-items-center">
                       <i class="heart bi bi-heart me-1" id="heart1" style="height: 24px; width: 24px;"></i>
                       <p class="text-white" style="line-height: 1;">1183</p>
@@ -360,7 +390,7 @@
                 <div class="card border-0 mb-4" style="border-radius: 12px;">
                   <div class="position-relative">
                     <img src="../assets/images/card-食譜教學/切段.png" class="card-img-top" alt="切段"
-                      style="height: 164px; object-fit: cover; object-position: center;">
+                      style="height: 164px; object-fit: cover; object-position: center; border-radius: 16px 16px 0 0;">
                     <div class="position-absolute bottom-0 end-0 me-4 mb-4 d-flex align-items-center">
                       <i class="heart bi bi-heart me-1" id="heart1" style="height: 24px; width: 24px;"></i>
                       <p class="text-white" style="line-height: 1;">221</p>
@@ -390,7 +420,7 @@
                 <div class="card border-0 mb-4" style="border-radius: 12px;">
                   <div class="position-relative">
                     <img src="../assets/images/card-食譜教學/刀子介紹與握法.png" class="card-img-top" alt="刀子介紹與握法"
-                      style="height: 164px; object-fit: cover; object-position: center;">
+                      style="height: 164px; object-fit: cover; object-position: center; border-radius: 16px 16px 0 0;">
                     <div class="position-absolute bottom-0 end-0 me-4 mb-4 d-flex align-items-center">
                       <i class="heart bi bi-heart me-1" id="heart1" style="height: 24px; width: 24px;"></i>
                       <p class="text-white" style="line-height: 1;">252</p>
@@ -420,7 +450,7 @@
                 <div class="card border-0 mb-4" style="border-radius: 12px;">
                   <div class="position-relative">
                     <img src="../assets/images/card-食譜教學/如何融化巧克力.png" class="card-img-top" alt="如何融化巧克力"
-                      style="height: 164px; object-fit: cover; object-position: center;">
+                      style="height: 164px; object-fit: cover; object-position: center; border-radius: 16px 16px 0 0;">
                     <div class="position-absolute bottom-0 end-0 me-4 mb-4 d-flex align-items-center">
                       <i class="heart bi bi-heart me-1" id="heart1" style="height: 24px; width: 24px;"></i>
                       <p class="text-white" style="line-height: 1;">1179</p>
@@ -450,7 +480,7 @@
                 <div class="card border-0 mb-4" style="border-radius: 12px;">
                   <div class="position-relative">
                     <img src="../assets/images/card-食譜教學/保存蔥的方法.png" class="card-img-top" alt="保存蔥的方法"
-                      style="height: 164px; object-fit: cover; object-position: center;">
+                      style="height: 164px; object-fit: cover; object-position: center; border-radius: 16px 16px 0 0;">
                     <div class="position-absolute bottom-0 end-0 me-4 mb-4 d-flex align-items-center">
                       <i class="heart bi bi-heart me-1" id="heart1" style="height: 24px; width: 24px;"></i>
                       <p class="text-white" style="line-height: 1;">2863</p>
@@ -480,7 +510,7 @@
                 <div class="card border-0 mb-4" style="border-radius: 12px;">
                   <div class="position-relative">
                     <img src="../assets/images/card-食譜教學/新鮮食材的保存法.png" class="card-img-top" alt="新鮮食材的保存法"
-                      style="height: 164px; object-fit: cover; object-position: center;">
+                      style="height: 164px; object-fit: cover; object-position: center; border-radius: 16px 16px 0 0;">
                     <div class="position-absolute bottom-0 end-0 me-4 mb-4 d-flex align-items-center">
                       <i class="heart bi bi-heart me-1" id="heart1" style="height: 24px; width: 24px;"></i>
                       <p class="text-white" style="line-height: 1;">1520</p>
@@ -510,7 +540,7 @@
                 <div class="card border-0 mb-4" style="border-radius: 12px;">
                   <div class="position-relative">
                     <img src="../assets/images/card-食譜教學/快速涼拌的技巧.png" class="card-img-top" alt="快速涼拌的技巧"
-                      style="height: 164px; object-fit: cover; object-position: center;">
+                      style="height: 164px; object-fit: cover; object-position: center; border-radius: 16px 16px 0 0;">
                     <div class="position-absolute bottom-0 end-0 me-4 mb-4 d-flex align-items-center">
                       <i class="heart bi bi-heart me-1" id="heart1" style="height: 24px; width: 24px;"></i>
                       <p class="text-white" style="line-height: 1;">805</p>
@@ -545,7 +575,7 @@
                 <div class="card border-0 mb-4" style="border-radius: 12px;">
                   <div class="position-relative">
                     <img src="../assets/images/card-食譜教學/夏日藜麥沙拉.png" class="card-img-top" alt="夏日藜麥沙拉"
-                      style="height: 164px; object-fit: cover; object-position: center;">
+                      style="height: 164px; object-fit: cover; object-position: center; border-radius: 16px 16px 0 0;">
                     <div class="position-absolute bottom-0 end-0 me-4 mb-4 d-flex align-items-center">
                       <i class="heart bi bi-heart me-1" id="heart1" style="height: 24px; width: 24px;"></i>
                       <p class="text-white" style="line-height: 1;">24</p>
@@ -584,7 +614,7 @@
                 <div class="card border-0 mb-4" style="border-radius: 12px;">
                   <div class="position-relative">
                     <img src="../assets/images/card-食譜教學/草莓優格果昔.png" class="card-img-top" alt="草莓優格果昔"
-                      style="height: 164px; object-fit: cover; object-position: center;">
+                      style="height: 164px; object-fit: cover; object-position: center; border-radius: 16px 16px 0 0;">
                     <div class="position-absolute bottom-0 end-0 me-4 mb-4 d-flex align-items-center">
                       <i class="heart bi bi-heart me-1" id="heart1" style="height: 24px; width: 24px;"></i>
                       <p class="text-white" style="line-height: 1;">1251</p>
@@ -623,7 +653,7 @@
                 <div class="card border-0 mb-4" style="border-radius: 12px;">
                   <div class="position-relative">
                     <img src="../assets/images/card-食譜教學/綠橄欖鷹嘴豆泥.png" class="card-img-top" alt="綠橄欖鷹嘴豆泥"
-                      style="height: 164px; object-fit: cover; object-position: center;">
+                      style="height: 164px; object-fit: cover; object-position: center; border-radius: 16px 16px 0 0;">
                     <div class="position-absolute bottom-0 end-0 me-4 mb-4 d-flex align-items-center">
                       <i class="heart bi bi-heart me-1" id="heart1" style="height: 24px; width: 24px;"></i>
                       <p class="text-white" style="line-height: 1;">821</p>
@@ -665,7 +695,7 @@
                 <div class="card border-0 mb-4" style="border-radius: 12px;">
                   <div class="position-relative">
                     <img src="../assets/images/card-食譜教學/快速涼拌的技巧.png" class="card-img-top" alt="快速涼拌的技巧"
-                      style="height: 164px; object-fit: cover; object-position: center;">
+                      style="height: 164px; object-fit: cover; object-position: center; border-radius: 16px 16px 0 0;">
                     <div class="position-absolute bottom-0 end-0 me-4 mb-4 d-flex align-items-center">
                       <i class="heart bi bi-heart me-1" id="heart1" style="height: 24px; width: 24px;"></i>
                       <p class="text-white" style="line-height: 1;">805</p>
@@ -695,7 +725,7 @@
                 <div class="card border-0 mb-4" style="border-radius: 12px;">
                   <div class="position-relative">
                     <img src="../assets/images/card-食譜教學/新鮮食材的保存法.png" class="card-img-top" alt="新鮮食材的保存法"
-                      style="height: 164px; object-fit: cover; object-position: center;">
+                      style="height: 164px; object-fit: cover; object-position: center; border-radius: 16px 16px 0 0;">
                     <div class="position-absolute bottom-0 end-0 me-4 mb-4 d-flex align-items-center">
                       <i class="heart bi bi-heart me-1" id="heart1" style="height: 24px; width: 24px;"></i>
                       <p class="text-white" style="line-height: 1;">1520</p>
@@ -733,7 +763,7 @@
                 <div class="card border-0 mb-4" style="border-radius: 12px;">
                   <div class="position-relative">
                     <img src="../assets/images/card-食譜教學/綠橄欖鷹嘴豆泥.png" class="card-img-top" alt="綠橄欖鷹嘴豆泥"
-                      style="height: 164px; object-fit: cover; object-position: center;">
+                      style="height: 164px; object-fit: cover; object-position: center; border-radius: 16px 16px 0 0;">
                     <div class="position-absolute bottom-0 end-0 me-4 mb-4 d-flex align-items-center">
                       <i class="heart bi bi-heart me-1" id="heart1" style="height: 24px; width: 24px;"></i>
                       <p class="text-white" style="line-height: 1;">821</p>
@@ -770,7 +800,7 @@
                 <div class="card border-0 mb-4" style="border-radius: 12px;">
                   <div class="position-relative">
                     <img src="../assets/images/card-食譜教學/肉末蘑菇奶油燉飯.png" class="card-img-top" alt="肉末蘑菇奶油燉飯"
-                      style="height: 164px; object-fit: cover; object-position: center;">
+                      style="height: 164px; object-fit: cover; object-position: center; border-radius: 16px 16px 0 0;">
                     <div class="position-absolute bottom-0 end-0 me-4 mb-4 d-flex align-items-center">
                       <i class="heart bi bi-heart me-1" id="heart1" style="height: 24px; width: 24px;"></i>
                       <p class="text-white" style="line-height: 1;">254</p>
@@ -807,7 +837,7 @@
                 <div class="card border-0 mb-4" style="border-radius: 12px;">
                   <div class="position-relative">
                     <img src="../assets/images/card-食譜教學/蜂蜜大蒜雞腿.png" class="card-img-top" alt="蜂蜜大蒜雞腿配胡蘿蔔和青花菜"
-                      style="height: 164px; object-fit: cover; object-position: center;">
+                      style="height: 164px; object-fit: cover; object-position: center; border-radius: 16px 16px 0 0;">
                     <div class="position-absolute bottom-0 end-0 me-4 mb-4 d-flex align-items-center">
                       <i class="heart bi bi-heart me-1" id="heart1" style="height: 24px; width: 24px;"></i>
                       <p class="text-white" style="line-height: 1;">344</p>
@@ -850,7 +880,7 @@
                 <div class="card border-0 mb-4" style="border-radius: 12px;">
                   <div class="position-relative">
                     <img src="../assets/images/card-食譜教學/切段.png" class="card-img-top" alt="切段"
-                      style="height: 164px; object-fit: cover; object-position: center;">
+                      style="height: 164px; object-fit: cover; object-position: center; border-radius: 16px 16px 0 0;">
                     <div class="position-absolute bottom-0 end-0 me-4 mb-4 d-flex align-items-center">
                       <i class="heart bi bi-heart me-1" id="heart1" style="height: 24px; width: 24px;"></i>
                       <p class="text-white" style="line-height: 1;">221</p>
@@ -880,7 +910,7 @@
                 <div class="card border-0 mb-4" style="border-radius: 12px;">
                   <div class="position-relative">
                     <img src="../assets/images/card-食譜教學/切花.png" class="card-img-top" alt="切花"
-                      style="height: 164px; object-fit: cover; object-position: center;">
+                      style="height: 164px; object-fit: cover; object-position: center; border-radius: 16px 16px 0 0;">
                     <div class="position-absolute bottom-0 end-0 me-4 mb-4 d-flex align-items-center">
                       <i class="heart bi bi-heart me-1" id="heart1" style="height: 24px; width: 24px;"></i>
                       <p class="text-white" style="line-height: 1;">1183</p>
@@ -910,7 +940,7 @@
                 <div class="card border-0 mb-4" style="border-radius: 12px;">
                   <div class="position-relative">
                     <img src="../assets/images/card-食譜教學/刀子介紹與握法.png" class="card-img-top" alt="刀子介紹與握法"
-                      style="height: 164px; object-fit: cover; object-position: center;">
+                      style="height: 164px; object-fit: cover; object-position: center; border-radius: 16px 16px 0 0;">
                     <div class="position-absolute bottom-0 end-0 me-4 mb-4 d-flex align-items-center">
                       <i class="heart bi bi-heart me-1" id="heart1" style="height: 24px; width: 24px;"></i>
                       <p class="text-white" style="line-height: 1;">252</p>
@@ -946,7 +976,7 @@
                 <div class="card border-0 mb-4" style="border-radius: 12px;">
                   <div class="position-relative">
                     <img src="../assets/images/card-食譜教學/草莓優格果昔.png" class="card-img-top" alt="草莓優格果昔"
-                      style="height: 164px; object-fit: cover; object-position: center;">
+                      style="height: 164px; object-fit: cover; object-position: center; border-radius: 16px 16px 0 0;">
                     <div class="position-absolute bottom-0 end-0 me-4 mb-4 d-flex align-items-center">
                       <i class="heart bi bi-heart me-1" id="heart1" style="height: 24px; width: 24px;"></i>
                       <p class="text-white" style="line-height: 1;">1251</p>
@@ -985,7 +1015,7 @@
                 <div class="card border-0 mb-4" style="border-radius: 12px;">
                   <div class="position-relative">
                     <img src="../assets/images/card-食譜教學/日式野菜溫沙拉.png" class="card-img-top" alt="日式野菜溫沙拉"
-                      style="height: 164px; object-fit: cover; object-position: center;">
+                      style="height: 164px; object-fit: cover; object-position: center; border-radius: 16px 16px 0 0;">
                     <div class="position-absolute start-0 fs-4 fw-700 text-white py-2 px-4 bg-gossamer-500"
                       style="top:16px; line-height: 1.2; border-radius: 0px 999px 999px 0px;">今日提案</div>
                     <div class="position-absolute bottom-0 end-0 me-4 mb-4 d-flex align-items-center">
@@ -1020,7 +1050,7 @@
                 <div class="card border-0 mb-4" style="border-radius: 12px;">
                   <div class="position-relative">
                     <img src="../assets/images/card-食譜教學/蜂蜜大蒜雞腿.png" class="card-img-top" alt="蜂蜜大蒜雞腿配胡蘿蔔和青花菜"
-                      style="height: 164px; object-fit: cover; object-position: center;">
+                      style="height: 164px; object-fit: cover; object-position: center; border-radius: 16px 16px 0 0;">
                     <div class="position-absolute bottom-0 end-0 me-4 mb-4 d-flex align-items-center">
                       <i class="heart bi bi-heart me-1" id="heart1" style="height: 24px; width: 24px;"></i>
                       <p class="text-white" style="line-height: 1;">344</p>
@@ -1063,7 +1093,7 @@
                 <div class="card border-0 mb-4" style="border-radius: 12px;">
                   <div class="position-relative">
                     <img src="../assets/images/card-食譜教學/如何融化巧克力.png" class="card-img-top" alt="如何融化巧克力"
-                      style="height: 164px; object-fit: cover; object-position: center;">
+                      style="height: 164px; object-fit: cover; object-position: center; border-radius: 16px 16px 0 0;">
                     <div class="position-absolute bottom-0 end-0 me-4 mb-4 d-flex align-items-center">
                       <i class="heart bi bi-heart me-1" id="heart1" style="height: 24px; width: 24px;"></i>
                       <p class="text-white" style="line-height: 1;">1179</p>
@@ -1093,7 +1123,7 @@
                 <div class="card border-0 mb-4" style="border-radius: 12px;">
                   <div class="position-relative">
                     <img src="../assets/images/card-食譜教學/保存蔥的方法.png" class="card-img-top" alt="保存蔥的方法"
-                      style="height: 164px; object-fit: cover; object-position: center;">
+                      style="height: 164px; object-fit: cover; object-position: center; border-radius: 16px 16px 0 0;">
                     <div class="position-absolute bottom-0 end-0 me-4 mb-4 d-flex align-items-center">
                       <i class="heart bi bi-heart me-1" id="heart1" style="height: 24px; width: 24px;"></i>
                       <p class="text-white" style="line-height: 1;">2863</p>
@@ -1123,7 +1153,7 @@
                 <div class="card border-0 mb-4" style="border-radius: 12px;">
                   <div class="position-relative">
                     <img src="../assets/images/card-食譜教學/新鮮食材的保存法.png" class="card-img-top" alt="新鮮食材的保存法"
-                      style="height: 164px; object-fit: cover; object-position: center;">
+                      style="height: 164px; object-fit: cover; object-position: center; border-radius: 16px 16px 0 0;">
                     <div class="position-absolute bottom-0 end-0 me-4 mb-4 d-flex align-items-center">
                       <i class="heart bi bi-heart me-1" id="heart1" style="height: 24px; width: 24px;"></i>
                       <p class="text-white" style="line-height: 1;">1520</p>
