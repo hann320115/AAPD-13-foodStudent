@@ -8,19 +8,46 @@
     <link rel="stylesheet" href="../assets/scss/all.scss">
 </head>
 <body>
-    <div class="cookBook-banner mx-auto position-relative" style="background-image: url(../assets/images/教學食譜頁/蜂蜜大蒜雞腿.png);background-size: cover;">
+    <div class="cookBook-banner container-self-full position-relative" style="background-image: url(../assets/images/教學食譜頁/蜂蜜大蒜雞腿.png);background-size: cover;">
+        <a href="javascript:history.back()" class="cookbook-topPage btn btn-text-400 text-white position-absolute top-0 rounded-circle d-flex justify-content-center
+        align-items-center">
+            <i class="bi bi-chevron-left "></i>
+        </a>
         <div class="cookBook-content bg-white position-absolute top-0 w-100">
             <!-- navbar -->
-            <div class="d-flex justify-content-between align-items-center d-none cookBook-topNavbar bg-white border-bottom py-2">
-                <a href="#" class="ps-2"><i class="bi bi-chevron-left"></i></a>
+            <div class="container-self d-flex justify-content-between align-items-center d-none cookBook-topNavbar bg-white border-bottom py-2 w-100">
+                <a href="javascript:history.back()" class="ps-2"><i class="bi bi-chevron-left"></i></a>
                 <ul class="list-unstyled ms-auto d-flex d-grid gap-3 pe-2">
                     <li><i class="dark-heart heart bi bi-heart me-2" id="heart10"></i>344</li>
-                    <li><i class="bookmark bi bi-bookmark" id="bookmark10"></i></li>
+                    <li><a type="button" class="" data-bs-toggle="modal" data-bs-target="#collectionTips"><i class="bookmark bi bi-bookmark" id="bookmark10"></i></a></li>
                     <li><a href="#"><i class="bi bi-share"></i></a></li>
                 </ul>
+                <!-- Modal -->
+                <div class="modal fade" id="collectionTips" tabindex="-1" aria-labelledby="collectionTips" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <div class="d-flex flex-column">
+                                    <div class="d-flex">
+                                        <img class="me-3" src="../assets/images/modal-icon.png" alt="pic" style="width: 40px; height: 40px;">
+                                        <div>
+                                            <h6 class="mb-1">你學會了嗎？</h6>
+                                            <p class="text-body-2 text-text-600 mb-1">標註我學會的料理，在我的主頁記錄學習歷程！</p>
+                                            <div class="text-end">
+                                                <a type="button" class="cookBook-modal-link text-body-2 fw-700 me-2 text-success p-2" data-bs-dismiss="modal">我學會了</a>
+                                                <a type="button" class="cookBook-modal-link text-body-2 fw-700 p-2" data-bs-dismiss="modal">先不要</a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <!-- 標題 -->
-            <div class="px-4">
+            <div class="container-self">
                 <div class="cookBook-information pt-9 d-flex flex-column mb-6 ">
                     <h2 class="text-center mb-6">蜂蜜大蒜雞腿配胡蘿蔔<br>和青花菜</h2>
                     <ul class="d-flex d-grid gap-2 mb-4 justify-content-center">
@@ -53,12 +80,12 @@
             </div>
             <!-- 敘述 -->
             <hr class="border border-text-200 my-0">
-            <div class="px-4 py-6">
+            <div class="container-self py-6">
                 <p>這種香甜可口的烤蜂蜜大蒜雞腿食譜配有一側的蔬菜，與雞肉在同一個平底鍋上烹飪，是完美的周末晚餐。</p>
             </div>
             <hr class="border border-text-200 my-0">
             <!-- 圓圖 -->
-            <div class="px-4 py-6">
+            <div class="container-self py-6">
                 <div class="d-flex justify-content-center d-grid gap-5">
                     <div>
                         <div class="circle position-relative rounded-circle d-flex justify-content-center align-items-center" data-progress="100">
@@ -82,7 +109,7 @@
             </div>
             <hr class="border border-text-200 my-0">
             <!-- 營養成份 -->
-            <div class="px-4 py-6">
+            <div class="container-self py-6">
                 <h3 class="mb-4">營養成份 <span class="ms-2 text-body-2 fw-400 text-text-600">(每份)</span></h3>
                 <div class="d-flex justify-content-center">
                     <div class="circle-chart position-relative rounded-circle d-flex align-items-center justify-content-center me-8">
@@ -109,7 +136,7 @@
             </div>
             <hr class="border border-text-200 my-0">
             <!-- 食材 -->
-            <div class="px-4 py-6">
+            <div class="container-self py-6">
                 <ul class="list-unstyled d-grid gap-4">
                     <li><h3>食材</h3></li>
                     <li class="d-flex align-items-center">
@@ -181,17 +208,16 @@
                         </li>
                     </ul>
                 </ul>
-
             </div>
             <hr class="border border-text-200 my-0">
             <!-- 廚具 -->
-            <div class="px-4 py-6">
+            <div class="container-self py-6">
                 <h3 class="mb-4">廚具</h3>
                 <p>平底鍋、烤箱、大邊框烤盤、鋁箔紙、密封塑膠袋、攪拌匙、攪拌用碗、攪拌用鍋、瓦斯爐</p>
             </div>
             <hr class="border border-text-200 my-0">
             <!-- 補充教學 -->
-            <div class="px-4 py-6">
+            <div class="container-self py-6">
                 <h3 class="mb-4">補充教學</h3>
                 <div class="swiper addTeaching">
                     <div class="swiper-wrapper">
@@ -262,17 +288,17 @@
                 </div>
             </div>
             <!-- 開始烹飪 -->
-            <div class="px-4 py-6 bg-pampas-100 border border-text-200">
+            <div class="container-self py-6 bg-pampas-100 border border-text-200">
                 <h3 class="mb-4">開始烹飪</h3>
                 <iframe class="border-radius-16px mb-6" width="358" height="200" src="https://www.youtube.com/embed/ev-U6vl5Lek?si=cbbCp1CmN4vkbBeL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
             <hr class="border border-text-200 my-0">
-            <div class="px-4 py-4 bg-pampas-100 d-flex align-items-center">
+            <div class="container-self py-4 bg-pampas-100 d-flex align-items-center">
                 <p class="text-body-5 text-gossamer-500 fw-700">步驟 1/4</p>
                 <div class="badge rounded-pill text-body-3 bg-gossamer-500 text-white py-2px px-2 lh16 ms-auto">00:30</div>
             </div>
             <div style="background-image: url(../assets/images/教學食譜頁/step-1.png);height: 200px; "></div>
-            <div class="pt-4 pb-6 px-4">
+            <div class="pt-4 pb-6 container-self">
                 <ul class="list-unstyled d-grid gap-2">
                     <li class="text-pampas-600">
                         <svg class="me-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="#947A62" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h1m17 0h-1m0 0l-1 10H5L4 10m16 0h-4M4 10h4m4 4v2m3-2v2m-6-2v2m-1-6h8m-8 0V8c0-1.333.8-4 4-4s4 2.667 4 4v2"/></svg>
@@ -285,11 +311,11 @@
                     <li>在一個小碗中攪拌蜂蜜、醬油、大蒜、醋和碎紅辣椒。將雞肉和一半蜂蜜混合物（約 1/4 杯）放入帶拉鍊的塑膠袋中；除去多餘的空氣並密封袋子。將密封袋中的雞肉按摩至均勻。冷藏至少 30 分鐘至 2 小時。保留剩餘的蜂蜜混合物。</li>
                 </ul>
             </div>
-            <div class="px-4 py-4 bg-pampas-100 d-flex align-items-center">
+            <div class="container-self py-4 bg-pampas-100 d-flex align-items-center">
                 <p class="text-body-5 text-gossamer-500 fw-700">步驟 2/4</p>
                 <div class="badge rounded-pill text-body-3 bg-gossamer-500 text-white py-2px px-2 lh16 ms-auto">03:20</div>
             </div>
-            <div class="pt-4 pb-6 px-4">
+            <div class="pt-4 pb-6 container-self">
                 <ul class="list-unstyled d-grid gap-2">
                     <li class="text-pampas-600">
                         <svg class="me-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="#947A62" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h1m17 0h-1m0 0l-1 10H5L4 10m16 0h-4M4 10h4m4 4v2m3-2v2m-6-2v2m-1-6h8m-8 0V8c0-1.333.8-4 4-4s4 2.667 4 4v2"/></svg>
@@ -302,12 +328,12 @@
                     <li>將烤箱預熱至 400°F。在一張大的有邊烤盤上鋪上鋁箔紙；塗上烹飪噴霧。將雞肉從醃料中取出（丟棄醃料）；放在準備好的平底鍋的一側。將胡蘿蔔和 1 湯匙油放入中等大小的碗中；充分攪拌均勻。將胡蘿蔔均勻地舖在鍋的另一側。將雞肉和胡蘿蔔烤 15 分鐘。從烤箱中取出；攪拌胡蘿蔔。</li>
                 </ul>
             </div>
-            <div class="px-4 py-4 bg-pampas-100 d-flex align-items-center">
+            <div class="container-self py-4 bg-pampas-100 d-flex align-items-center">
                 <p class="text-body-5 text-gossamer-500 fw-700">步驟 3/4</p>
                 <div class="badge rounded-pill text-body-3 bg-gossamer-500 text-white py-2px px-2 lh16 ms-auto">05:34</div>
             </div>
             <div style="background-image: url(../assets/images/教學食譜頁/step-2.png);height: 200px; "></div>
-            <div class="pt-4 pb-6 px-4">
+            <div class="pt-4 pb-6 container-self">
                 <ul class="list-unstyled d-grid gap-2">
                     <li class="text-pampas-600">
                         <svg class="me-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="#947A62" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h1m17 0h-1m0 0l-1 10H5L4 10m16 0h-4M4 10h4m4 4v2m3-2v2m-6-2v2m-1-6h8m-8 0V8c0-1.333.8-4 4-4s4 2.667 4 4v2"/></svg>
@@ -320,11 +346,11 @@
                     <li>將青花菜和剩餘的1湯匙油混合；充分攪拌均勻。將青花菜均勻分佈在平底鍋上的雞肉和胡蘿蔔上。在所有東西上撒上鹽和胡椒。烘烤 15 至 18 分鐘，直至蔬菜變軟，並且插入雞肉最厚部分的溫度計顯示為 165°F。</li>
                 </ul>
             </div>
-            <div class="px-4 py-4 bg-pampas-100 d-flex align-items-center">
+            <div class="container-self py-4 bg-pampas-100 d-flex align-items-center">
                 <p class="text-body-5 text-gossamer-500 fw-700">步驟 4/4</p>
                 <div class="badge rounded-pill text-body-3 bg-gossamer-500 text-white py-2px px-2 lh16 ms-auto">05:56</div>
             </div>
-            <div class="pt-4 pb-6 px-4">
+            <div class="container-self pt-4 pb-6">
                 <ul class="list-unstyled d-grid gap-2">
                     <li class="text-pampas-600">
                         <svg class="me-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="#947A62" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h1m17 0h-1m0 0l-1 10H5L4 10m16 0h-4M4 10h4m4 4v2m3-2v2m-6-2v2m-1-6h8m-8 0V8c0-1.333.8-4 4-4s4 2.667 4 4v2"/></svg>
@@ -337,16 +363,16 @@
                     <li>同時，將玉米澱粉和水放入小碗中攪拌，直到沒有結塊為止。將玉米澱粉混合物和保留的蜂蜜混合物放入小鍋中混合；用中低火煮，攪拌一到兩次。煮約 2 分鐘，經常攪拌，直到醬汁澄清且變稠。淋在雞肉和蔬菜上。趁熱食用。</li>
                 </ul>
             </div>
-            <div class="px-4 py-4 bg-pampas-100">
+            <div class="container-self py-4 bg-pampas-100">
                 <p class="text-body-5 text-gossamer-500 fw-700">料理完成</p>
             </div>
             <div style="background-image: url(../assets/images/教學食譜頁/step-3.png);height: 200px; "></div>
-            <div class="px-4 py-8 bg-pampas-100 d-flex flex-column align-items-center border border-text-200">
+            <div class="container-self py-8 bg-pampas-100 d-flex flex-column align-items-center border border-text-200">
                 <p class="text-body-5 text-gossamer-500 fw-700 mb-4">留下你的心得與成果吧 !</p>
-                <button class="btn btn-gossamer-500 text-white fw-700 text-body-5 py-3 px-8 btn-radiys-100">馬上留言分享</button>
+                <button class="btn btn-gossamer-500 text-white fw-700 text-body-5 py-3 px-8 btn-radis-100">馬上留言分享</button>
             </div>
             <!-- 留言與評論 -->
-            <div class="px-4 py-6">
+            <div class="container-self py-6">
                 <div class="d-flex mb-4">
                     <h3>留言與評論</h3>
                     <p class="text-gossamer-500 ms-auto">查看所有留言</p>
@@ -372,7 +398,7 @@
             </div>
             <hr class="border border-text-200 my-0">
             <!-- 推薦食譜 -->
-            <div class="px-4 py-6">
+            <div class="container-self py-6">
                 <h3 class="mb-4">推薦食譜</h3>
                 <div class="swiper recommendBook">
                     <div class="swiper-wrapper">
