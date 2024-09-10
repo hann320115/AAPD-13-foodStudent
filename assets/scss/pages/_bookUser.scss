@@ -1,0 +1,66 @@
+.bookUser-content{
+    border-top-left-radius: 28px;
+    border-top-right-radius: 28px;
+    margin-top: 356px;
+    height: 700px;
+    box-shadow: 0px -6px 10px 0px #0000000A;
+    .nav-link{
+        color: #B0B0B0;
+        font-weight: normal;
+        border-bottom: 1px solid #32967D;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+    .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+        color: #2E2E2E;
+        font-weight: bold;
+        // border-bottom: 10px solid #32967D;
+        position: relative;
+        &::after{
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 3px; /* 調整高度 */
+            background: #32967D; /* 調整顏色 */
+            box-shadow: 0 3px 0 0 #32967D inset;
+        }
+    }
+}
+.border-top-left-radius{
+    border-top-left-radius: 28px !important;
+}
+.border-top-right-radius{
+    border-top-right-radius: 28px !important;
+}
+.foodBookBox{
+    width: 171px;
+    
+}
+.border-radius-12px{
+    border-radius: 12px;
+}
+.radius-top-start{
+    border-top-left-radius: 12px;
+}
+.radius-top-end{
+    border-top-right-radius: 12px;
+}
+.radius-bottom-start{
+    border-bottom-left-radius: 12px;
+}
+.radius-bottom-end{
+    border-bottom-right-radius: 12px;
+}
+
+.foodBookPic{
+    width: 85px;
+    height: 85px;
+}
+.gap-1px{
+    gap: 1px;
+}
+.A{
+
+}
