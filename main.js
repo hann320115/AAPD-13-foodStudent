@@ -51,6 +51,14 @@ document.addEventListener('DOMContentLoaded', function () {
     }, 1000); // 設置讀取畫面顯示時間
 });
 
+// 1秒後隱藏讀取圈圈並顯示卡片內容
+setTimeout(() => {
+    document.querySelector('.loading-wrapper').style.display = 'none';
+    document.querySelectorAll('.hidden').forEach(element => {
+        element.classList.remove('hidden');
+    });
+}, 1000);
+
 // 食譜-補充教學
 
 var swiper = new Swiper(".addTeaching", {
