@@ -13,7 +13,7 @@
             <div class="text-body-5 fw-700 align-self-center ms-32">所有留言</div>
         </div>
     </header>
-    <div class="container-self-full">
+    <div class="container-self-full mb-22">
         <!-- 留言板 -->
         <div class="container-self pb-20">
             <!-- 留言板-已留言(預設) -->
@@ -50,12 +50,30 @@
             <div id="messageList"></div>
         </div>
         <!--    輸入框    -->
-        <form id="messageForm" class="d-flex">
+        <form id="messageForm" class="d-flex mb-22">
             <button class="btn btn-transparent border-0 border"><i class="bi bi-camera fz-2"></i></button>
             <input type="text" class="form-control input-gray" id="message" placeholder="發佈留言">
             <button type="submit" class="btn btn-transparent"><i class="bi bi-send-fill"></i></button>
         </form>
     </div>
+    <footer class="footer fixed-bottom bg-pampas-100 d-flex justify-content-around" style="max-width: 390px; margin: 0 auto; padding-bottom: 34px;">
+        <a href="index.html" class="d-flex flex-column gap-1">
+            <span class="majesticons--home mt-2 active"></span>
+            <p class="text-body-4 text-text-400 text-center active">首頁</p>
+        </a>
+        <a href="#" class="d-flex flex-column gap-1">
+            <span class="majesticons--search-line mt-2"></span>
+            <p class="text-body-4 text-text-400 text-center">探索</p>
+        </a>
+        <a href="#" class="d-flex flex-column gap-1">
+            <span class="material-symbols--bookmark-outline mt-2"></span>
+            <p class="text-body-4 text-text-400 text-center">收藏</p>
+        </a>
+        <a href="#" class="d-flex flex-column gap-1">
+            <span class="ion--person-circle-outline mt-2"></span>
+            <p class="text-body-4 text-text-400 text-center">我的</p>
+        </a>
+    </footer>
 
 <!-- JS -->
     <script>
