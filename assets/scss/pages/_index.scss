@@ -1,0 +1,211 @@
+.index {
+  max-width: 390px;
+  margin: 0 auto;
+
+  .background-image {
+    position: relative;
+    background-image: url('../images/card-食譜教學/夏日藜麥沙拉.png');
+    background-size: cover;
+    background-position: center;
+    height: 248px;
+    margin: 0 auto;
+    z-index: -2;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.4) 100%);
+      z-index: -1;
+    }
+  }
+
+  .main-background {
+    background-color: white;
+    height: 100vh;
+    padding: 16px;
+    border-radius: 28px 28px 0px 0px;
+    margin-top: -28px;
+  }
+
+  .bookmark {
+    cursor: pointer;
+  }
+
+  .bookmark.bi-bookmark-fill {
+    color: #32967D;
+  }
+
+  .text-ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
+
+  .metrics {
+    position: relative;
+  }
+
+  .metrics::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    width: 1px;
+    height: 12px;
+    background-color: #D9D9D9;
+  }
+
+  .list-group-item {
+    border-radius: 0;
+    border: none;
+    padding: 16px 0;
+    text-align: center;
+    color: $text-300;
+    background-color: white;
+    border-bottom: 3px solid transparent;
+    font-size: 20px;
+    line-height: 1.2;
+  }
+
+  .list-group-item.active {
+    color: $text-950;
+    border-bottom: 3px solid $gossamer-500;
+    font-weight: 700;
+  }
+
+  .list-group {
+    margin: 0 -16px;
+  }
+
+  .swiper-slide {
+    max-width: 316px;
+  }
+
+  .title-ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+  }
+
+  /* 讀取畫面的樣式 */
+  .card-loading-screen {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #F3F1EC;
+    /* 讀取畫面的顏色 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    /* 確保在內容上層 */
+    transition: opacity 0.5s ease-out;
+    /* 平滑隱藏 */
+    opacity: 1;
+    /* 預設顯示 */
+  }
+
+  /* 隱藏讀取畫面的樣式 */
+  .card-loading-screen.hidden {
+    opacity: 0;
+    /* 隱藏 */
+    pointer-events: none;
+    /* 不影響點擊 */
+  }
+
+  .card-text .loading-row {
+    position: relative;
+    margin-bottom: 12px;
+  }
+
+  /* 讀取畫面 */
+  .card-text .loading-row .loading-screen {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #F3F1EC;
+    /* 讀取畫面的顏色 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    /* 根據需要調整邊角 */
+    z-index: 10;
+    transition: opacity 0.5s ease-out;
+    opacity: 1;
+    /* 預設顯示 */
+  }
+
+  /* 隱藏讀取畫面 */
+  .card-text .loading-row .loading-screen.hidden {
+    opacity: 0;
+    pointer-events: none;
+    /* 不影響點擊 */
+  }
+
+  /* 只針對 img 的讀取畫面 */
+  .image-loading-screen {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 28px;
+    /* 與 img 的寬度一致 */
+    height: 28px;
+    /* 與 img 的高度一致 */
+    background-color: #F3F1EC;
+    /* 讀取畫面的顏色 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    /* 圓形 */
+    z-index: 10;
+    transition: opacity 0.5s ease-out;
+    opacity: 1;
+    /* 預設顯示 */
+  }
+
+  /* 隱藏讀取畫面 */
+  .image-loading-screen.hidden {
+    opacity: 0;
+    pointer-events: none;
+    /* 不影響點擊 */
+  }
+
+  /* 確保文字和圖像在讀取畫面之上 */
+  .loading-row .d-flex {
+    position: relative;
+    z-index: 5;
+    /* 確保文字在讀取畫面之上 */
+  }
+
+  @keyframes loading {
+    0% { opacity: 1; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }
+  }
+
+  /* 文字消失和顯示 */
+  .text-wrapper {
+    position: relative;
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
+  }
+
+  .text-wrapper.visible {
+    opacity: 1;
+  }
+}
