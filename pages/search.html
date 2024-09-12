@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="zh-hant">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>搜尋</title>
+    <link rel="stylesheet" href="../assets/scss/all.scss">
+</head>
+
+<body>
+    <div class="search">
+        <div class="search-container">
+            <form class="position-relative mb-4">
+                <i class="bi bi-search position-absolute top-50 start-0 translate-middle-y ms-2"></i>
+                <input class="w-100 border-0" type="search" placeholder="搜尋" aria-label="Search"
+                    style="background-color: #7676801F; padding: 7px 8px 7px 32px ; border-radius: 12px;">
+            </form>
+            <div class="search-background-image mb-6">
+                <div class="pt-9 pb-4">
+                    <p class="fs-3 text-center fw-700" style="color: #F8F7F4; text-shadow: 0px 3px 4px #00000073;">
+                        沒有靈感嗎？讓我們幫你推薦！
+                    </p>
+                </div>
+                <a href="#" class="w-100 text-center"><button class="btn btn-light text-gossamer-500"
+                        style="border-radius: 99px;">開始</button></a>
+            </div>
+        </div>
+        <div class="search-main-content">
+            <div class="pb-6">
+                <h2 class="text-text-950 pb-4">最近看過</h2>
+                <div class="swiper searchSwiper mb-4">
+                    <div class="swiper-wrapper">
+                        <!-- 保存蔥的方法 -->
+                        <div class="swiper-slide">
+                            <div class="card border-0" style="border-radius: 12px;">
+                                <div class="position-relative">
+                                    <div class="img-mask"></div>
+                                    <img src="../assets/images/card-食譜教學/保存蔥的方法.png" class="card-img-top" alt="保存蔥的方法"
+                                        style="height: 164px; object-fit: cover; object-position: center; border-radius: 16px;">
+                                    <div class="position-absolute bottom-0 end-0 me-3 mb-3 d-flex align-items-center">
+                                        <i class="heart bi bi-heart me-1" id="heart1"
+                                            style="height: 24px; width: 24px;"></i>
+                                        <p class="text-white" style="line-height: 1;">2863</p>
+                                    </div>
+                                </div>
+                                <div class="card-body px-0 pb-0">
+                                    <div class="card-text">
+                                        <div class="d-flex justify-content-between align-items-center pb-1">
+                                            <p class="text-body-1 fw-700" style="line-height: 1.6;">保存蔥的方法</p>
+                                            <i class="fs-4 bookmark bi bi-bookmark" style="line-height: 1;"></i>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex pb-1">
+                                        <p class="text-body-2 text-text-600 pe-2">難度：易</p>
+                                    </div>
+                                    <div class="d-flex align-items-center">
+                                        <img class="rounded-circle me-2" src="../assets/images/Avatar/Avatar-3.png"
+                                            alt="people-img" style="width: 28px;height: 28px;">
+                                        <p class="text-text-600 text-body-2 fw-700">blue_lady</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 夏日藜麥沙拉 -->
+                        <div class="swiper-slide">
+                            <div class="card border-0" style="border-radius: 12px;">
+                                <div class="position-relative">
+                                    <div class="img-mask"></div>
+                                    <img src="../assets/images/card-食譜教學/夏日藜麥沙拉.png" class="card-img-top" alt="夏日藜麥沙拉"
+                                        style="height: 164px; object-fit: cover; object-position: center; border-radius: 16px;">
+                                    <div class="position-absolute bottom-0 end-0 me-3 mb-3 d-flex align-items-center">
+                                        <i class="heart bi bi-heart me-1" id="heart1"
+                                            style="height: 24px; width: 24px;"></i>
+                                        <p class="text-white" style="line-height: 1;">24</p>
+                                    </div>
+                                </div>
+                                <div class="position-absolute start-0 d-flex gap-1 mt-3 ms-3">
+                                    <div class="text-body-3 bg-gossamer-500 text-white"
+                                        style="top:16px; line-height: 1.6; border-radius:999px; padding: 2px 8px;">
+                                        30min</div>
+                                    <div class="text-body-3 bg-gossamer-500 text-white"
+                                        style="top:16px; line-height: 1.6; border-radius:999px; padding: 2px 8px;">
+                                        全素</div>
+                                </div>
+                                <div class="card-body px-0 pb-0">
+                                    <div class="card-text">
+                                        <div class="d-flex justify-content-between align-items-center pb-1">
+                                            <p class="text-body-1 fw-700" style="line-height: 1.6;">夏日藜麥沙拉</p>
+                                            <i class="fs-4 bookmark bi bi-bookmark-fill" style="line-height: 1;"></i>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex pb-1">
+                                        <p class="metrics text-body-2 text-text-600 pe-2">難度：易</p>
+                                        <p class="text-body-2 text-text-600 px-2">265 kcal</p>
+                                    </div>
+                                    <div class="d-flex align-items-center">
+                                        <img class="rounded-circle me-2" src="../assets/images/Avatar/Avatar-8.png"
+                                            alt="people-img" style="width: 28px;height: 28px;">
+                                        <p class="text-text-600 text-body-2 fw-700">Ruby的廚房秘方</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 滾刀塊 -->
+                        <div class="swiper-slide">
+                            <div class="card border-0" style="border-radius: 12px;">
+                                <div class="position-relative">
+                                    <div class="img-mask"></div>
+                                    <img src="../assets/images/card-食譜教學/滾刀塊.png" class="card-img-top" alt="滾刀塊"
+                                        style="height: 164px; object-fit: cover; object-position: center; border-radius: 16px;">
+                                    <div class="position-absolute bottom-0 end-0 me-3 mb-3 d-flex align-items-center">
+                                        <i class="heart bi bi-heart me-1" id="heart1"
+                                            style="height: 24px; width: 24px;"></i>
+                                        <p class="text-white" style="line-height: 1;">363</p>
+                                    </div>
+                                </div>
+                                <div class="card-body px-0 pb-0">
+                                    <div class="card-text">
+                                        <div class="d-flex justify-content-between align-items-center pb-1">
+                                            <p class="text-body-1 fw-700" style="line-height: 1.6;">滾刀塊</p>
+                                            <i class="fs-4 bookmark bi bi-bookmark" style="line-height: 1;"></i>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex pb-1">
+                                        <p class="text-body-2 text-text-600 pe-2">難度：易</p>
+                                    </div>
+                                    <div class="d-flex align-items-center">
+                                        <img class="rounded-circle me-2" src="../assets/images/Avatar/Avatar-5.png"
+                                            alt="people-img" style="width: 28px;height: 28px;">
+                                        <p class="text-text-600 text-body-2 fw-700">Justin 廚藝教室</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cooking">
+                <h2 class="text-text-950 pb-4">熱門食譜類別</h2>
+                <div class="swiper cookingSwiper mb-4">
+                    <div class="swiper-wrapper">
+                        <!-- 地中海 -->
+                        <div class="swiper-slide">
+                            <img src="../assets/images/熱門類別/地中海.png" alt="料理類別">
+                        </div>
+                        <!-- 越式 -->
+                        <div class="swiper-slide">
+                            <img src="../assets/images/熱門類別/越式.png" alt="料理類別">
+                        </div>
+                        <!-- 台菜 -->
+                        <div class="swiper-slide">
+                            <img src="../assets/images/熱門類別/TW.png" alt="料理類別">
+                        </div>
+                        <!-- 台菜 -->
+                        <div class="swiper-slide">
+                            <img src="../assets/images/熱門類別/TW.png" alt="料理類別">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer fixed-bottom bg-pampas-100 d-flex justify-content-around"
+    style="max-width: 390px; margin: 0 auto; padding-bottom: 34px;">
+    <a href="index.html" class="d-flex flex-column gap-1">
+      <span class="majesticons--home-line mt-2"></span>
+      <p class="text-body-4 text-text-400 text-center">首頁</p>
+    </a>
+    <a href="search.html" class="d-flex flex-column gap-1">
+      <span class="majesticons--search mt-2 active"></span>
+      <p class="text-body-4 text-text-400 text-center active">探索</p>
+    </a>
+    <a href="favorites.html" class="d-flex flex-column gap-1">
+      <span class="material-symbols--bookmark-outline mt-2"></span>
+      <p class="text-body-4 text-text-400 text-center">收藏</p>
+    </a>
+    <a href="homepage.html" class="d-flex flex-column gap-1">
+      <span class="ion--person-circle-outline mt-2"></span>
+      <p class="text-body-4 text-text-400 text-center">我的</p>
+    </a>
+  </footer>
+
+    <script type="module" src="../main.js"></script>
+</body>
+
+</html>
