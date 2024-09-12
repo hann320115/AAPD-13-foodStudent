@@ -59,6 +59,12 @@ setTimeout(() => {
     });
 }, 1000);
 
+// 我的收藏
+var swiper = new Swiper(".favoritesSwiper", {
+    slidesPerView: "auto",
+    spaceBetween: 12,
+  });
+
 // 食譜-補充教學
 
 var swiper = new Swiper(".addTeaching", {

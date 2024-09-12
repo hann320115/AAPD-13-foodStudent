@@ -9,27 +9,78 @@
 </head>
 
 <body>
+
     <div class="container-self-full bg-pampas-100 pt-12">
-        <div class="position-relative" style="padding: 9px 0;">
-            <a href="homepage.html"><i class="fs-2 bi bi-chevron-left position-absolute top-50 start-0 translate-middle-y ms-2"></i></a>
-            <h4 class="position-absolute top-50 start-50 translate-middle">我的收藏</h4>
-            <a href="#"><i class="fs-2 bi bi-plus-square position-absolute top-50 end-0 translate-middle-y me-2"></i></a>
+        <div class="favorites-header">
+            <div class="position-relative" style="padding: 9px 0;">
+                <a href="javascript:history.back();"><i
+                        class="fs-2 bi bi-chevron-left position-absolute top-50 start-0 translate-middle-y ms-2"></i></a>
+                <h4 class="position-absolute top-50 start-50 translate-middle">我的收藏</h4>
+                <a href="#"><i
+                        class="fs-2 bi bi-plus-square position-absolute top-50 end-0 translate-middle-y me-2"></i></a>
+            </div>
+            <div class="pt-4 pb-8 ps-4">
+                <h4 class="mb-2">追蹤名單</h4>
+                <div class="swiper favoritesSwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="bookUser.html">
+                                <div class="d-flex flex-column align-items-center">
+                                    <img class="rounded-circle border border-gossamer-500"
+                                        src="../assets/images/Avatar/Avatar-1.png" width="72" height="72"
+                                        style="padding: 5px; margin-bottom: 2px;">
+                                    <p class="text-body-4 text-text-950">Ruby.cook</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="d-flex flex-column align-items-center">
+                                <img class="rounded-circle border border-gossamer-500"
+                                    src="../assets/images/Avatar/Avatar-2.png" width="72" height="72"
+                                    style="padding: 5px; margin-bottom: 2px;">
+                                <p class="text-body-4 text-text-950">FitSabrina</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="d-flex flex-column align-items-center">
+                                <img class="rounded-circle border border-gossamer-500"
+                                    src="../assets/images/Avatar/Avatar-3.png" width="72" height="72"
+                                    style="padding: 5px; margin-bottom: 2px;">
+                                <p class="text-body-4 text-text-950">blue_lady</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="d-flex flex-column align-items-center">
+                                <img class="rounded-circle border border-gossamer-500"
+                                    src="../assets/images/Avatar/Avatar-4.png" width="72" height="72"
+                                    style="padding: 5px; margin-bottom: 2px;">
+                                <p class="text-body-4 text-text-950"
+                                    style="width: 60px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+                                    LizHealthlymeal</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="d-flex flex-column align-items-center">
+                                <img class="rounded-circle border border-gossamer-500"
+                                    src="../assets/images/Avatar/Avatar-5.png" width="72" height="72"
+                                    style="padding: 5px; margin-bottom: 2px;">
+                                <p class="text-body-4 text-text-950">Steven</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="pt-4 pb-8 ps-4">
-            <h4 class="">追蹤名單</h4>
-            
-        </div>
-        <div class="homepage-content mb-30">
+        <div class="favorites-content mb-30">
             <div class="main-background">
                 <div class="list-group flex-row mb-6" id="list-tab" role="tablist">
-                    <a class="list-group-item list-group-item-action active" id="cookbook-list" data-bs-toggle="list"
-                        href="#cookbook" role="tab" aria-controls="cookbook">煮過的食譜</a>
-                    <a class="list-group-item list-group-item-action m-0" id="skills-list" data-bs-toggle="list"
-                        href="#skills" role="tab" aria-controls="skills">學會的技巧</a>
+                    <a class="list-group-item list-group-item-action active" id="recipe-list" data-bs-toggle="list"
+                        href="#recipe" role="tab" aria-controls="recipe">食譜</a>
+                    <a class="list-group-item list-group-item-action m-0" id="tutorial-list" data-bs-toggle="list"
+                        href="#tutorial" role="tab" aria-controls="tutorial">教學</a>
                 </div>
                 <div class="tab-content" id="nav-tabContent">
-                    <div class="tab-pane fade show active" id="cookbook" role="tabpanel"
-                        aria-labelledby="cookbook-list">
+                    <div class="tab-pane fade show active" id="recipe" role="tabpanel" aria-labelledby="recipe-list">
                         <div class="container">
                             <div class="row position-relative">
                                 <!-- 讀取圈圈 -->
@@ -37,129 +88,78 @@
                                     <div class="loading-circle"></div>
                                 </div>
                                 <div class="col-6 ps-0 pe-2 hidden">
-                                    <!-- 燕麥核桃香蕉鬆餅 -->
+                                    <!-- 夏日輕食 -->
                                     <div class="card border-0 mb-6" style="border-radius: 12px;">
+                                        <a href="favoritesfolder.html">
+                                            <ul class="list-unstyled d-flex d-grid gap-1px flex-wrap mb-4">
+                                                <li class="foodBookPic radius-top-start"
+                                                    style="background-image: url(../assets/images/card-食譜教學/燕麥核桃香蕉鬆餅.png);background-position: center;background-size: cover;">
+                                                </li>
+                                                <li class="foodBookPic radius-top-end"
+                                                    style="background-image: url(../assets/images/card-食譜教學/日式野菜溫沙拉.png);background-position: center;background-size: cover;">
+                                                </li>
+                                                <li class="foodBookPic radius-bottom-start"
+                                                    style="background-image: url(../assets/images/card-食譜教學/夏日藜麥沙拉.png);background-position: center;background-size: cover;">
+                                                </li>
+                                                <li class="foodBookPic radius-bottom-end"
+                                                    style="background-image: url(../assets/images/card-食譜教學/草莓優格果昔.png);background-position: center;background-size: cover;">
+                                                </li>
+                                            </ul>
+                                        </a>
+                                        <p class="text-body-1 text-text-950 fw-700">夏日輕食</p>
+                                        <p class="text-body-2 text-text-600">4 篇收藏</p>
+                                    </div>
+                                </div>
+                                <div class="col-6 ps-2 pe-0 hidden">
+                                    <!-- 三明治 -->
+                                    <ul class="list-unstyled d-flex d-grid gap-1px flex-wrap mb-4">
+                                        <li class="foodBookPic radius-top-start"
+                                            style="background-image: url(../assets/images/card-食譜教學/三明治.png);background-position: bottom;background-size: cover;">
+                                        </li>
+                                        <li class="foodBookPic bg-pampas-100 radius-top-end"></li>
+                                        <li class="foodBookPic bg-pampas-100 radius-bottom-start"></li>
+                                        <li class="foodBookPic bg-pampas-100 radius-bottom-end"></li>
+                                    </ul>
+                                    <p class="text-body-1 text-text-950 fw-700">三明治</p>
+                                    <p class="text-body-2 text-text-600">1 篇收藏</p>
+                                </div>
+                                <div class="col-6 ps-0 pe-2 hidden">
+                                    <!-- 綠橄欖鷹嘴豆泥 -->
+                                    <div class="card border-0" style="border-radius: 12px;">
                                         <div class="position-relative">
                                             <div class="img-mask"></div>
-                                            <img src="../assets/images/card-食譜教學/燕麥核桃香蕉鬆餅.png" class="card-img-top"
-                                                alt="燕麥核桃香蕉鬆餅"
+                                            <img src="../assets/images/card-食譜教學/綠橄欖鷹嘴豆泥.png" class="card-img-top"
+                                                alt="綠橄欖鷹嘴豆泥"
                                                 style="height: 164px; object-fit: cover; object-position: center; border-radius: 16px;">
                                             <div
                                                 class="position-absolute bottom-0 end-0 me-3 mb-3 d-flex align-items-center">
                                                 <i class="heart bi bi-heart me-1" id="heart1"
                                                     style="height: 24px; width: 24px;"></i>
-                                                <p class="text-white" style="line-height: 1;">1327</p>
+                                                <p class="text-white" style="line-height: 1;">821</p>
                                             </div>
                                         </div>
                                         <div class="position-absolute start-0 d-flex gap-1 mt-3 ms-3">
                                             <div class="text-body-3 bg-gossamer-500 text-white"
                                                 style="top:16px; line-height: 1.6; border-radius:999px; padding: 2px 8px;">
-                                                30min</div>
-                                            <div class="text-body-3 bg-gossamer-500 text-white"
-                                                style="top:16px; line-height: 1.6; border-radius:999px; padding: 2px 8px;">
-                                                無乳製品</div>
+                                                15min</div>
                                         </div>
                                         <div class="card-body px-0 pb-0">
                                             <div class="card-text">
                                                 <div class="d-flex justify-content-between align-items-center pb-1">
-                                                    <p class="text-body-1 fw-700" style="line-height: 1.6;">燕麥核桃香蕉鬆餅</p>
-                                                    <i class="fs-4 bookmark bi bi-bookmark" style="line-height: 1;"></i>
+                                                    <p class="text-body-1 fw-700" style="line-height: 1.6;">綠橄欖鷹嘴豆泥</p>
+                                                    <i class="fs-4 bookmark bi bi-bookmark-fill"
+                                                        style="line-height: 1;"></i>
                                                 </div>
                                             </div>
                                             <div class="d-flex pb-1">
                                                 <p class="metrics text-body-2 text-text-600 pe-2">難度：中</p>
-                                                <p class="text-body-2 text-text-600 px-2">148 kcal</p>
+                                                <p class="text-body-2 text-text-600 px-2">150 kcal</p>
                                             </div>
                                             <div class="d-flex align-items-center">
                                                 <img class="rounded-circle me-2"
-                                                    src="../assets/images/Avatar/Avatar-9.png" alt="people-img"
+                                                    src="../assets/images/Avatar/Avatar-6.png" alt="people-img"
                                                     style="width: 28px;height: 28px;">
-                                                <p class="text-text-600 text-body-2 fw-700">冰冰好料理</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-6 ps-2 pe-0 hidden">
-                                    <!-- 日式野菜溫沙拉 -->
-                                    <div class="card border-0 mb-6" style="border-radius: 12px;">
-                                        <div class="position-relative">
-                                            <div class="img-mask"></div>
-                                            <img src="../assets/images/card-食譜教學/日式野菜溫沙拉.png" class="card-img-top"
-                                                alt="日式野菜溫沙拉"
-                                                style="height: 164px; object-fit: cover; object-position: center; border-radius: 16px;">
-                                            <div
-                                                class="position-absolute bottom-0 end-0 me-3 mb-3 d-flex align-items-center">
-                                                <i class="heart bi bi-heart me-1" id="heart1"
-                                                    style="height: 24px; width: 24px;"></i>
-                                                <p class="text-white" style="line-height: 1;">1327</p>
-                                            </div>
-                                        </div>
-                                        <div class="position-absolute start-0 d-flex gap-1 mt-3 ms-3">
-                                            <div class="text-body-3 bg-gossamer-500 text-white"
-                                                style="top:16px; line-height: 1.6; border-radius:999px; padding: 2px 8px;">
-                                                25min</div>
-                                        </div>
-                                        <div class="card-body px-0 pb-0">
-                                            <div class="card-text">
-                                                <div class="d-flex justify-content-between align-items-center pb-1">
-                                                    <p class="text-body-1 fw-700" style="line-height: 1.6;">日式野菜溫沙拉</p>
-                                                    <i class="fs-4 bookmark bi bi-bookmark-fill"
-                                                        style="line-height: 1;"></i>
-                                                </div>
-                                            </div>
-                                            <div class="d-flex pb-1">
-                                                <p class="metrics text-body-2 text-text-600 pe-2">難度：易</p>
-                                                <p class="text-body-2 text-text-600 px-2">375 kcal</p>
-                                            </div>
-                                            <div class="d-flex align-items-center">
-                                                <img class="rounded-circle me-2"
-                                                    src="../assets/images/Avatar/Avatar-3.png" alt="people-img"
-                                                    style="width: 28px;height: 28px;">
-                                                <p class="text-text-600 text-body-2 fw-700">blue_lady</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-6 ps-0 pe-2 hidden">
-                                    <!-- 夏日藜麥沙拉 -->
-                                    <div class="card border-0" style="border-radius: 12px;">
-                                        <div class="position-relative">
-                                            <div class="img-mask"></div>
-                                            <img src="../assets/images/card-食譜教學/夏日藜麥沙拉.png" class="card-img-top"
-                                                alt="夏日藜麥沙拉"
-                                                style="height: 164px; object-fit: cover; object-position: center; border-radius: 16px;">
-                                            <div
-                                                class="position-absolute bottom-0 end-0 me-3 mb-3 d-flex align-items-center">
-                                                <i class="heart bi bi-heart me-1" id="heart1"
-                                                    style="height: 24px; width: 24px;"></i>
-                                                <p class="text-white" style="line-height: 1;">24</p>
-                                            </div>
-                                        </div>
-                                        <div class="position-absolute start-0 d-flex gap-1 mt-3 ms-3">
-                                            <div class="text-body-3 bg-gossamer-500 text-white"
-                                                style="top:16px; line-height: 1.6; border-radius:999px; padding: 2px 8px;">
-                                                30min</div>
-                                            <div class="text-body-3 bg-gossamer-500 text-white"
-                                                style="top:16px; line-height: 1.6; border-radius:999px; padding: 2px 8px;">
-                                                全素</div>
-                                        </div>
-                                        <div class="card-body px-0 pb-0">
-                                            <div class="card-text">
-                                                <div class="d-flex justify-content-between align-items-center pb-1">
-                                                    <p class="text-body-1 fw-700" style="line-height: 1.6;">夏日藜麥沙拉</p>
-                                                    <i class="fs-4 bookmark bi bi-bookmark-fill"
-                                                        style="line-height: 1;"></i>
-                                                </div>
-                                            </div>
-                                            <div class="d-flex pb-1">
-                                                <p class="metrics text-body-2 text-text-600 pe-2">難度：易</p>
-                                                <p class="text-body-2 text-text-600 px-2">265 kcal</p>
-                                            </div>
-                                            <div class="d-flex align-items-center">
-                                                <img class="rounded-circle me-2"
-                                                    src="../assets/images/Avatar/Avatar-8.png" alt="people-img"
-                                                    style="width: 28px;height: 28px;">
-                                                <p class="text-text-600 text-body-2 fw-700">Ruby的廚房秘方</p>
+                                                <p class="text-text-600 text-body-2 fw-700">美味匠人</p>
                                             </div>
                                         </div>
                                     </div>
@@ -208,7 +208,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="tab-pane fade" id="skills" role="tabpanel" aria-labelledby="skills-list">
+                    <div class="tab-pane fade" id="tutorial" role="tabpanel" aria-labelledby="tutorial-list">
                         <div class="container">
                             <div class="row">
                                 <div class="col-6 ps-0 pe-2">
@@ -229,7 +229,8 @@
                                             <div class="card-text">
                                                 <div class="d-flex justify-content-between align-items-center pb-1">
                                                     <p class="text-body-1 fw-700" style="line-height: 1.6;">切段</p>
-                                                    <i class="fs-4 bookmark bi bi-bookmark" style="line-height: 1;"></i>
+                                                    <i class="fs-4 bookmark bi bi-bookmark-fill"
+                                                        style="line-height: 1;"></i>
                                                 </div>
                                             </div>
                                             <div class="d-flex pb-1">
@@ -298,7 +299,8 @@
                                             <div class="card-text">
                                                 <div class="d-flex justify-content-between align-items-center pb-1">
                                                     <p class="text-body-1 fw-700" style="line-height: 1.6;">保存蔥的方法</p>
-                                                    <i class="fs-4 bookmark bi bi-bookmark" style="line-height: 1;"></i>
+                                                    <i class="fs-4 bookmark bi bi-bookmark-fill"
+                                                        style="line-height: 1;"></i>
                                                 </div>
                                             </div>
                                             <div class="d-flex pb-1">
@@ -315,36 +317,41 @@
                                 </div>
                                 <div class="col-6 ps-2 pe-0">
                                     <!-- 滾刀塊 -->
-                                    <div class="card border-0" style="border-radius: 12px;">
-                                        <div class="position-relative">
-                                            <div class="img-mask"></div>
-                                            <img src="../assets/images/card-食譜教學/滾刀塊.png" class="card-img-top" alt="滾刀塊"
-                                                style="height: 164px; object-fit: cover; object-position: center; border-radius: 16px;">
-                                            <div
-                                                class="position-absolute bottom-0 end-0 me-3 mb-3 d-flex align-items-center">
-                                                <i class="heart bi bi-heart me-1" id="heart1"
-                                                    style="height: 24px; width: 24px;"></i>
-                                                <p class="text-white" style="line-height: 1;">363</p>
-                                            </div>
-                                        </div>
-                                        <div class="card-body px-0 pb-0">
-                                            <div class="card-text">
-                                                <div class="d-flex justify-content-between align-items-center pb-1">
-                                                    <p class="text-body-1 fw-700" style="line-height: 1.6;">滾刀塊</p>
-                                                    <i class="fs-4 bookmark bi bi-bookmark" style="line-height: 1;"></i>
+                                    <a href="teach.html">
+                                        <div class="card border-0" style="border-radius: 12px;">
+                                            <div class="position-relative">
+                                                <div class="img-mask"></div>
+                                                <img src="../assets/images/card-食譜教學/滾刀塊.png" class="card-img-top"
+                                                    alt="滾刀塊"
+                                                    style="height: 164px; object-fit: cover; object-position: center; border-radius: 16px;">
+                                                <div
+                                                    class="position-absolute bottom-0 end-0 me-3 mb-3 d-flex align-items-center">
+                                                    <i class="heart bi bi-heart me-1" id="heart1"
+                                                        style="height: 24px; width: 24px;"></i>
+                                                    <p class="text-white" style="line-height: 1;">363</p>
                                                 </div>
                                             </div>
-                                            <div class="d-flex pb-1">
-                                                <p class="metrics text-body-2 text-text-600 pe-2">難度：易</p>
-                                            </div>
-                                            <div class="d-flex align-items-center">
-                                                <img class="rounded-circle me-2"
-                                                    src="../assets/images/Avatar/Avatar-5.png" alt="people-img"
-                                                    style="width: 28px;height: 28px;">
-                                                <p class="text-text-600 text-body-2 fw-700">Justin 廚藝教室</p>
+                                            <div class="card-body px-0 pb-0">
+                                                <div class="card-text">
+                                                    <div class="d-flex justify-content-between align-items-center pb-1">
+                                                        <p class="text-body-1 fw-700" style="line-height: 1.6;">滾刀塊
+                                                        </p>
+                                                        <i class="fs-4 bookmark bi bi-bookmark-fill"
+                                                            style="line-height: 1;"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex pb-1">
+                                                    <p class="metrics text-body-2 text-text-600 pe-2">難度：易</p>
+                                                </div>
+                                                <div class="d-flex align-items-center">
+                                                    <img class="rounded-circle me-2"
+                                                        src="../assets/images/Avatar/Avatar-5.png" alt="people-img"
+                                                        style="width: 28px;height: 28px;">
+                                                    <p class="text-text-600 text-body-2 fw-700">Justin 廚藝教室</p>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -352,6 +359,8 @@
                 </div>
             </div>
         </div>
+    </div>
+    </div>
     </div>
     <footer class="footer fixed-bottom bg-pampas-100 d-flex justify-content-around"
         style="max-width: 390px; margin: 0 auto; padding-bottom: 34px;">
@@ -364,12 +373,12 @@
             <p class="text-body-4 text-text-400 text-center">探索</p>
         </a>
         <a href="favorites.html" class="d-flex flex-column gap-1">
-            <span class="material-symbols--bookmark-outline mt-2"></span>
-            <p class="text-body-4 text-text-400 text-center">收藏</p>
+            <span class="material-symbols--bookmark mt-2 active"></span>
+            <p class="text-body-4 text-text-400 text-center active">收藏</p>
         </a>
         <a href="homepage.html" class="d-flex flex-column gap-1">
-            <span class="ion--person-circle mt-2 active"></span>
-            <p class="text-body-4 text-text-400 text-center active">我的</p>
+            <span class="ion--person-circle-outline mt-2"></span>
+            <p class="text-body-4 text-text-400 text-center">我的</p>
         </a>
     </footer>
 
