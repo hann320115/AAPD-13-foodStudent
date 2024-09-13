@@ -51,6 +51,31 @@ document.addEventListener('DOMContentLoaded', function () {
     }, 1000); // 設置讀取畫面顯示時間
 });
 
+// 1秒後隱藏讀取圈圈並顯示卡片內容
+setTimeout(() => {
+    document.querySelector('.loading-wrapper').style.display = 'none';
+    document.querySelectorAll('.hidden').forEach(element => {
+        element.classList.remove('hidden');
+    });
+}, 1000);
+
+// 我的收藏
+var swiper = new Swiper(".favoritesSwiper", {
+    slidesPerView: "auto",
+    spaceBetween: 12,
+});
+
+// 搜尋
+var swiper = new Swiper(".searchSwiper", {
+    slidesPerView: "auto",
+    spaceBetween: 16,
+});
+
+var swiper = new Swiper(".cookingSwiper", {
+    slidesPerView: "auto",
+    spaceBetween: 16,
+});
+
 // 食譜-補充教學
 
 var swiper = new Swiper(".addTeaching", {
