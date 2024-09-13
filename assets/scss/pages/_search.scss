@@ -1,0 +1,35 @@
+.search {
+    .search-container {
+        max-width: 390px;
+        padding: 48px 16px 16px 16px;
+        margin: 0 auto;
+    }
+
+    .search-background-image {
+        background-image: url('../images/二選一進入 35_.png');
+        background-size: cover;
+        background-position: center;
+        width: 358px;
+        height: 156px;
+        margin: 0 auto;
+        z-index: -2;
+    }
+
+    .swiper-slide {
+        max-width: 160px;
+    }
+}
+
+
+
+.search-main-content {
+    max-width: 390px;
+    margin: 0 auto;
+    padding-left: 16px;
+}
+
+.cooking {
+    .swiper-slide {
+        max-width: 100px;
+    }
+}

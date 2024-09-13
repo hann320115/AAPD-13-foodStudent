@@ -63,7 +63,18 @@ setTimeout(() => {
 var swiper = new Swiper(".favoritesSwiper", {
     slidesPerView: "auto",
     spaceBetween: 12,
-  });
+});
+
+// 搜尋
+var swiper = new Swiper(".searchSwiper", {
+    slidesPerView: "auto",
+    spaceBetween: 16,
+});
+
+var swiper = new Swiper(".cookingSwiper", {
+    slidesPerView: "auto",
+    spaceBetween: 16,
+});
 
 // 食譜-補充教學
 
