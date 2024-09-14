@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>留言頁面</title>
     
-  <script type="module" crossorigin src="/AAPD-13-foodStudent/assets/main-6b9dcb35.js"></script>
-  <link rel="stylesheet" href="/AAPD-13-foodStudent/assets/main-509b41ce.css">
+  <script type="module" crossorigin src="/AAPD-13-foodStudent/assets/main-d54aac6f.js"></script>
+  <link rel="stylesheet" href="/AAPD-13-foodStudent/assets/main-a1b1a3c0.css">
 </head>
 <body>
     <header class="container-self-full mb-4">
@@ -78,6 +78,92 @@
     </footer>
 
 <!-- JS -->
+<script>
+    // 圖片路徑變量 (使用相對路徑)
+    const avatarImagePath = "./images/Avatar/Avatar-3.png";
+
+    // 註冊表單提交事件處理器
+    document.getElementById("messageForm").addEventListener("submit", function(event) {
+        event.preventDefault(); // 防止表單提交
+
+        const messageInput = document.getElementById("message");
+        const messageText = messageInput.value.trim();
+        
+        if (messageText !== "") {
+            // 創建新的留言項目
+            const messageItem = document.createElement("div");
+            messageItem.className = "d-flex flex-column";
+
+            // 用戶回覆
+            const userReply = document.createElement("div");
+            userReply.className = "d-flex align-items-center";
+
+            const newAvatarImg = document.createElement("img");
+            newAvatarImg.className = "rounded-circle me-2";
+            newAvatarImg.src = avatarImagePath; // 使用變量引用圖片路徑
+            newAvatarImg.alt = "User Avatar";
+            newAvatarImg.height = 36;
+            newAvatarImg.width = 36;
+
+            const userName = document.createElement("h6");
+            userName.textContent = "April";
+
+            const timestamp = document.createElement("div");
+            timestamp.className = "ms-auto";
+            timestamp.textContent = "剛剛";
+
+            userReply.appendChild(newAvatarImg);
+            userReply.appendChild(userName);
+            userReply.appendChild(timestamp);
+
+            // 留言內容
+            const messageContent = document.createElement("div");
+            messageContent.className = "my-2 ms-11";
+            messageContent.textContent = messageText;
+
+            // 愛心+留言
+            const heartReply = document.createElement("div");
+            heartReply.className = "d-flex align-items-center mb-4";
+
+            const likeButton = document.createElement("button");
+            likeButton.className = "btn btn-transparent border-0 border p-0 ms-11 me-1";
+
+            const likeIcon = document.createElement("i");
+            likeIcon.className = "dark-heart bi bi-heart";
+            likeIcon.id = "heart14";
+            likeButton.appendChild(likeIcon);
+
+            const likeCount = document.createElement("p");
+            likeCount.className = "me-4";
+            likeCount.textContent = "000";
+
+            const commentButton = document.createElement("button");
+            commentButton.className = "btn btn-transparent border-0 border p-0";
+
+            const commentIcon = document.createElement("i");
+            commentIcon.className = "bi bi-chat";
+            commentButton.appendChild(commentIcon);
+
+            heartReply.appendChild(likeButton);
+            heartReply.appendChild(likeCount);
+            heartReply.appendChild(commentButton);
+
+            // 把各部分加到留言項目中
+            messageItem.appendChild(userReply);
+            messageItem.appendChild(messageContent);
+            messageItem.appendChild(heartReply);
+
+            // 將留言項目添加到留言列表中
+            document.getElementById("messageList").appendChild(messageItem);
+
+            // 清空輸入框
+            messageInput.value = "";
+        }
+    });
+</script>
+
+
+
     
 </body>
 </html>
