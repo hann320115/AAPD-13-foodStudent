@@ -10,7 +10,7 @@ import './assets/scss/all.scss';
 import "bootstrap/dist/js/bootstrap.min.js";
 
 // 首頁
-var swiper = new Swiper(".indexSwiper", {
+var swiper = new Swiper(".homeSwiper", {
     slidesPerView: "auto",
     spaceBetween: 16,
 });
@@ -84,6 +84,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const showMoreBtn = document.getElementById('showMoreBtn');
     const moreItems = document.getElementById('moreItems');
     const hiddenResults = document.querySelector('.list-unstyled.d-none'); // 下方的 ul
+    const backgroundImage = document.querySelector('.search-background-image'); // 背景推薦區塊
 
     // 當搜尋框獲得焦點時，顯示搜尋結果
     searchInput.addEventListener('focus', function () {
@@ -99,6 +100,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
             // 隱藏 "顯示更多" 按鈕，因為沒有內容可以顯示了
             showMoreBtn.style.display = 'none';
+
+            // 隱藏背景推薦區塊
+            if (backgroundImage) {
+                backgroundImage.style.display = 'none';
+            }
         } else {
             if (moreItems.style.display === 'none' || moreItems.style.display === '') {
                 moreItems.style.display = 'block'; // 顯示更多項目
@@ -148,6 +154,12 @@ document.addEventListener('DOMContentLoaded', function () {
             hiddenResults.classList.add('d-none');
         }
     });
+
+    function updateSearchResultsVisibility() {
+        if (searchResults.children.length === 0) {
+            searchResults.style.display = 'none';
+        }
+    }
 });
 
 // 留言
@@ -200,6 +212,7 @@ document.getElementById("messageForm").addEventListener("submit", function(event
     messageInput.value = "";
 }
 });
+
 
 
 // 食譜-補充教學
