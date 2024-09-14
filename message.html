@@ -81,7 +81,7 @@
     <script>
         // const imageUrl = `${import.meta.env.BASE_URL}assets/images/Avatar-3.png`;
         // document.getElementById("image").src = `${import.meta.env.BASE_URL}assets/images/Avatar-3.png`;
-        import avatarImage from '/assets/images/Avatar-3.png';
+        // import avatarImage from '/assets/images/Avatar-3.png';
 
 document.getElementById("messageForm").addEventListener("submit", function(event) {
     event.preventDefault(); // 防止表單提交
@@ -100,7 +100,7 @@ document.getElementById("messageForm").addEventListener("submit", function(event
 
         const avatarImg = document.createElement("img");
         avatarImg.className = "rounded-circle me-2";
-        avatarImg.src = "${import.meta.env.BASE_URL}assets/images/Avatar-3.png";
+        avatarImg.src = "/assets/images/Avatar-3.png";
         avatarImg.alt = "people-img";
         avatarImg.height = 36;
         avatarImg.width = 36;
