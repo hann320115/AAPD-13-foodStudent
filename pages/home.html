@@ -1,0 +1,1255 @@
+<!DOCTYPE html>
+<html lang="zh-hant">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>首頁</title>
+  <link rel="stylesheet" href="../assets/scss/all.scss">
+</head>
+
+<body>
+  <div class="home">
+    <div class="background-image">
+      <!-- 讀取畫面 -->
+      <div class="card-loading-screen"></div>
+      <p class="fs-2 text-white fw-700 pt-30 pb-6 ps-7">Hi Jenny
+        <br>
+        你想煮些什麼呢？
+      </p>
+    </div>
+    <div class="main-background">
+      <a href="cookBook.html" style="text-decoration: none;">
+        <div class="card border-0 mb-4" style="border-radius: 12px;">
+          <div class="position-relative">
+            <!-- 讀取畫面 -->
+            <div class="card-loading-screen" style="border-radius: 12px 12px 0 0;"></div>
+            <div class="img-mask"></div>
+            <img src="../assets/images/card-食譜教學/蜂蜜大蒜雞腿.png" class="card-img-top" alt="蜂蜜大蒜雞腿配胡蘿蔔和青花菜"
+              style="height: 164px; object-fit: cover; object-position: center; border-radius: 12px 12px 0 0;">
+            <div class="position-absolute start-0 fs-4 fw-700 text-white py-2 px-4 bg-gossamer-500"
+              style="top:16px; line-height: 1.2; border-radius: 0px 999px 999px 0px;">今日提案</div>
+            <div class="position-absolute bottom-0 end-0 me-4 mb-4 d-flex align-items-center">
+              <i class="heart bi bi-heart me-1" id="heart1" style="height: 24px; width: 24px;"
+                onclick="event.stopPropagation(); return false;"></i>
+              <p class="text-white" style="line-height: 1;">344</p>
+            </div>
+          </div>
+          <div class="card-body" style="box-shadow: 0px 2px 16px 0px #00000026; border-radius:0 0 16px 16px;">
+            <div class="card-text">
+              <div class="loading-row">
+                <div class="loading-screen"></div>
+                <div class="d-flex justify-content-between align-items-center pb-2">
+                  <p class="fs-3 fw-700" style="line-height: 1.2;">蜂蜜大蒜雞腿配胡蘿蔔和青花菜</p>
+                  <i class="fs-2 bookmark bi bi-bookmark" id="bookmark1" style="line-height: 1;"
+                    onclick="event.stopPropagation(); return false;"></i>
+                </div>
+              </div>
+              <div class="loading-row">
+                <div class="loading-screen"></div>
+                <p class="text-body-1 text-text-600 text-ellipsis mb-2">
+                  這種香甜可口的烤蜂蜜大蒜雞腿食譜配有一側的蔬菜，與雞肉在同一個平底鍋上烹飪，是完美的周末晚餐。</p>
+              </div>
+              <div class="loading-row">
+                <div class="loading-screen"></div>
+                <div class="d-flex pb-2">
+                  <p class="metrics text-body-2 text-text-600 pe-4">難度：易</p>
+                  <p class="text-body-2 text-text-600 ps-4">475 kcal</p>
+                </div>
+              </div>
+              <div class="loading-row">
+                <div class="position-relative d-flex align-items-center">
+                  <img class="rounded-circle me-2" src="../assets/images/Avatar/Avatar-3.png" alt="people-img"
+                    style="width: 28px;height: 28px;">
+                  <!-- 只對 img 顯示讀取效果 -->
+                  <div class="image-loading-screen"></div>
+                  <p class="text-text-600 text-body-2 fw-700 text-wrapper">blue_lady</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <a href="teach.html">
+        <div class="card border-0 mb-4" style="border-radius: 12px;">
+          <div class="position-relative">
+            <!-- 讀取畫面 -->
+            <div class="card-loading-screen" style="border-radius: 12px 12px 0 0;"></div>
+            <div class="img-mask"></div>
+            <img src="../assets/images/card-食譜教學/滾刀塊.png" class="card-img-top" alt="滾刀塊"
+              style="height: 164px; object-fit: cover; object-position: center; border-radius: 12px 12px 0 0;">
+            <div class="position-absolute start-0 fs-4 fw-700 text-white py-2 px-4 bg-roman-500"
+              style="top:16px; line-height: 1.2; border-radius: 0px 999px 999px 0px;">每日一招</div>
+            <div class="position-absolute bottom-0 end-0 me-4 mb-4 d-flex align-items-center">
+              <i class="heart bi bi-heart me-1" id="heart1" style="height: 24px; width: 24px;" onclick="event.stopPropagation(); return false;"></i>
+              <p class="text-white" style="line-height: 1;">363</p>
+            </div>
+          </div>
+          <div class="card-body" style="box-shadow: 0px 2px 16px 0px #00000026; border-radius:0 0 16px 16px;">
+            <div class="card-text">
+              <div class="loading-row">
+                <div class="loading-screen"></div>
+                <div class="d-flex justify-content-between align-items-center pb-2">
+                  <p class="fs-3 fw-700" style="line-height: 1.2;">滾刀塊</p>
+                  <i class="fs-2 bookmark bi bi-bookmark" style="line-height: 1;" onclick="event.stopPropagation(); return false;"></i>
+                </div>
+              </div>
+              <div class="loading-row">
+                <div class="loading-screen"></div>
+                <p class="text-body-1 text-text-600 text-ellipsis mb-2">
+                  滾刀塊又叫滾刀切，是常見的刀法之一。首先一手握着食材，一手持刀斜切，切一下便把食材滾動一次，直至切完。</p>
+              </div>
+              <div class="loading-row">
+                <div class="loading-screen"></div>
+                <p class="text-body-2 text-text-600">難度：易</p>
+              </div>
+              <div class="loading-row">
+                <object>
+                  <a href="bookUser.html" class="position-relative d-flex align-items-center">
+                    <img class="rounded-circle me-2" src="../assets/images/Avatar/Avatar-5.png" alt="people-img"
+                      style="width: 28px;height: 28px;">
+                    <!-- 只對 img 顯示讀取效果 -->
+                    <div class="image-loading-screen"></div>
+                    <p class="text-text-600 text-body-2 fw-700 text-wrapper">Justin 廚藝教室</p>
+                  </a>
+                </object>
+              </div>
+            </div>
+          </div>
+        </div>
+      </a>
+
+
+
+
+
+      <div class="list-group flex-row mb-9" id="list-tab" role="tablist">
+        <a class="list-group-item list-group-item-action active" id="curations-list" data-bs-toggle="list"
+          href="#curations" role="tab" aria-controls="curations">編輯嚴選</a>
+        <a class="list-group-item list-group-item-action m-0" id="recommendation-list" data-bs-toggle="list"
+          href="#recommendation" role="tab" aria-controls="recommendation">個人推薦</a>
+      </div>
+      <div class="tab-content pb-5" id="nav-tabContent">
+        <div class="tab-pane fade show active" id="curations" role="tabpanel" aria-labelledby="curations-list">
+          <h2 class="text-text-950 pb-4">最新食譜</h2>
+          <div class="swiper homeSwiper mb-4">
+            <div class="swiper-wrapper">
+              <!-- 燕麥核桃香蕉鬆餅 -->
+              <div class="swiper-slide">
+                <div class="card border-0 mb-4" style="border-radius: 12px;">
+                  <div class="position-relative">
+                    <div class="img-mask"></div>
+                    <img src="../assets/images/card-食譜教學/燕麥核桃香蕉鬆餅.png" class="card-img-top" alt="燕麥核桃香蕉鬆餅"
+                      style="height: 164px; object-fit: cover; object-position: center; border-radius: 16px 16px 0 0;">
+                    <div class="position-absolute bottom-0 end-0 me-4 mb-4 d-flex align-items-center">
+                      <i class="heart bi bi-heart me-1" id="heart1" style="height: 24px; width: 24px;"></i>
+                      <p class="text-white" style="line-height: 1;">1327</p>
+                    </div>
+                  </div>
+                  <div class="position-absolute start-0 d-flex gap-2">
+                    <div class="fs-4 fw-700 text-white py-2 px-4 bg-gossamer-500 ms-4 mt-4"
+                      style="top:16px; line-height: 1.2; border-radius:999px;">30min</div>
+                    <div class="fs-4 fw-700 text-white py-2 px-4 bg-gossamer-500 mt-4"
+                      style="top:16px; line-height: 1.2; border-radius:999px;">無乳製品</div>
+                  </div>
+                  <div class="card-body" style="box-shadow: 0px 2px 16px 0px #00000026; border-radius:0 0 16px 16px;">
+                    <div class="card-text">
+                      <div class="d-flex justify-content-between align-items-center pb-2">
+                        <p class="fs-3 fw-700" style="line-height: 1.2;">燕麥核桃香蕉鬆餅</p>
+                        <i class="fs-2 bookmark bi bi-bookmark" style="line-height: 1;"></i>
+                      </div>
+                      <p class="text-body-1 text-text-600 text-ellipsis mb-2">
+                        這是一道健康美味的早餐選擇，結合了營養豐富的燕麥、核桃和香蕉，提供豐富的纖維和蛋白質。這款鬆餅不僅低糖低脂，還富含多種維生素和礦物質，讓你活力滿滿地開始每一天。
+                      </p>
+                    </div>
+                    <div class="d-flex pb-2">
+                      <p class="metrics text-body-2 text-text-600 pe-4">難度：中</p>
+                      <p class="text-body-2 text-text-600 px-4">148 kcal</p>
+                    </div>
+                    <div class="d-flex align-items-center">
+                      <img class="rounded-circle me-2" src="../assets/images/Avatar/Avatar-9.png" alt="people-img"
+                        style="width: 28px;height: 28px;">
+                      <p class="text-text-600 text-body-2 fw-700">冰冰好料理</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- 草莓優格果昔 -->
+              <div class="swiper-slide">
+                <div class="card border-0 mb-4" style="border-radius: 12px;">
+                  <div class="position-relative">
+                    <div class="img-mask"></div>
+                    <img src="../assets/images/card-食譜教學/草莓優格果昔.png" class="card-img-top" alt="草莓優格果昔"
+                      style="height: 164px; object-fit: cover; object-position: center; border-radius: 16px 16px 0 0;">
+                    <div class="position-absolute bottom-0 end-0 me-4 mb-4 d-flex align-items-center">
+                      <i class="heart bi bi-heart me-1" id="heart1" style="height: 24px; width: 24px;"></i>
+                      <p class="text-white" style="line-height: 1;">1251</p>
+                    </div>
+                  </div>
+                  <div class="position-absolute start-0 d-flex gap-2">
+                    <div class="fs-4 fw-700 text-white py-2 px-4 bg-gossamer-500 ms-4 mt-4"
+                      style="top:16px; line-height: 1.2; border-radius:999px;">30min</div>
+                    <div class="fs-4 fw-700 text-white py-2 px-4 bg-gossamer-500 mt-4"
+                      style="top:16px; line-height: 1.2; border-radius:999px;">蛋奶素</div>
+                  </div>
+                  <div class="card-body" style="box-shadow: 0px 2px 16px 0px #00000026; border-radius:0 0 16px 16px;">
+                    <div class="card-text">
+                      <div class="d-flex justify-content-between align-items-center pb-2">
+                        <p class="fs-3 fw-700" style="line-height: 1.2;">草莓優格果昔</p>
+                        <i class="fs-2 bookmark bi bi-bookmark" style="line-height: 1;"></i>
+                      </div>
+                      <p class="text-body-1 text-text-600 text-ellipsis mb-2">
+                        草莓燉煮的果醬搭配優格，水果香氣與優格融合在一起相當適合現在炎炎夏日的季節飲品。
+                      </p>
+                    </div>
+                    <div class="d-flex pb-2">
+                      <p class="metrics text-body-2 text-text-600 pe-4">難度：易</p>
+                      <p class="text-body-2 text-text-600 px-4">270 kcal</p>
+                    </div>
+                    <div class="d-flex align-items-center">
+                      <img class="rounded-circle me-2" src="../assets/images/Avatar/Avatar-5.png" alt="people-img"
+                        style="width: 28px;height: 28px;">
+                      <p class="text-text-600 text-body-2 fw-700">Justin 廚藝教室</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- 夏日藜麥沙拉 -->
+              <div class="swiper-slide">
+                <div class="card border-0 mb-4" style="border-radius: 12px;">
+                  <div class="position-relative">
+                    <div class="img-mask"></div>
+                    <img src="../assets/images/card-食譜教學/夏日藜麥沙拉.png" class="card-img-top" alt="夏日藜麥沙拉"
+                      style="height: 164px; object-fit: cover; object-position: center; border-radius: 16px 16px 0 0;">
+                    <div class="position-absolute bottom-0 end-0 me-4 mb-4 d-flex align-items-center">
+                      <i class="heart bi bi-heart me-1" id="heart1" style="height: 24px; width: 24px;"></i>
+                      <p class="text-white" style="line-height: 1;">24</p>
+                    </div>
+                  </div>
+                  <div class="position-absolute start-0 d-flex gap-2">
+                    <div class="fs-4 fw-700 text-white py-2 px-4 bg-gossamer-500 ms-4 mt-4"
+                      style="top:16px; line-height: 1.2; border-radius:999px;">30min</div>
+                    <div class="fs-4 fw-700 text-white py-2 px-4 bg-gossamer-500 mt-4"
+                      style="top:16px; line-height: 1.2; border-radius:999px;">全素</div>
+                  </div>
+                  <div class="card-body" style="box-shadow: 0px 2px 16px 0px #00000026; border-radius:0 0 16px 16px;">
+                    <div class="card-text">
+                      <div class="d-flex justify-content-between align-items-center pb-2">
+                        <p class="fs-3 fw-700" style="line-height: 1.2;">夏日藜麥沙拉</p>
+                        <i class="fs-2 bookmark bi bi-bookmark" style="line-height: 1;"></i>
+                      </div>
+                      <p class="text-body-1 text-text-600 text-ellipsis mb-2">
+                        這道沙拉使用熟藜麥、櫛瓜、甜玉米、黑豆、紅椒和香菜，拌以檸檬汁和橄欖油。清爽又富有口感，適合炎熱的夏日享用。
+                      </p>
+                    </div>
+                    <div class="d-flex pb-2">
+                      <p class="metrics text-body-2 text-text-600 pe-4">難度：易</p>
+                      <p class="text-body-2 text-text-600 px-4">265 kcal</p>
+                    </div>
+                    <div class="d-flex align-items-center">
+                      <img class="rounded-circle me-2" src="../assets/images/Avatar/Avatar-8.png" alt="people-img"
+                        style="width: 28px;height: 28px;">
+                      <p class="text-text-600 text-body-2 fw-700">Ruby的廚房秘方</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- 綠橄欖鷹嘴豆泥 -->
+              <div class="swiper-slide">
+                <div class="card border-0 mb-4" style="border-radius: 12px;">
+                  <div class="position-relative">
+                    <div class="img-mask"></div>
+                    <img src="../assets/images/card-食譜教學/綠橄欖鷹嘴豆泥.png" class="card-img-top" alt="綠橄欖鷹嘴豆泥"
+                      style="height: 164px; object-fit: cover; object-position: center; border-radius: 16px 16px 0 0;">
+                    <div class="position-absolute bottom-0 end-0 me-4 mb-4 d-flex align-items-center">
+                      <i class="heart bi bi-heart me-1" id="heart1" style="height: 24px; width: 24px;"></i>
+                      <p class="text-white" style="line-height: 1;">821</p>
+                    </div>
+                  </div>
+                  <div class="position-absolute start-0">
+                    <div class="fs-4 fw-700 text-white py-2 px-4 bg-gossamer-500 ms-4 mt-4"
+                      style="top:16px; line-height: 1.2; border-radius:999px;">15min</div>
+                  </div>
+                  <div class="card-body" style="box-shadow: 0px 2px 16px 0px #00000026; border-radius:0 0 16px 16px;">
+                    <div class="card-text">
+                      <div class="d-flex justify-content-between align-items-center pb-2">
+                        <p class="fs-3 fw-700" style="line-height: 1.2;">綠橄欖鷹嘴豆泥</p>
+                        <i class="fs-2 bookmark bi bi-bookmark" style="line-height: 1;"></i>
+                      </div>
+                      <p class="text-body-1 text-text-600 text-ellipsis mb-2">
+                        綠橄欖鷹嘴豆泥是一款滑順的開胃菜，融合鷹嘴豆、綠橄欖、芝麻醬和檸檬汁，風味獨特。適合作為餅乾或蔬菜條的沾醬，健康又美味。
+                      </p>
+                    </div>
+                    <div class="d-flex pb-2">
+                      <p class="metrics text-body-2 text-text-600 pe-4">難度：中</p>
+                      <p class="text-body-2 text-text-600 px-4">150 kcal</p>
+                    </div>
+                    <div class="d-flex align-items-center">
+                      <img class="rounded-circle me-2" src="../assets/images/Avatar/Avatar-6.png" alt="people-img"
+                        style="width: 28px;height: 28px;">
+                      <p class="text-text-600 text-body-2 fw-700">美味匠人</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- 肉末蘑菇奶油燉飯 -->
+              <div class="swiper-slide">
+                <div class="card border-0 mb-4" style="border-radius: 12px;">
+                  <div class="position-relative">
+                    <div class="img-mask"></div>
+                    <img src="../assets/images/card-食譜教學/肉末蘑菇奶油燉飯.png" class="card-img-top" alt="肉末蘑菇奶油燉飯"
+                      style="height: 164px; object-fit: cover; object-position: center; border-radius: 16px 16px 0 0;">
+                    <div class="position-absolute bottom-0 end-0 me-4 mb-4 d-flex align-items-center">
+                      <i class="heart bi bi-heart me-1" id="heart1" style="height: 24px; width: 24px;"></i>
+                      <p class="text-white" style="line-height: 1;">254</p>
+                    </div>
+                  </div>
+                  <div class="position-absolute start-0">
+                    <div class="fs-4 fw-700 text-white py-2 px-4 bg-gossamer-500 ms-4 mt-4"
+                      style="top:16px; line-height: 1.2; border-radius:999px;">50min</div>
+                  </div>
+                  <div class="card-body" style="box-shadow: 0px 2px 16px 0px #00000026; border-radius:0 0 16px 16px;">
+                    <div class="card-text">
+                      <div class="d-flex justify-content-between align-items-center pb-2">
+                        <p class="fs-3 fw-700" style="line-height: 1.2;">肉末蘑菇奶油燉飯</p>
+                        <i class="fs-2 bookmark bi bi-bookmark" style="line-height: 1;"></i>
+                      </div>
+                      <p class="text-body-1 text-text-600 text-ellipsis mb-2">
+                        一道濃郁美味的料理，結合了香滑的奶油、豐富的肉末和蘑菇。這道燉飯口感柔滑，熱量較高，是一道豐盛的主菜，適合喜歡濃厚口味的人。
+                      </p>
+                    </div>
+                    <div class="d-flex pb-2">
+                      <p class="metrics text-body-2 text-text-600 pe-4">難度：中高</p>
+                      <p class="text-body-2 text-text-600 px-4">445 kcal</p>
+                    </div>
+                    <div class="d-flex align-items-center">
+                      <img class="rounded-circle me-2" src="../assets/images/Avatar/Avatar-6.png" alt="people-img"
+                        style="width: 28px;height: 28px;">
+                      <p class="text-text-600 text-body-2 fw-700">美味匠人</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- 蜂蜜大蒜雞腿配胡蘿蔔和青花菜 -->
+              <div class="swiper-slide">
+                <div class="card border-0 mb-4" style="border-radius: 12px;">
+                  <div class="position-relative">
+                    <div class="img-mask"></div>
+                    <img src="../assets/images/card-食譜教學/蜂蜜大蒜雞腿.png" class="card-img-top" alt="蜂蜜大蒜雞腿配胡蘿蔔和青花菜"
+                      style="height: 164px; object-fit: cover; object-position: center; border-radius: 16px 16px 0 0;">
+                    <div class="position-absolute bottom-0 end-0 me-4 mb-4 d-flex align-items-center">
+                      <i class="heart bi bi-heart me-1" id="heart1" style="height: 24px; width: 24px;"></i>
+                      <p class="text-white" style="line-height: 1;">344</p>
+                    </div>
+                  </div>
+                  <div class="position-absolute start-0">
+                    <div class="fs-4 fw-700 text-white py-2 px-4 bg-gossamer-500 ms-4 mt-4"
+                      style="top:16px; line-height: 1.2; border-radius:999px;">90min</div>
+                  </div>
+                  <div class="card-body" style="box-shadow: 0px 2px 16px 0px #00000026; border-radius:0 0 16px 16px;">
+                    <div class="card-text">
+                      <div class="d-flex justify-content-between align-items-center pb-2">
+                        <p class="title-ellipsis fs-3 fw-700 me-2" style="line-height: 1.2;">蜂蜜大蒜雞腿配胡蘿蔔和青花菜</p>
+                        <i class="fs-2 bookmark bi bi-bookmark" style="line-height: 1;"></i>
+                      </div>
+                      <p class="text-body-1 text-text-600 text-ellipsis mb-2">
+                        這種香甜可口的烤蜂蜜大蒜雞腿食譜配有一側的蔬菜，與雞肉在同一個平底鍋上烹飪，是完美的周末晚餐。
+                      </p>
+                    </div>
+                    <div class="d-flex pb-2">
+                      <p class="metrics text-body-2 text-text-600 pe-4">難度：易</p>
+                      <p class="text-body-2 text-text-600 px-4">475 kcal</p>
+                    </div>
+                    <div class="d-flex align-items-center">
+                      <img class="rounded-circle me-2" src="../assets/images/Avatar/Avatar-3.png" alt="people-img"
+                        style="width: 28px;height: 28px;">
+                      <p class="text-text-600 text-body-2 fw-700">blue_lady</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <h2 class="text-text-950 pb-4">熱門教學</h2>
+          <div class="swiper homeSwiper mb-4">
+            <div class="swiper-wrapper">
+              <!-- 切花 -->
+              <div class="swiper-slide">
+                <div class="card border-0 mb-4" style="border-radius: 12px;">
+                  <div class="position-relative">
+                    <div class="img-mask"></div>
+                    <img src="../assets/images/card-食譜教學/切花.png" class="card-img-top" alt="切花"
+                      style="height: 164px; object-fit: cover; object-position: center; border-radius: 16px 16px 0 0;">
+                    <div class="position-absolute bottom-0 end-0 me-4 mb-4 d-flex align-items-center">
+                      <i class="heart bi bi-heart me-1" id="heart1" style="height: 24px; width: 24px;"></i>
+                      <p class="text-white" style="line-height: 1;">1183</p>
+                    </div>
+                  </div>
+                  <div class="card-body" style="box-shadow: 0px 2px 16px 0px #00000026; border-radius:0 0 16px 16px;">
+                    <div class="card-text">
+                      <div class="d-flex justify-content-between align-items-center pb-2">
+                        <p class="fs-3 fw-700" style="line-height: 1.2;">切花</p>
+                        <i class="fs-2 bookmark bi bi-bookmark" style="line-height: 1;"></i>
+                      </div>
+                      <p class="text-body-1 text-text-600 text-ellipsis mb-2">
+                        這種切法適合將蔥切成細碎狀，為了確保切得均勻且細碎，新手可以放慢速度，左手微彎支撐食材，右手持刀斜切，以達到理想效果。
+                      </p>
+                    </div>
+                    <p class="text-body-2 text-text-600 pb-2">難度：易</p>
+                    <div class="d-flex align-items-center">
+                      <img class="rounded-circle me-2" src="../assets/images/Avatar/Avatar-5.png" alt="people-img"
+                        style="width: 28px;height: 28px;">
+                      <p class="text-text-600 text-body-2 fw-700">Justin 廚藝教室</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- 切段 -->
+              <div class="swiper-slide">
+                <div class="card border-0 mb-4" style="border-radius: 12px;">
+                  <div class="position-relative">
+                    <div class="img-mask"></div>
+                    <img src="../assets/images/card-食譜教學/切段.png" class="card-img-top" alt="切段"
+                      style="height: 164px; object-fit: cover; object-position: center; border-radius: 16px 16px 0 0;">
+                    <div class="position-absolute bottom-0 end-0 me-4 mb-4 d-flex align-items-center">
+                      <i class="heart bi bi-heart me-1" id="heart1" style="height: 24px; width: 24px;"></i>
+                      <p class="text-white" style="line-height: 1;">221</p>
+                    </div>
+                  </div>
+                  <div class="card-body" style="box-shadow: 0px 2px 16px 0px #00000026; border-radius:0 0 16px 16px;">
+                    <div class="card-text">
+                      <div class="d-flex justify-content-between align-items-center pb-2">
+                        <p class="fs-3 fw-700" style="line-height: 1.2;">切段</p>
+                        <i class="fs-2 bookmark bi bi-bookmark" style="line-height: 1;"></i>
+                      </div>
+                      <p class="text-body-1 text-text-600 text-ellipsis mb-2">
+                        刀法中的“切段”通常指的是將食材切成均勻的段狀或片狀。這種技法常見於處理長形食材，如蔥、胡蘿蔔或青椒等。
+                      </p>
+                    </div>
+                    <p class="text-body-2 text-text-600 pb-2">難度：易</p>
+                    <div class="d-flex align-items-center">
+                      <img class="rounded-circle me-2" src="../assets/images/Avatar/Avatar-5.png" alt="people-img"
+                        style="width: 28px;height: 28px;">
+                      <p class="text-text-600 text-body-2 fw-700">Justin 廚藝教室</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- 刀子介紹與握法 -->
+              <div class="swiper-slide">
+                <div class="card border-0 mb-4" style="border-radius: 12px;">
+                  <div class="position-relative">
+                    <div class="img-mask"></div>
+                    <img src="../assets/images/card-食譜教學/刀子介紹與握法.png" class="card-img-top" alt="刀子介紹與握法"
+                      style="height: 164px; object-fit: cover; object-position: center; border-radius: 16px 16px 0 0;">
+                    <div class="position-absolute bottom-0 end-0 me-4 mb-4 d-flex align-items-center">
+                      <i class="heart bi bi-heart me-1" id="heart1" style="height: 24px; width: 24px;"></i>
+                      <p class="text-white" style="line-height: 1;">252</p>
+                    </div>
+                  </div>
+                  <div class="card-body" style="box-shadow: 0px 2px 16px 0px #00000026; border-radius:0 0 16px 16px;">
+                    <div class="card-text">
+                      <div class="d-flex justify-content-between align-items-center pb-2">
+                        <p class="fs-3 fw-700" style="line-height: 1.2;">刀子介紹與握法</p>
+                        <i class="fs-2 bookmark bi bi-bookmark" style="line-height: 1;"></i>
+                      </div>
+                      <p class="text-body-1 text-text-600 text-ellipsis mb-2">
+                        刀子有多種類型，如廚房刀、切肉刀和削皮刀。握刀時，用手握住刀柄，拇指和食指輔助穩定，其他三指緊握。手掌應放鬆，以避免疲勞和提高手部控制力。正確的握法能提升切割效果和安全性。
+                      </p>
+                    </div>
+                    <p class="text-body-2 text-text-600 pb-2">難度：易</p>
+                    <div class="d-flex align-items-center">
+                      <img class="rounded-circle me-2" src="../assets/images/Avatar/Avatar-6.png" alt="people-img"
+                        style="width: 28px;height: 28px;">
+                      <p class="text-text-600 text-body-2 fw-700">美味匠人</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- 如何融化巧克力 -->
+              <div class="swiper-slide">
+                <div class="card border-0 mb-4" style="border-radius: 12px;">
+                  <div class="position-relative">
+                    <div class="img-mask"></div>
+                    <img src="../assets/images/card-食譜教學/如何融化巧克力.png" class="card-img-top" alt="如何融化巧克力"
+                      style="height: 164px; object-fit: cover; object-position: center; border-radius: 16px 16px 0 0;">
+                    <div class="position-absolute bottom-0 end-0 me-4 mb-4 d-flex align-items-center">
+                      <i class="heart bi bi-heart me-1" id="heart1" style="height: 24px; width: 24px;"></i>
+                      <p class="text-white" style="line-height: 1;">1179</p>
+                    </div>
+                  </div>
+                  <div class="card-body" style="box-shadow: 0px 2px 16px 0px #00000026; border-radius:0 0 16px 16px;">
+                    <div class="card-text">
+                      <div class="d-flex justify-content-between align-items-center pb-2">
+                        <p class="fs-3 fw-700" style="line-height: 1.2;">如何融化巧克力</p>
+                        <i class="fs-2 bookmark bi bi-bookmark" style="line-height: 1;"></i>
+                      </div>
+                      <p class="text-body-1 text-text-600 text-ellipsis mb-2">
+                        要融化巧克力，將其切碎後放入耐熱碗中，放在熱水蒸汽上（隔水加熱），輕輕攪拌直到完全融化。避免水分進入，否則巧克力會凝固。也可以使用微波爐，每30秒攪拌一次。
+                      </p>
+                    </div>
+                    <p class="text-body-2 text-text-600 pb-2">難度：中</p>
+                    <div class="d-flex align-items-center">
+                      <img class="rounded-circle me-2" src="../assets/images/Avatar/Avatar-9.png" alt="people-img"
+                        style="width: 28px;height: 28px;">
+                      <p class="text-text-600 text-body-2 fw-700">冰冰好料理</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- 保存蔥的方法 -->
+              <div class="swiper-slide">
+                <div class="card border-0 mb-4" style="border-radius: 12px;">
+                  <div class="position-relative">
+                    <div class="img-mask"></div>
+                    <img src="../assets/images/card-食譜教學/保存蔥的方法.png" class="card-img-top" alt="保存蔥的方法"
+                      style="height: 164px; object-fit: cover; object-position: center; border-radius: 16px 16px 0 0;">
+                    <div class="position-absolute bottom-0 end-0 me-4 mb-4 d-flex align-items-center">
+                      <i class="heart bi bi-heart me-1" id="heart1" style="height: 24px; width: 24px;"></i>
+                      <p class="text-white" style="line-height: 1;">2863</p>
+                    </div>
+                  </div>
+                  <div class="card-body" style="box-shadow: 0px 2px 16px 0px #00000026; border-radius:0 0 16px 16px;">
+                    <div class="card-text">
+                      <div class="d-flex justify-content-between align-items-center pb-2">
+                        <p class="fs-3 fw-700" style="line-height: 1.2;">保存蔥的方法</p>
+                        <i class="fs-2 bookmark bi bi-bookmark" style="line-height: 1;"></i>
+                      </div>
+                      <p class="text-body-1 text-text-600 text-ellipsis mb-2">
+                        這種切法適合將蔥切成細碎狀，為了確保切得均勻且細碎，新手可以放慢速度，左手微彎支撐食材，右手持刀斜切，以達到理想效果。
+                      </p>
+                    </div>
+                    <p class="text-body-2 text-text-600 pb-2">難度：易</p>
+                    <div class="d-flex align-items-center">
+                      <img class="rounded-circle me-2" src="../assets/images/Avatar/Avatar-3.png" alt="people-img"
+                        style="width: 28px;height: 28px;">
+                      <p class="text-text-600 text-body-2 fw-700">blue_lady</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- 新鮮食材的保存法 -->
+              <div class="swiper-slide">
+                <div class="card border-0 mb-4" style="border-radius: 12px;">
+                  <div class="position-relative">
+                    <div class="img-mask"></div>
+                    <img src="../assets/images/card-食譜教學/新鮮食材的保存法.png" class="card-img-top" alt="新鮮食材的保存法"
+                      style="height: 164px; object-fit: cover; object-position: center; border-radius: 16px 16px 0 0;">
+                    <div class="position-absolute bottom-0 end-0 me-4 mb-4 d-flex align-items-center">
+                      <i class="heart bi bi-heart me-1" id="heart1" style="height: 24px; width: 24px;"></i>
+                      <p class="text-white" style="line-height: 1;">1520</p>
+                    </div>
+                  </div>
+                  <div class="card-body" style="box-shadow: 0px 2px 16px 0px #00000026; border-radius:0 0 16px 16px;">
+                    <div class="card-text">
+                      <div class="d-flex justify-content-between align-items-center pb-2">
+                        <p class="fs-3 fw-700" style="line-height: 1.2;">新鮮食材的保存法</p>
+                        <i class="fs-2 bookmark bi bi-bookmark" style="line-height: 1;"></i>
+                      </div>
+                      <p class="text-body-1 text-text-600 text-ellipsis mb-2">
+                        新鮮食材的保存法包括冷藏、冷凍和真空密封。蔬菜可用濕紙巾包裹後放入冰箱，水果則需保持乾燥。肉類和魚類可冷凍保存，確保食材長久新鮮和營養。
+                      </p>
+                    </div>
+                    <p class="text-body-2 text-text-600 pb-2">難度：易</p>
+                    <div class="d-flex align-items-center">
+                      <img class="rounded-circle me-2" src="../assets/images/Avatar/Avatar-5.png" alt="people-img"
+                        style="width: 28px;height: 28px;">
+                      <p class="text-text-600 text-body-2 fw-700">Justin 廚藝教室</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- 快速涼拌的技巧 -->
+              <div class="swiper-slide">
+                <div class="card border-0 mb-4" style="border-radius: 12px;">
+                  <div class="position-relative">
+                    <div class="img-mask"></div>
+                    <img src="../assets/images/card-食譜教學/快速涼拌的技巧.png" class="card-img-top" alt="快速涼拌的技巧"
+                      style="height: 164px; object-fit: cover; object-position: center; border-radius: 16px 16px 0 0;">
+                    <div class="position-absolute bottom-0 end-0 me-4 mb-4 d-flex align-items-center">
+                      <i class="heart bi bi-heart me-1" id="heart1" style="height: 24px; width: 24px;"></i>
+                      <p class="text-white" style="line-height: 1;">805</p>
+                    </div>
+                  </div>
+                  <div class="card-body" style="box-shadow: 0px 2px 16px 0px #00000026; border-radius:0 0 16px 16px;">
+                    <div class="card-text">
+                      <div class="d-flex justify-content-between align-items-center pb-2">
+                        <p class="fs-3 fw-700" style="line-height: 1.2;">快速涼拌的技巧</p>
+                        <i class="fs-2 bookmark bi bi-bookmark" style="line-height: 1;"></i>
+                      </div>
+                      <p class="text-body-1 text-text-600 text-ellipsis mb-2">
+                        快速涼拌的秘訣在於使用新鮮食材和簡單調味料。切細蔬菜後，加入橄欖油、檸檬汁和鹽，迅速攪拌均勻。提前準備調味料，節省時間，保持蔬菜脆爽口感。
+                      </p>
+                    </div>
+                    <p class="text-body-2 text-text-600 pb-2">難度：易</p>
+                    <div class="d-flex align-items-center">
+                      <img class="rounded-circle me-2" src="../assets/images/Avatar/Avatar-5.png" alt="people-img"
+                        style="width: 28px;height: 28px;">
+                      <p class="text-text-600 text-body-2 fw-700">Justin 廚藝教室</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <h2 class="text-text-950 pb-4">夏日小食</h2>
+          <div class="swiper homeSwiper mb-4">
+            <div class="swiper-wrapper">
+              <!-- 夏日藜麥沙拉 -->
+              <div class="swiper-slide">
+                <div class="card border-0 mb-4" style="border-radius: 12px;">
+                  <div class="position-relative">
+                    <div class="img-mask"></div>
+                    <img src="../assets/images/card-食譜教學/夏日藜麥沙拉.png" class="card-img-top" alt="夏日藜麥沙拉"
+                      style="height: 164px; object-fit: cover; object-position: center; border-radius: 16px 16px 0 0;">
+                    <div class="position-absolute bottom-0 end-0 me-4 mb-4 d-flex align-items-center">
+                      <i class="heart bi bi-heart me-1" id="heart1" style="height: 24px; width: 24px;"></i>
+                      <p class="text-white" style="line-height: 1;">24</p>
+                    </div>
+                  </div>
+                  <div class="position-absolute start-0 d-flex gap-2">
+                    <div class="fs-4 fw-700 text-white py-2 px-4 bg-gossamer-500 ms-4 mt-4"
+                      style="top:16px; line-height: 1.2; border-radius:999px;">30min</div>
+                    <div class="fs-4 fw-700 text-white py-2 px-4 bg-gossamer-500 mt-4"
+                      style="top:16px; line-height: 1.2; border-radius:999px;">全素</div>
+                  </div>
+                  <div class="card-body" style="box-shadow: 0px 2px 16px 0px #00000026; border-radius:0 0 16px 16px;">
+                    <div class="card-text">
+                      <div class="d-flex justify-content-between align-items-center pb-2">
+                        <p class="fs-3 fw-700" style="line-height: 1.2;">夏日藜麥沙拉</p>
+                        <i class="fs-2 bookmark bi bi-bookmark" style="line-height: 1;"></i>
+                      </div>
+                      <p class="text-body-1 text-text-600 text-ellipsis mb-2">
+                        這道沙拉使用熟藜麥、櫛瓜、甜玉米、黑豆、紅椒和香菜，拌以檸檬汁和橄欖油。清爽又富有口感，適合炎熱的夏日享用。
+                      </p>
+                    </div>
+                    <div class="d-flex pb-2">
+                      <p class="metrics text-body-2 text-text-600 pe-4">難度：易</p>
+                      <p class="text-body-2 text-text-600 px-4">265 kcal</p>
+                    </div>
+                    <div class="d-flex align-items-center">
+                      <img class="rounded-circle me-2" src="../assets/images/Avatar/Avatar-8.png" alt="people-img"
+                        style="width: 28px;height: 28px;">
+                      <p class="text-text-600 text-body-2 fw-700">Ruby的廚房秘方</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- 草莓優格果昔 -->
+              <div class="swiper-slide">
+                <div class="card border-0 mb-4" style="border-radius: 12px;">
+                  <div class="position-relative">
+                    <div class="img-mask"></div>
+                    <img src="../assets/images/card-食譜教學/草莓優格果昔.png" class="card-img-top" alt="草莓優格果昔"
+                      style="height: 164px; object-fit: cover; object-position: center; border-radius: 16px 16px 0 0;">
+                    <div class="position-absolute bottom-0 end-0 me-4 mb-4 d-flex align-items-center">
+                      <i class="heart bi bi-heart me-1" id="heart1" style="height: 24px; width: 24px;"></i>
+                      <p class="text-white" style="line-height: 1;">1251</p>
+                    </div>
+                  </div>
+                  <div class="position-absolute start-0 d-flex gap-2">
+                    <div class="fs-4 fw-700 text-white py-2 px-4 bg-gossamer-500 ms-4 mt-4"
+                      style="top:16px; line-height: 1.2; border-radius:999px;">30min</div>
+                    <div class="fs-4 fw-700 text-white py-2 px-4 bg-gossamer-500 mt-4"
+                      style="top:16px; line-height: 1.2; border-radius:999px;">蛋奶素</div>
+                  </div>
+                  <div class="card-body" style="box-shadow: 0px 2px 16px 0px #00000026; border-radius:0 0 16px 16px;">
+                    <div class="card-text">
+                      <div class="d-flex justify-content-between align-items-center pb-2">
+                        <p class="fs-3 fw-700" style="line-height: 1.2;">草莓優格果昔</p>
+                        <i class="fs-2 bookmark bi bi-bookmark" style="line-height: 1;"></i>
+                      </div>
+                      <p class="text-body-1 text-text-600 text-ellipsis mb-2">
+                        草莓燉煮的果醬搭配優格，水果香氣與優格融合在一起相當適合現在炎炎夏日的季節飲品。
+                      </p>
+                    </div>
+                    <div class="d-flex pb-2">
+                      <p class="metrics text-body-2 text-text-600 pe-4">難度：易</p>
+                      <p class="text-body-2 text-text-600 px-4">270 kcal</p>
+                    </div>
+                    <div class="d-flex align-items-center">
+                      <img class="rounded-circle me-2" src="../assets/images/Avatar/Avatar-5.png" alt="people-img"
+                        style="width: 28px;height: 28px;">
+                      <p class="text-text-600 text-body-2 fw-700">Justin 廚藝教室</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- 綠橄欖鷹嘴豆泥 -->
+              <div class="swiper-slide">
+                <div class="card border-0 mb-4" style="border-radius: 12px;">
+                  <div class="position-relative">
+                    <div class="img-mask"></div>
+                    <img src="../assets/images/card-食譜教學/綠橄欖鷹嘴豆泥.png" class="card-img-top" alt="綠橄欖鷹嘴豆泥"
+                      style="height: 164px; object-fit: cover; object-position: center; border-radius: 16px 16px 0 0;">
+                    <div class="position-absolute bottom-0 end-0 me-4 mb-4 d-flex align-items-center">
+                      <i class="heart bi bi-heart me-1" id="heart1" style="height: 24px; width: 24px;"></i>
+                      <p class="text-white" style="line-height: 1;">821</p>
+                    </div>
+                  </div>
+                  <div class="position-absolute start-0">
+                    <div class="fs-4 fw-700 text-white py-2 px-4 bg-gossamer-500 ms-4 mt-4"
+                      style="top:16px; line-height: 1.2; border-radius:999px;">15min</div>
+                  </div>
+                  <div class="card-body" style="box-shadow: 0px 2px 16px 0px #00000026; border-radius:0 0 16px 16px;">
+                    <div class="card-text">
+                      <div class="d-flex justify-content-between align-items-center pb-2">
+                        <p class="fs-3 fw-700" style="line-height: 1.2;">綠橄欖鷹嘴豆泥</p>
+                        <i class="fs-2 bookmark bi bi-bookmark" style="line-height: 1;"></i>
+                      </div>
+                      <p class="text-body-1 text-text-600 text-ellipsis mb-2">
+                        綠橄欖鷹嘴豆泥是一款滑順的開胃菜，融合鷹嘴豆、綠橄欖、芝麻醬和檸檬汁，風味獨特。適合作為餅乾或蔬菜條的沾醬，健康又美味。
+                      </p>
+                    </div>
+                    <div class="d-flex pb-2">
+                      <p class="metrics text-body-2 text-text-600 pe-4">難度：中</p>
+                      <p class="text-body-2 text-text-600 px-4">150 kcal</p>
+                    </div>
+                    <div class="d-flex align-items-center">
+                      <img class="rounded-circle me-2" src="../assets/images/Avatar/Avatar-6.png" alt="people-img"
+                        style="width: 28px;height: 28px;">
+                      <p class="text-text-600 text-body-2 fw-700">美味匠人</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <h2 class="text-text-950 pb-4">健康沙拉秘訣</h2>
+          <div class="swiper homeSwiper mb-20">
+            <div class="swiper-wrapper">
+              <!-- 快速涼拌的技巧 -->
+              <div class="swiper-slide">
+                <div class="card border-0 mb-4" style="border-radius: 12px;">
+                  <div class="position-relative">
+                    <div class="img-mask"></div>
+                    <img src="../assets/images/card-食譜教學/快速涼拌的技巧.png" class="card-img-top" alt="快速涼拌的技巧"
+                      style="height: 164px; object-fit: cover; object-position: center; border-radius: 16px 16px 0 0;">
+                    <div class="position-absolute bottom-0 end-0 me-4 mb-4 d-flex align-items-center">
+                      <i class="heart bi bi-heart me-1" id="heart1" style="height: 24px; width: 24px;"></i>
+                      <p class="text-white" style="line-height: 1;">805</p>
+                    </div>
+                  </div>
+                  <div class="card-body" style="box-shadow: 0px 2px 16px 0px #00000026; border-radius:0 0 16px 16px;">
+                    <div class="card-text">
+                      <div class="d-flex justify-content-between align-items-center pb-2">
+                        <p class="fs-3 fw-700" style="line-height: 1.2;">快速涼拌的技巧</p>
+                        <i class="fs-2 bookmark bi bi-bookmark" style="line-height: 1;"></i>
+                      </div>
+                      <p class="text-body-1 text-text-600 text-ellipsis mb-2">
+                        快速涼拌的秘訣在於使用新鮮食材和簡單調味料。切細蔬菜後，加入橄欖油、檸檬汁和鹽，迅速攪拌均勻。提前準備調味料，節省時間，保持蔬菜脆爽口感。
+                      </p>
+                    </div>
+                    <p class="text-body-2 text-text-600 pb-2">難度：易</p>
+                    <div class="d-flex align-items-center">
+                      <img class="rounded-circle me-2" src="../assets/images/Avatar/Avatar-5.png" alt="people-img"
+                        style="width: 28px;height: 28px;">
+                      <p class="text-text-600 text-body-2 fw-700">Justin 廚藝教室</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- 新鮮食材的保存法 -->
+              <div class="swiper-slide">
+                <div class="card border-0 mb-4" style="border-radius: 12px;">
+                  <div class="position-relative">
+                    <div class="img-mask"></div>
+                    <img src="../assets/images/card-食譜教學/新鮮食材的保存法.png" class="card-img-top" alt="新鮮食材的保存法"
+                      style="height: 164px; object-fit: cover; object-position: center; border-radius: 16px 16px 0 0;">
+                    <div class="position-absolute bottom-0 end-0 me-4 mb-4 d-flex align-items-center">
+                      <i class="heart bi bi-heart me-1" id="heart1" style="height: 24px; width: 24px;"></i>
+                      <p class="text-white" style="line-height: 1;">1520</p>
+                    </div>
+                  </div>
+                  <div class="card-body" style="box-shadow: 0px 2px 16px 0px #00000026; border-radius:0 0 16px 16px;">
+                    <div class="card-text">
+                      <div class="d-flex justify-content-between align-items-center pb-2">
+                        <p class="fs-3 fw-700" style="line-height: 1.2;">新鮮食材的保存法</p>
+                        <i class="fs-2 bookmark bi bi-bookmark" style="line-height: 1;"></i>
+                      </div>
+                      <p class="text-body-1 text-text-600 text-ellipsis mb-2">
+                        新鮮食材的保存法包括冷藏、冷凍和真空密封。蔬菜可用濕紙巾包裹後放入冰箱，水果則需保持乾燥。肉類和魚類可冷凍保存，確保食材長久新鮮和營養。
+                      </p>
+                    </div>
+                    <p class="text-body-2 text-text-600 pb-2">難度：易</p>
+                    <div class="d-flex align-items-center">
+                      <img class="rounded-circle me-2" src="../assets/images/Avatar/Avatar-5.png" alt="people-img"
+                        style="width: 28px;height: 28px;">
+                      <p class="text-text-600 text-body-2 fw-700">Justin 廚藝教室</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="recommendation" role="tabpanel" aria-labelledby="recommendation-list">
+          <h2 class="text-text-950">你的食譜提案</h2>
+          <p class="text-body-1 text-text-600 pb-4">猜你可能會喜歡</p>
+          <div class="swiper homeSwiper mb-4">
+            <div class="swiper-wrapper">
+              <!-- 綠橄欖鷹嘴豆泥 -->
+              <div class="swiper-slide">
+                <div class="card border-0 mb-4" style="border-radius: 12px;">
+                  <div class="position-relative">
+                    <div class="img-mask"></div>
+                    <img src="../assets/images/card-食譜教學/綠橄欖鷹嘴豆泥.png" class="card-img-top" alt="綠橄欖鷹嘴豆泥"
+                      style="height: 164px; object-fit: cover; object-position: center; border-radius: 16px 16px 0 0;">
+                    <div class="position-absolute bottom-0 end-0 me-4 mb-4 d-flex align-items-center">
+                      <i class="heart bi bi-heart me-1" id="heart1" style="height: 24px; width: 24px;"></i>
+                      <p class="text-white" style="line-height: 1;">821</p>
+                    </div>
+                  </div>
+                  <div class="position-absolute start-0">
+                    <div class="fs-4 fw-700 text-white py-2 px-4 bg-gossamer-500 ms-4 mt-4"
+                      style="top:16px; line-height: 1.2; border-radius:999px;">15min</div>
+                  </div>
+                  <div class="card-body" style="box-shadow: 0px 2px 16px 0px #00000026; border-radius:0 0 16px 16px;">
+                    <div class="card-text">
+                      <div class="d-flex justify-content-between align-items-center pb-2">
+                        <p class="fs-3 fw-700" style="line-height: 1.2;">綠橄欖鷹嘴豆泥</p>
+                        <i class="fs-2 bookmark bi bi-bookmark" style="line-height: 1;"></i>
+                      </div>
+                      <p class="text-body-1 text-text-600 text-ellipsis mb-2">
+                        綠橄欖鷹嘴豆泥是一款滑順的開胃菜，融合鷹嘴豆、綠橄欖、芝麻醬和檸檬汁，風味獨特。適合作為餅乾或蔬菜條的沾醬，健康又美味。
+                      </p>
+                    </div>
+                    <div class="d-flex pb-2">
+                      <p class="metrics text-body-2 text-text-600 pe-4">難度：中</p>
+                      <p class="text-body-2 text-text-600 px-4">150 kcal</p>
+                    </div>
+                    <div class="d-flex align-items-center">
+                      <img class="rounded-circle me-2" src="../assets/images/Avatar/Avatar-6.png" alt="people-img"
+                        style="width: 28px;height: 28px;">
+                      <p class="text-text-600 text-body-2 fw-700">美味匠人</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- 肉末蘑菇奶油燉飯 -->
+              <div class="swiper-slide">
+                <div class="card border-0 mb-4" style="border-radius: 12px;">
+                  <div class="position-relative">
+                    <div class="img-mask"></div>
+                    <img src="../assets/images/card-食譜教學/肉末蘑菇奶油燉飯.png" class="card-img-top" alt="肉末蘑菇奶油燉飯"
+                      style="height: 164px; object-fit: cover; object-position: center; border-radius: 16px 16px 0 0;">
+                    <div class="position-absolute bottom-0 end-0 me-4 mb-4 d-flex align-items-center">
+                      <i class="heart bi bi-heart me-1" id="heart1" style="height: 24px; width: 24px;"></i>
+                      <p class="text-white" style="line-height: 1;">254</p>
+                    </div>
+                  </div>
+                  <div class="position-absolute start-0">
+                    <div class="fs-4 fw-700 text-white py-2 px-4 bg-gossamer-500 ms-4 mt-4"
+                      style="top:16px; line-height: 1.2; border-radius:999px;">50min</div>
+                  </div>
+                  <div class="card-body" style="box-shadow: 0px 2px 16px 0px #00000026; border-radius:0 0 16px 16px;">
+                    <div class="card-text">
+                      <div class="d-flex justify-content-between align-items-center pb-2">
+                        <p class="fs-3 fw-700" style="line-height: 1.2;">肉末蘑菇奶油燉飯</p>
+                        <i class="fs-2 bookmark bi bi-bookmark" style="line-height: 1;"></i>
+                      </div>
+                      <p class="text-body-1 text-text-600 text-ellipsis mb-2">
+                        一道濃郁美味的料理，結合了香滑的奶油、豐富的肉末和蘑菇。這道燉飯口感柔滑，熱量較高，是一道豐盛的主菜，適合喜歡濃厚口味的人。
+                      </p>
+                    </div>
+                    <div class="d-flex pb-2">
+                      <p class="metrics text-body-2 text-text-600 pe-4">難度：中高</p>
+                      <p class="text-body-2 text-text-600 px-4">445 kcal</p>
+                    </div>
+                    <div class="d-flex align-items-center">
+                      <img class="rounded-circle me-2" src="../assets/images/Avatar/Avatar-6.png" alt="people-img"
+                        style="width: 28px;height: 28px;">
+                      <p class="text-text-600 text-body-2 fw-700">美味匠人</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- 蜂蜜大蒜雞腿配胡蘿蔔和青花菜 -->
+              <div class="swiper-slide">
+                <div class="card border-0 mb-4" style="border-radius: 12px;">
+                  <div class="position-relative">
+                    <div class="img-mask"></div>
+                    <img src="../assets/images/card-食譜教學/蜂蜜大蒜雞腿.png" class="card-img-top" alt="蜂蜜大蒜雞腿配胡蘿蔔和青花菜"
+                      style="height: 164px; object-fit: cover; object-position: center; border-radius: 16px 16px 0 0;">
+                    <div class="position-absolute bottom-0 end-0 me-4 mb-4 d-flex align-items-center">
+                      <i class="heart bi bi-heart me-1" id="heart1" style="height: 24px; width: 24px;"></i>
+                      <p class="text-white" style="line-height: 1;">344</p>
+                    </div>
+                  </div>
+                  <div class="position-absolute start-0">
+                    <div class="fs-4 fw-700 text-white py-2 px-4 bg-gossamer-500 ms-4 mt-4"
+                      style="top:16px; line-height: 1.2; border-radius:999px;">90min</div>
+                  </div>
+                  <div class="card-body" style="box-shadow: 0px 2px 16px 0px #00000026; border-radius:0 0 16px 16px;">
+                    <div class="card-text">
+                      <div class="d-flex justify-content-between align-items-center pb-2">
+                        <p class="title-ellipsis fs-3 fw-700 me-2" style="line-height: 1.2;">蜂蜜大蒜雞腿配胡蘿蔔和青花菜</p>
+                        <i class="fs-2 bookmark bi bi-bookmark" style="line-height: 1;"></i>
+                      </div>
+                      <p class="text-body-1 text-text-600 text-ellipsis mb-2">
+                        這種香甜可口的烤蜂蜜大蒜雞腿食譜配有一側的蔬菜，與雞肉在同一個平底鍋上烹飪，是完美的周末晚餐。
+                      </p>
+                    </div>
+                    <div class="d-flex pb-2">
+                      <p class="metrics text-body-2 text-text-600 pe-4">難度：易</p>
+                      <p class="text-body-2 text-text-600 px-4">475 kcal</p>
+                    </div>
+                    <div class="d-flex align-items-center">
+                      <img class="rounded-circle me-2" src="../assets/images/Avatar/Avatar-3.png" alt="people-img"
+                        style="width: 28px;height: 28px;">
+                      <p class="text-text-600 text-body-2 fw-700">blue_lady</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <h2 class="text-text-950">你的料理教學</h2>
+          <p class="text-body-1 text-text-600 pb-4">因為你收藏了〈 日式野菜溫沙拉 〉</p>
+          <div class="swiper homeSwiper mb-4">
+            <div class="swiper-wrapper">
+              <!-- 切段 -->
+              <div class="swiper-slide">
+                <div class="card border-0 mb-4" style="border-radius: 12px;">
+                  <div class="position-relative">
+                    <div class="img-mask"></div>
+                    <img src="../assets/images/card-食譜教學/切段.png" class="card-img-top" alt="切段"
+                      style="height: 164px; object-fit: cover; object-position: center; border-radius: 16px 16px 0 0;">
+                    <div class="position-absolute bottom-0 end-0 me-4 mb-4 d-flex align-items-center">
+                      <i class="heart bi bi-heart me-1" id="heart1" style="height: 24px; width: 24px;"></i>
+                      <p class="text-white" style="line-height: 1;">221</p>
+                    </div>
+                  </div>
+                  <div class="card-body" style="box-shadow: 0px 2px 16px 0px #00000026; border-radius:0 0 16px 16px;">
+                    <div class="card-text">
+                      <div class="d-flex justify-content-between align-items-center pb-2">
+                        <p class="fs-3 fw-700" style="line-height: 1.2;">切段</p>
+                        <i class="fs-2 bookmark bi bi-bookmark" style="line-height: 1;"></i>
+                      </div>
+                      <p class="text-body-1 text-text-600 text-ellipsis mb-2">
+                        刀法中的“切段”通常指的是將食材切成均勻的段狀或片狀。這種技法常見於處理長形食材，如蔥、胡蘿蔔或青椒等。
+                      </p>
+                    </div>
+                    <p class="text-body-2 text-text-600 pb-2">難度：易</p>
+                    <div class="d-flex align-items-center">
+                      <img class="rounded-circle me-2" src="../assets/images/Avatar/Avatar-5.png" alt="people-img"
+                        style="width: 28px;height: 28px;">
+                      <p class="text-text-600 text-body-2 fw-700">Justin 廚藝教室</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- 切花 -->
+              <div class="swiper-slide">
+                <div class="card border-0 mb-4" style="border-radius: 12px;">
+                  <div class="position-relative">
+                    <div class="img-mask"></div>
+                    <img src="../assets/images/card-食譜教學/切花.png" class="card-img-top" alt="切花"
+                      style="height: 164px; object-fit: cover; object-position: center; border-radius: 16px 16px 0 0;">
+                    <div class="position-absolute bottom-0 end-0 me-4 mb-4 d-flex align-items-center">
+                      <i class="heart bi bi-heart me-1" id="heart1" style="height: 24px; width: 24px;"></i>
+                      <p class="text-white" style="line-height: 1;">1183</p>
+                    </div>
+                  </div>
+                  <div class="card-body" style="box-shadow: 0px 2px 16px 0px #00000026; border-radius:0 0 16px 16px;">
+                    <div class="card-text">
+                      <div class="d-flex justify-content-between align-items-center pb-2">
+                        <p class="fs-3 fw-700" style="line-height: 1.2;">切花</p>
+                        <i class="fs-2 bookmark bi bi-bookmark" style="line-height: 1;"></i>
+                      </div>
+                      <p class="text-body-1 text-text-600 text-ellipsis mb-2">
+                        這種切法適合將蔥切成細碎狀，為了確保切得均勻且細碎，新手可以放慢速度，左手微彎支撐食材，右手持刀斜切，以達到理想效果。
+                      </p>
+                    </div>
+                    <p class="text-body-2 text-text-600 pb-2">難度：易</p>
+                    <div class="d-flex align-items-center">
+                      <img class="rounded-circle me-2" src="../assets/images/Avatar/Avatar-5.png" alt="people-img"
+                        style="width: 28px;height: 28px;">
+                      <p class="text-text-600 text-body-2 fw-700">Justin 廚藝教室</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- 刀子介紹與握法 -->
+              <div class="swiper-slide">
+                <div class="card border-0 mb-4" style="border-radius: 12px;">
+                  <div class="position-relative">
+                    <div class="img-mask"></div>
+                    <img src="../assets/images/card-食譜教學/刀子介紹與握法.png" class="card-img-top" alt="刀子介紹與握法"
+                      style="height: 164px; object-fit: cover; object-position: center; border-radius: 16px 16px 0 0;">
+                    <div class="position-absolute bottom-0 end-0 me-4 mb-4 d-flex align-items-center">
+                      <i class="heart bi bi-heart me-1" id="heart1" style="height: 24px; width: 24px;"></i>
+                      <p class="text-white" style="line-height: 1;">252</p>
+                    </div>
+                  </div>
+                  <div class="card-body" style="box-shadow: 0px 2px 16px 0px #00000026; border-radius:0 0 16px 16px;">
+                    <div class="card-text">
+                      <div class="d-flex justify-content-between align-items-center pb-2">
+                        <p class="fs-3 fw-700" style="line-height: 1.2;">刀子介紹與握法</p>
+                        <i class="fs-2 bookmark bi bi-bookmark" style="line-height: 1;"></i>
+                      </div>
+                      <p class="text-body-1 text-text-600 text-ellipsis mb-2">
+                        刀子有多種類型，如廚房刀、切肉刀和削皮刀。握刀時，用手握住刀柄，拇指和食指輔助穩定，其他三指緊握。手掌應放鬆，以避免疲勞和提高手部控制力。正確的握法能提升切割效果和安全性。
+                      </p>
+                    </div>
+                    <p class="text-body-2 text-text-600 pb-2">難度：易</p>
+                    <div class="d-flex align-items-center">
+                      <img class="rounded-circle me-2" src="../assets/images/Avatar/Avatar-6.png" alt="people-img"
+                        style="width: 28px;height: 28px;">
+                      <p class="text-text-600 text-body-2 fw-700">美味匠人</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <h2 class="text-text-950">最新食譜</h2>
+          <p class="text-body-1 text-text-600 pb-4">追蹤中的最新發布</p>
+          <div class="swiper homeSwiper mb-4">
+            <div class="swiper-wrapper">
+              <!-- 草莓優格果昔 -->
+              <div class="swiper-slide">
+                <div class="card border-0 mb-4" style="border-radius: 12px;">
+                  <div class="position-relative">
+                    <div class="img-mask"></div>
+                    <img src="../assets/images/card-食譜教學/草莓優格果昔.png" class="card-img-top" alt="草莓優格果昔"
+                      style="height: 164px; object-fit: cover; object-position: center; border-radius: 16px 16px 0 0;">
+                    <div class="position-absolute bottom-0 end-0 me-4 mb-4 d-flex align-items-center">
+                      <i class="heart bi bi-heart me-1" id="heart1" style="height: 24px; width: 24px;"></i>
+                      <p class="text-white" style="line-height: 1;">1251</p>
+                    </div>
+                  </div>
+                  <div class="position-absolute start-0 d-flex gap-2">
+                    <div class="fs-4 fw-700 text-white py-2 px-4 bg-gossamer-500 ms-4 mt-4"
+                      style="top:16px; line-height: 1.2; border-radius:999px;">30min</div>
+                    <div class="fs-4 fw-700 text-white py-2 px-4 bg-gossamer-500 mt-4"
+                      style="top:16px; line-height: 1.2; border-radius:999px;">蛋奶素</div>
+                  </div>
+                  <div class="card-body" style="box-shadow: 0px 2px 16px 0px #00000026; border-radius:0 0 16px 16px;">
+                    <div class="card-text">
+                      <div class="d-flex justify-content-between align-items-center pb-2">
+                        <p class="fs-3 fw-700" style="line-height: 1.2;">草莓優格果昔</p>
+                        <i class="fs-2 bookmark bi bi-bookmark" style="line-height: 1;"></i>
+                      </div>
+                      <p class="text-body-1 text-text-600 text-ellipsis mb-2">
+                        草莓燉煮的果醬搭配優格，水果香氣與優格融合在一起相當適合現在炎炎夏日的季節飲品。
+                      </p>
+                    </div>
+                    <div class="d-flex pb-2">
+                      <p class="metrics text-body-2 text-text-600 pe-4">難度：易</p>
+                      <p class="text-body-2 text-text-600 px-4">270 kcal</p>
+                    </div>
+                    <div class="d-flex align-items-center">
+                      <img class="rounded-circle me-2" src="../assets/images/Avatar/Avatar-5.png" alt="people-img"
+                        style="width: 28px;height: 28px;">
+                      <p class="text-text-600 text-body-2 fw-700">Justin 廚藝教室</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- 日式野菜溫沙拉 -->
+              <div class="swiper-slide">
+                <div class="card border-0 mb-4" style="border-radius: 12px;">
+                  <div class="position-relative">
+                    <div class="img-mask"></div>
+                    <img src="../assets/images/card-食譜教學/日式野菜溫沙拉.png" class="card-img-top" alt="日式野菜溫沙拉"
+                      style="height: 164px; object-fit: cover; object-position: center; border-radius: 16px 16px 0 0;">
+                    <div class="position-absolute start-0 fs-4 fw-700 text-white py-2 px-4 bg-gossamer-500"
+                      style="top:16px; line-height: 1.2; border-radius: 0px 999px 999px 0px;">今日提案</div>
+                    <div class="position-absolute bottom-0 end-0 me-4 mb-4 d-flex align-items-center">
+                      <i class="heart bi bi-heart me-1" id="heart1" style="height: 24px; width: 24px;"></i>
+                      <p class="text-white" style="line-height: 1;">385</p>
+                    </div>
+                  </div>
+                  <div class="card-body" style="box-shadow: 0px 2px 16px 0px #00000026; border-radius:0 0 16px 16px;">
+                    <div class="card-text">
+                      <div class="d-flex justify-content-between align-items-center pb-2">
+                        <p class="fs-3 fw-700" style="line-height: 1.2;">日式野菜溫沙拉</p>
+                        <i class="fs-2 bookmark bi bi-bookmark" style="line-height: 1;"></i>
+                      </div>
+                      <p class="text-body-1 text-text-600 text-ellipsis mb-2">
+                        融合了新鮮蔬菜與溫暖的日式醬汁，透過輕柔的加熱，使口感更加豐富。這道沙拉展現了日式料理的簡約與健康，適合追求清新自然風味的人士。</p>
+                    </div>
+                    <div class="d-flex pb-2">
+                      <p class="metrics text-body-2 text-text-600 pe-4">25 分鐘</p>
+                      <p class="metrics text-body-2 text-text-600 px-4">難度：易</p>
+                      <p class="text-body-2 text-text-600 ps-4">375 kcal</p>
+                    </div>
+                    <div class="d-flex align-items-center">
+                      <img class="rounded-circle me-2" src="../assets/images/Avatar/Avatar-3.png" alt="people-img"
+                        style="width: 28px;height: 28px;">
+                      <p class="text-text-600 text-body-2 fw-700">blue_lady</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- 蜂蜜大蒜雞腿配胡蘿蔔和青花菜 -->
+              <div class="swiper-slide">
+                <div class="card border-0 mb-4" style="border-radius: 12px;">
+                  <div class="position-relative">
+                    <div class="img-mask"></div>
+                    <img src="../assets/images/card-食譜教學/蜂蜜大蒜雞腿.png" class="card-img-top" alt="蜂蜜大蒜雞腿配胡蘿蔔和青花菜"
+                      style="height: 164px; object-fit: cover; object-position: center; border-radius: 16px 16px 0 0;">
+                    <div class="position-absolute bottom-0 end-0 me-4 mb-4 d-flex align-items-center">
+                      <i class="heart bi bi-heart me-1" id="heart1" style="height: 24px; width: 24px;"></i>
+                      <p class="text-white" style="line-height: 1;">344</p>
+                    </div>
+                  </div>
+                  <div class="position-absolute start-0">
+                    <div class="fs-4 fw-700 text-white py-2 px-4 bg-gossamer-500 ms-4 mt-4"
+                      style="top:16px; line-height: 1.2; border-radius:999px;">90min</div>
+                  </div>
+                  <div class="card-body" style="box-shadow: 0px 2px 16px 0px #00000026; border-radius:0 0 16px 16px;">
+                    <div class="card-text">
+                      <div class="d-flex justify-content-between align-items-center pb-2">
+                        <p class="title-ellipsis fs-3 fw-700 me-2" style="line-height: 1.2;">蜂蜜大蒜雞腿配胡蘿蔔和青花菜</p>
+                        <i class="fs-2 bookmark bi bi-bookmark" style="line-height: 1;"></i>
+                      </div>
+                      <p class="text-body-1 text-text-600 text-ellipsis mb-2">
+                        這種香甜可口的烤蜂蜜大蒜雞腿食譜配有一側的蔬菜，與雞肉在同一個平底鍋上烹飪，是完美的周末晚餐。
+                      </p>
+                    </div>
+                    <div class="d-flex pb-2">
+                      <p class="metrics text-body-2 text-text-600 pe-4">難度：易</p>
+                      <p class="text-body-2 text-text-600 px-4">475 kcal</p>
+                    </div>
+                    <div class="d-flex align-items-center">
+                      <img class="rounded-circle me-2" src="../assets/images/Avatar/Avatar-3.png" alt="people-img"
+                        style="width: 28px;height: 28px;">
+                      <p class="text-text-600 text-body-2 fw-700">blue_lady</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <h2 class="text-text-950">推薦教學</h2>
+          <p class="text-body-1 text-text-600 pb-4">參考你常做的料理推薦</p>
+          <div class="swiper homeSwiper mb-20">
+            <div class="swiper-wrapper">
+              <!-- 如何融化巧克力 -->
+              <div class="swiper-slide">
+                <div class="card border-0 mb-4" style="border-radius: 12px;">
+                  <div class="position-relative">
+                    <div class="img-mask"></div>
+                    <img src="../assets/images/card-食譜教學/如何融化巧克力.png" class="card-img-top" alt="如何融化巧克力"
+                      style="height: 164px; object-fit: cover; object-position: center; border-radius: 16px 16px 0 0;">
+                    <div class="position-absolute bottom-0 end-0 me-4 mb-4 d-flex align-items-center">
+                      <i class="heart bi bi-heart me-1" id="heart1" style="height: 24px; width: 24px;"></i>
+                      <p class="text-white" style="line-height: 1;">1179</p>
+                    </div>
+                  </div>
+                  <div class="card-body" style="box-shadow: 0px 2px 16px 0px #00000026; border-radius:0 0 16px 16px;">
+                    <div class="card-text">
+                      <div class="d-flex justify-content-between align-items-center pb-2">
+                        <p class="fs-3 fw-700" style="line-height: 1.2;">如何融化巧克力</p>
+                        <i class="fs-2 bookmark bi bi-bookmark" style="line-height: 1;"></i>
+                      </div>
+                      <p class="text-body-1 text-text-600 text-ellipsis mb-2">
+                        要融化巧克力，將其切碎後放入耐熱碗中，放在熱水蒸汽上（隔水加熱），輕輕攪拌直到完全融化。避免水分進入，否則巧克力會凝固。也可以使用微波爐，每30秒攪拌一次。
+                      </p>
+                    </div>
+                    <p class="text-body-2 text-text-600 pb-2">難度：中</p>
+                    <div class="d-flex align-items-center">
+                      <img class="rounded-circle me-2" src="../assets/images/Avatar/Avatar-9.png" alt="people-img"
+                        style="width: 28px;height: 28px;">
+                      <p class="text-text-600 text-body-2 fw-700">冰冰好料理</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- 保存蔥的方法 -->
+              <div class="swiper-slide">
+                <div class="card border-0 mb-4" style="border-radius: 12px;">
+                  <div class="position-relative">
+                    <div class="img-mask"></div>
+                    <img src="../assets/images/card-食譜教學/保存蔥的方法.png" class="card-img-top" alt="保存蔥的方法"
+                      style="height: 164px; object-fit: cover; object-position: center; border-radius: 16px 16px 0 0;">
+                    <div class="position-absolute bottom-0 end-0 me-4 mb-4 d-flex align-items-center">
+                      <i class="heart bi bi-heart me-1" id="heart1" style="height: 24px; width: 24px;"></i>
+                      <p class="text-white" style="line-height: 1;">2863</p>
+                    </div>
+                  </div>
+                  <div class="card-body" style="box-shadow: 0px 2px 16px 0px #00000026; border-radius:0 0 16px 16px;">
+                    <div class="card-text">
+                      <div class="d-flex justify-content-between align-items-center pb-2">
+                        <p class="fs-3 fw-700" style="line-height: 1.2;">保存蔥的方法</p>
+                        <i class="fs-2 bookmark bi bi-bookmark" style="line-height: 1;"></i>
+                      </div>
+                      <p class="text-body-1 text-text-600 text-ellipsis mb-2">
+                        這種切法適合將蔥切成細碎狀，為了確保切得均勻且細碎，新手可以放慢速度，左手微彎支撐食材，右手持刀斜切，以達到理想效果。
+                      </p>
+                    </div>
+                    <p class="text-body-2 text-text-600 pb-2">難度：易</p>
+                    <div class="d-flex align-items-center">
+                      <img class="rounded-circle me-2" src="../assets/images/Avatar/Avatar-3.png" alt="people-img"
+                        style="width: 28px;height: 28px;">
+                      <p class="text-text-600 text-body-2 fw-700">blue_lady</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- 新鮮食材的保存法 -->
+              <div class="swiper-slide">
+                <div class="card border-0 mb-4" style="border-radius: 12px;">
+                  <div class="position-relative">
+                    <div class="img-mask"></div>
+                    <img src="../assets/images/card-食譜教學/新鮮食材的保存法.png" class="card-img-top" alt="新鮮食材的保存法"
+                      style="height: 164px; object-fit: cover; object-position: center; border-radius: 16px 16px 0 0;">
+                    <div class="position-absolute bottom-0 end-0 me-4 mb-4 d-flex align-items-center">
+                      <i class="heart bi bi-heart me-1" id="heart1" style="height: 24px; width: 24px;"></i>
+                      <p class="text-white" style="line-height: 1;">1520</p>
+                    </div>
+                  </div>
+                  <div class="card-body" style="box-shadow: 0px 2px 16px 0px #00000026; border-radius:0 0 16px 16px;">
+                    <div class="card-text">
+                      <div class="d-flex justify-content-between align-items-center pb-2">
+                        <p class="fs-3 fw-700" style="line-height: 1.2;">新鮮食材的保存法</p>
+                        <i class="fs-2 bookmark bi bi-bookmark" style="line-height: 1;"></i>
+                      </div>
+                      <p class="text-body-1 text-text-600 text-ellipsis mb-2">
+                        新鮮食材的保存法包括冷藏、冷凍和真空密封。蔬菜可用濕紙巾包裹後放入冰箱，水果則需保持乾燥。肉類和魚類可冷凍保存，確保食材長久新鮮和營養。
+                      </p>
+                    </div>
+                    <p class="text-body-2 text-text-600 pb-2">難度：易</p>
+                    <div class="d-flex align-items-center">
+                      <img class="rounded-circle me-2" src="../assets/images/Avatar/Avatar-5.png" alt="people-img"
+                        style="width: 28px;height: 28px;">
+                      <p class="text-text-600 text-body-2 fw-700">Justin 廚藝教室</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer fixed-bottom bg-pampas-100 d-flex justify-content-around"
+    style="max-width: 390px; margin: 0 auto; padding-bottom: 34px; border-top: 0.5px solid #D1D1D1">
+    <a href="home.html" class="d-flex flex-column gap-1">
+      <span class="majesticons--home mt-2 active"></span>
+      <p class="text-body-4 text-text-400 text-center active">首頁</p>
+    </a>
+    <a href="search.html" class="d-flex flex-column gap-1">
+      <span class="majesticons--search-line mt-2"></span>
+      <p class="text-body-4 text-text-400 text-center">探索</p>
+    </a>
+    <a href="favorites.html" class="d-flex flex-column gap-1">
+      <span class="material-symbols--bookmark-outline mt-2"></span>
+      <p class="text-body-4 text-text-400 text-center">收藏</p>
+    </a>
+    <a href="homepage.html" class="d-flex flex-column gap-1">
+      <span class="ion--person-circle-outline mt-2"></span>
+      <p class="text-body-4 text-text-400 text-center">我的</p>
+    </a>
+  </footer>
+  <script type="module" src="../main.js"></script>
+</body>
+
+</html>
+
