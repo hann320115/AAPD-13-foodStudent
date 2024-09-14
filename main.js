@@ -162,7 +162,56 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 });
 
+// 留言
 
+const imageUrl = `${import.meta.env.BASE_URL}assets/images/Avatar-3.png`;
+document.getElementById("image").src = `${import.meta.env.BASE_URL}assets/images/Avatar-3.png`;
+
+document.getElementById("messageForm").addEventListener("submit", function(event) {
+    event.preventDefault(); // 防止表單提交
+    const messageInput = document.getElementById("message");
+    const messageText = messageInput.value.trim();
+    
+    if (messageText !== "") {
+    // 創建新的留言項目
+    const messageItem = document.createElement("div");
+    messageItem.className = "d-flex flex-column";
+
+    // 用戶回覆
+    const userReply = document.createElement("div");
+    userReply.className = "d-flex align-items-center";
+    userReply.innerHTML = `
+        <img class="rounded-circle me-2" src="${import.meta.env.BASE_URL}assets/images/Avatar-3.png" alt="people-img" height="36" width="36">
+        <h6>April</h6>
+        <div class="ms-auto">剛剛</div>
+    `;
+
+    // 留言內容
+    const messageContent = document.createElement("div");
+    messageContent.className = "my-2 ms-11";
+    messageContent.textContent = messageText;
+
+    // 愛心+留言
+    const heartReply = document.createElement("div");
+    heartReply.className = "d-flex align-items-center mb-4";
+    heartReply.innerHTML = `
+        <button class="btn btn-transparent border-0 border p-0 ms-11 me-1"><i class="dark-heart bi bi-heart" id="heart14"></i></button>
+        <p class="me-4">000</p>
+        <button class="btn btn-transparent border-0 border p-0"><i class="bi bi-chat"></i></button>
+    `;
+
+    // 把各部分加到留言項目中
+    messageItem.appendChild(userReply);
+    messageItem.appendChild(messageContent);
+    messageItem.appendChild(heartReply);
+
+    // 將留言項目添加到留言列表中
+    document.getElementById("messageList").appendChild(messageItem);
+
+    // 清空輸入框
+    messageInput.value = "";
+}
+});
 
 
 
