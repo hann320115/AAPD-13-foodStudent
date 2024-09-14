@@ -80,7 +80,9 @@
 <!-- JS -->
     <script>
         // 導入圖片
-        import avatarImage from '../assets/images/Avatar-3.png';
+        const imageUrl = `${import.meta.env.BASE_URL}assets/images/Avatar-3.png`;
+        document.getElementById("image").src = `${import.meta.env.BASE_URL}assets/images/Avatar-3.png`;
+
 
 
 
@@ -98,7 +100,7 @@
             const userReply = document.createElement("div");
             userReply.className = "d-flex align-items-center";
             userReply.innerHTML = `
-                <img class="rounded-circle me-2" src="${avatarImage}" alt="people-img" height="36" width="36">
+                <img class="rounded-circle me-2" src="${import.meta.env.BASE_URL}assets/images/Avatar-3.png" alt="people-img" height="36" width="36">
                 <h6>April</h6>
                 <div class="ms-auto">剛剛</div>
             `;
