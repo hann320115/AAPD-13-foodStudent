@@ -9,14 +9,108 @@
     <link rel="stylesheet" href="../assets/scss/all.scss">
 </head>
 
-<body>
+<body class="bg-pampas-100">
     <div class="search">
         <div class="search-container">
-            <form class="position-relative mb-4">
-                <i class="bi bi-search position-absolute top-50 start-0 translate-middle-y ms-2"></i>
-                <input class="w-100 border-0" type="search" placeholder="搜尋" aria-label="Search"
-                    style="background-color: #7676801F; padding: 7px 8px 7px 32px ; border-radius: 12px;">
-            </form>
+            <div class="position-relative">
+                <form class="position-relative mb-4" id="searchForm">
+                    <i class="bi bi-search position-absolute top-50 start-0 translate-middle-y ms-2"></i>
+                    <input id="searchInput" class="w-100 border-0" type="search" placeholder="搜尋" aria-label="Search"
+                        style="background-color: #7676801F; padding: 7px 8px 7px 32px; border-radius: 12px;">
+                </form>
+
+                <ul class="list-unstyled pt-6 pb-4 pe-9 bg-pampas-100" id="searchResults"
+                    style="display: none; position: absolute; top: 100%; left: 0; width: 390px; background-color: white; z-index: 1000;">
+                    <p class="text-text-950 h5 pb-4">最近搜尋</p>
+                    <li class="d-flex align-items-center mb-2 justify-content-between">
+                        <div class="d-flex align-items-center gap-2">
+                            <i class="fs-2 bi bi-clock" style="line-height: 1;"></i>
+                            <span class="text-body-1">沙拉</span>
+                        </div>
+                        <i class="bi bi-x-lg" style="font-style: 16px; line-height: 1;"></i>
+                    </li>
+                    <li class="d-flex align-items-center mb-2 justify-content-between">
+                        <div class="d-flex align-items-center gap-2">
+                            <i class="fs-2 bi bi-clock" style="line-height: 1;"></i>
+                            <span class="text-body-1">舒芙蕾</span>
+                        </div>
+                        <i class="bi bi-x-lg" style="font-style: 16px; line-height: 1;"></i>
+                    </li>
+                    <li class="d-flex align-items-center mb-2 justify-content-between">
+                        <div class="d-flex align-items-center gap-2">
+                            <i class="fs-2 bi bi-clock" style="line-height: 1;"></i>
+                            <span class="text-body-1">減脂</span>
+                        </div>
+                        <i class="bi bi-x-lg" style="font-style: 16px; line-height: 1;"></i>
+                    </li>
+                    <div id="moreItems" style="display: none;">
+                        <!-- 更多項目 -->
+                        <li class="d-flex align-items-center mb-2 justify-content-between">
+                            <div class="d-flex align-items-center gap-2">
+                                <i class="fs-2 bi bi-clock" style="line-height: 1;"></i>
+                                <span class="text-body-1">沙拉</span>
+                            </div>
+                            <i class="bi bi-x-lg" style="font-style: 16px; line-height: 1;"></i>
+                        </li>
+                        <li class="d-flex align-items-center mb-2 justify-content-between">
+                            <div class="d-flex align-items-center gap-2">
+                                <i class="fs-2 bi bi-clock" style="line-height: 1;"></i>
+                                <span class="text-body-1">蕃茄燉肉</span>
+                            </div>
+                            <i class="bi bi-x-lg" style="font-style: 16px; line-height: 1;"></i>
+                        </li>
+                        <li class="d-flex align-items-center mb-2 justify-content-between">
+                            <div class="d-flex align-items-center gap-2">
+                                <i class="fs-2 bi bi-clock" style="line-height: 1;"></i>
+                                <span class="text-body-1">雞胸肉</span>
+                            </div>
+                            <i class="bi bi-x-lg" style="font-style: 16px; line-height: 1;"></i>
+                        </li>
+                        <li class="d-flex align-items-center mb-2 justify-content-between">
+                            <div class="d-flex align-items-center gap-2">
+                                <i class="fs-2 bi bi-clock" style="line-height: 1;"></i>
+                                <span class="text-body-1">清爽</span>
+                            </div>
+                            <i class="bi bi-x-lg" style="font-style: 16px; line-height: 1;"></i>
+                        </li>
+                        <li class="d-flex align-items-center mb-2 justify-content-between">
+                            <div class="d-flex align-items-center gap-2">
+                                <i class="fs-2 bi bi-clock" style="line-height: 1;"></i>
+                                <span class="text-body-1">低鹽</span>
+                            </div>
+                            <i class="bi bi-x-lg" style="font-style: 16px; line-height: 1;"></i>
+                        </li>
+                        <li class="d-flex align-items-center mb-2 justify-content-between">
+                            <div class="d-flex align-items-center gap-2">
+                                <i class="fs-2 bi bi-clock" style="line-height: 1;"></i>
+                                <span class="text-body-1">滾刀切</span>
+                            </div>
+                            <i class="bi bi-x-lg" style="font-style: 16px; line-height: 1;"></i>
+                        </li>
+                        <li class="d-flex align-items-center mb-2 justify-content-between">
+                            <div class="d-flex align-items-center gap-2">
+                                <i class="fs-2 bi bi-clock" style="line-height: 1;"></i>
+                                <span class="text-body-1">滷味</span>
+                            </div>
+                            <i class="bi bi-x-lg" style="font-style: 16px; line-height: 1;"></i>
+                        </li>
+                    </div>
+                    <button id="showMoreBtn" class="py-1 px-4 btn btn-pampas-100 text-text-600 mx-auto d-block"
+                        style="border-radius: 20px; border: 1px solid #DDD8CB;">顯示更多</button>
+                </ul>
+                <ul class="list-unstyled d-none pt-4 pb-4 pe-9 bg-pampas-100"
+                    style="position: absolute; top: 100%; left: 0; width: 390px; height: 100vh; background-color: white; z-index: 1000;">
+                    <li class="text-body-1 text-text-950" style="border-bottom: 1px solid #b0b0b0;">沙拉</li>
+                    <li class="text-body-1 text-text-950" style="border-bottom: 1px solid #b0b0b0;">番茄沙拉</li>
+                    <li class="text-body-1 text-text-950" style="border-bottom: 1px solid #b0b0b0;">凱薩雞肉沙拉</li>
+                    <li class="text-body-1 text-text-950" style="border-bottom: 1px solid #b0b0b0;">清爽日式沙拉</li>
+                    <li class="text-body-1 text-text-950" style="border-bottom: 1px solid #b0b0b0;">無花果沙拉</li>
+                </ul>
+            </div>
+            <!-- 讀取圈圈 -->
+            <div class="loading-wrapper">
+                <div class="loading-circle"></div>
+            </div>
             <div class="search-background-image mb-6">
                 <div class="pt-9 pb-4">
                     <p class="fs-3 text-center fw-700" style="color: #F8F7F4; text-shadow: 0px 3px 4px #00000073;">
@@ -34,11 +128,11 @@
                     <div class="swiper-wrapper">
                         <!-- 保存蔥的方法 -->
                         <div class="swiper-slide">
-                            <div class="card border-0" style="border-radius: 12px;">
+                            <div class="card border-0 bg-pampas-100" style="border-radius: 16px;">
                                 <div class="position-relative">
                                     <div class="img-mask"></div>
-                                    <img src="../assets/images/card-食譜教學/保存蔥的方法.png" class="card-img-top" alt="保存蔥的方法"
-                                        style="height: 164px; object-fit: cover; object-position: center; border-radius: 16px;">
+                                    <img src="../assets/images/card-食譜教學/保存蔥的方法.png" class="w-100" alt="保存蔥的方法"
+                                    style="height: 164px; object-fit: cover; object-position: center; border-radius: 16px;">
                                     <div class="position-absolute bottom-0 end-0 me-3 mb-3 d-flex align-items-center">
                                         <i class="heart bi bi-heart me-1" id="heart1"
                                             style="height: 24px; width: 24px;"></i>
@@ -65,7 +159,7 @@
                         </div>
                         <!-- 夏日藜麥沙拉 -->
                         <div class="swiper-slide">
-                            <div class="card border-0" style="border-radius: 12px;">
+                            <div class="card border-0 bg-pampas-100" style="border-radius: 12px;">
                                 <div class="position-relative">
                                     <div class="img-mask"></div>
                                     <img src="../assets/images/card-食譜教學/夏日藜麥沙拉.png" class="card-img-top" alt="夏日藜麥沙拉"
@@ -105,7 +199,7 @@
                         </div>
                         <!-- 滾刀塊 -->
                         <div class="swiper-slide">
-                            <div class="card border-0" style="border-radius: 12px;">
+                            <div class="card border-0 bg-pampas-100" style="border-radius: 12px;">
                                 <div class="position-relative">
                                     <div class="img-mask"></div>
                                     <img src="../assets/images/card-食譜教學/滾刀塊.png" class="card-img-top" alt="滾刀塊"
@@ -162,26 +256,27 @@
             </div>
         </div>
     </div>
+    </div>
 
     <footer class="footer fixed-bottom bg-pampas-100 d-flex justify-content-around"
-    style="max-width: 390px; margin: 0 auto; padding-bottom: 34px;">
-    <a href="index.html" class="d-flex flex-column gap-1">
-      <span class="majesticons--home-line mt-2"></span>
-      <p class="text-body-4 text-text-400 text-center">首頁</p>
-    </a>
-    <a href="search.html" class="d-flex flex-column gap-1">
-      <span class="majesticons--search mt-2 active"></span>
-      <p class="text-body-4 text-text-400 text-center active">探索</p>
-    </a>
-    <a href="favorites.html" class="d-flex flex-column gap-1">
-      <span class="material-symbols--bookmark-outline mt-2"></span>
-      <p class="text-body-4 text-text-400 text-center">收藏</p>
-    </a>
-    <a href="homepage.html" class="d-flex flex-column gap-1">
-      <span class="ion--person-circle-outline mt-2"></span>
-      <p class="text-body-4 text-text-400 text-center">我的</p>
-    </a>
-  </footer>
+        style="max-width: 390px; margin: 0 auto; padding-bottom: 34px; border-top: 0.5px solid #D1D1D1">
+        <a href="index.html" class="d-flex flex-column gap-1">
+            <span class="majesticons--home-line mt-2"></span>
+            <p class="text-body-4 text-text-400 text-center">首頁</p>
+        </a>
+        <a href="search.html" class="d-flex flex-column gap-1">
+            <span class="majesticons--search mt-2 active"></span>
+            <p class="text-body-4 text-text-400 text-center active">探索</p>
+        </a>
+        <a href="favorites.html" class="d-flex flex-column gap-1">
+            <span class="material-symbols--bookmark-outline mt-2"></span>
+            <p class="text-body-4 text-text-400 text-center">收藏</p>
+        </a>
+        <a href="homepage.html" class="d-flex flex-column gap-1">
+            <span class="ion--person-circle-outline mt-2"></span>
+            <p class="text-body-4 text-text-400 text-center">我的</p>
+        </a>
+    </footer>
 
     <script type="module" src="../main.js"></script>
 </body>
