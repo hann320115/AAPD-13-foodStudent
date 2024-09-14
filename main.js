@@ -59,11 +59,13 @@ setTimeout(() => {
     });
 }, 1000);
 
+
 // 我的收藏
 var swiper = new Swiper(".favoritesSwiper", {
     slidesPerView: "auto",
     spaceBetween: 12,
 });
+
 
 // 搜尋
 var swiper = new Swiper(".searchSwiper", {
@@ -75,6 +77,81 @@ var swiper = new Swiper(".cookingSwiper", {
     slidesPerView: "auto",
     spaceBetween: 16,
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+    const searchResults = document.getElementById('searchResults');
+    const searchInput = document.getElementById('searchInput');
+    const showMoreBtn = document.getElementById('showMoreBtn');
+    const moreItems = document.getElementById('moreItems');
+    const hiddenResults = document.querySelector('.list-unstyled.d-none'); // 下方的 ul
+
+    // 當搜尋框獲得焦點時，顯示搜尋結果
+    searchInput.addEventListener('focus', function () {
+        searchResults.style.display = 'block';
+    });
+
+    // 點擊顯示更多按鈕顯示或隱藏更多項目
+    showMoreBtn.addEventListener('click', function (event) {
+        event.stopPropagation(); // 阻止點擊事件冒泡
+        if (showMoreBtn.textContent === '清除歷史紀錄') {
+            // 刪除整個上方的 ul
+            searchResults.remove();
+
+            // 隱藏 "顯示更多" 按鈕，因為沒有內容可以顯示了
+            showMoreBtn.style.display = 'none';
+        } else {
+            if (moreItems.style.display === 'none' || moreItems.style.display === '') {
+                moreItems.style.display = 'block'; // 顯示更多項目
+                showMoreBtn.textContent = '清除歷史紀錄'; // 更改按鈕文字為 "清除歷史紀錄"
+            } else {
+                moreItems.style.display = 'none'; // 隱藏更多項目
+                showMoreBtn.textContent = '顯示更多'; // 更改按鈕文字回到 "顯示更多"
+            }
+        }
+    });
+
+    // 刪除搜尋項目
+    searchResults.addEventListener('click', function (event) {
+        if (event.target.classList.contains('bi-x-lg')) {
+            event.stopPropagation(); // 阻止點擊事件冒泡
+            const li = event.target.closest('li');
+            if (li) {
+                li.remove(); // 刪除該行
+                updateSearchResultsVisibility();
+            }
+        }
+    });
+
+    // 點擊 `ul` 以外的地方隱藏 `ul`
+    document.addEventListener('click', function (event) {
+        if (!searchResults.contains(event.target) && event.target !== searchInput) {
+            searchResults.style.display = 'none';
+        }
+    });
+
+    // 防止點擊 `ul` 內部的元素隱藏 `ul`
+    searchResults.addEventListener('click', function (event) {
+        event.stopPropagation(); // 阻止點擊事件冒泡
+    });
+
+    // 監聽搜尋框的輸入事件
+    searchInput.addEventListener('input', function () {
+        const inputValue = searchInput.value.trim();
+
+        if (inputValue === '沙') {
+            // 隱藏上方 ul 並顯示下方的 ul
+            searchResults.style.display = 'none';
+            hiddenResults.classList.remove('d-none');
+        } else {
+            // 顯示上方 ul 並隱藏下方的 ul
+            searchResults.style.display = 'block';
+            hiddenResults.classList.add('d-none');
+        }
+    });
+});
+
+
+
 
 // 食譜-補充教學
 
@@ -183,5 +260,3 @@ document.addEventListener('scroll', function () {
         navbar.style.top = '';
     }
 });
-
-
