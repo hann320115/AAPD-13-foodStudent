@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="zh-hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>食譜提供者</title>
+    
+  <script type="module" crossorigin src="/AAPD-13-foodStudent/assets/main-81a095cc.js"></script>
+  <link rel="stylesheet" href="/AAPD-13-foodStudent/assets/main-7ec42a8f.css">
+</head>
+<body>
+    <div class="container-self-full bg-pampas-100 position-relative pt-12">
+        <div class="container-self">
+            <button class="btn btn-transparent mb-5 p-0" onclick="history.back()"><i class="bi bi-chevron-left fs-3"></i></button>
+            <div class="d-flex mb-2">
+                <img class="rounded-circle me-4" src="/AAPD-13-foodStudent/assets/Avatar-5-d3d4e924.png" width="100" height="100">
+                <div class="d-flex flex-column justify-content-center">
+                    <h1 class="mb-4">Justin 廚藝教室</h1>
+                    <p class="text-body-5 text-text-600">食習生 嚴選廚師</p>
+                </div>
+            </div>
+            <p class="mb-2">熱愛生活、熱愛料理</p>
+            <a class="text-gossamer-500 mb-4" href="#"><i class="bi bi-link-45deg"></i>instagram.com/justin.cook</a>
+            <div class="pb-21">
+                <button class="btn fw-700 bg-gossamer-500 border-radius-100 text-white w-100 py-1 btn-radius-100">追蹤中</button>
+            </div>
+        </div>
+        <div class="bookUser-content container-self-full bg-white position-absolute top-0 w-100">
+            <ul class="nav nav-pills mb-6" id="myTab" role="tablist">
+                <li class="nav-item w-50" role="presentation">
+                    <button class="nav-link active border-top-left-radius w-100 bg-white fs-3 " id="bookTab1" data-bs-toggle="pill" data-bs-target="#foodBook" type="button" role="tab" aria-controls="pills-home" aria-selected="true">食譜</button>
+                </li>
+                <li class="nav-item w-50" role="presentation">
+                    <button class="nav-link border-top-right-radius w-100 bg-white fs-3" id="bookTab2"  data-bs-toggle="pill" data-bs-target="#learn" type="button" role="tab" aria-controls="pills-home" aria-selected="true">教學</button>
+                </li>
+            </ul>
+                <!-- 食譜內容 -->
+                <div class="container-self tab-pane fade show active" id="foodBook" role="tabpanel" aria-labelledby="home-tab">
+                    <ul class="list-unstyled d-flex flex-wrap d-grid gap-4 w-100">
+                        <li class="foodBookBox">
+                            <ul class="list-unstyled d-flex d-grid gap-1px flex-wrap mb-4">
+                                <li class="foodBookPic radius-top-start" style="background-image: url(/AAPD-13-foodStudent/assets/燕麥核桃香蕉鬆餅-b95fa2c4.png);background-position: center;background-size: cover;"></li>
+                                <li class="foodBookPic radius-top-end" style="background-image: url(/AAPD-13-foodStudent/assets/日式野菜溫沙拉-ace10a0e.png);background-position: center;background-size: cover;"></li>
+                                <li class="foodBookPic radius-bottom-start" style="background-image: url(/AAPD-13-foodStudent/assets/夏日藜麥沙拉-31924de3.png);background-position: center;background-size: cover;"></li>
+                                <li class="foodBookPic radius-bottom-end" style="background-image: url(/AAPD-13-foodStudent/assets/草莓優格果昔-0689fd4c.png);background-position: center;background-size: cover;"></li>
+                            </ul>
+                            <h6>夏日輕食</h6>
+                            <p class="text-body-2 text-text-600">4 篇收藏</p>
+                        </li>
+                        <li class="foodBookBox">
+                            <ul class="list-unstyled d-flex d-grid gap-1px flex-wrap mb-4">
+                                <li class="foodBookPic radius-top-start" style="background-image: url(/AAPD-13-foodStudent/assets/三明治-c6d6e889.png);background-position: bottom;background-size: cover;"></li>
+                                <li class="foodBookPic bg-pampas-100 radius-top-end"></li>
+                                <li class="foodBookPic bg-pampas-100 radius-bottom-start"></li>
+                                <li class="foodBookPic bg-pampas-100 radius-bottom-end"></li>
+                            </ul>
+                            <h6>三明治</h6>
+                            <p class="text-body-2 text-text-600">1 篇收藏</p>
+                        </li>
+                        <li class="foodBookBox">
+                            <div class="position-relative border-radius-16px mb-4" style="background-image: url(/AAPD-13-foodStudent/assets/綠橄欖鷹嘴豆泥-45e13096.png);background-size: cover;background-position: center; height: 171px;">
+                                <div class="badge rounded-pill py-2px px-2 text-white text-body-3 bg-gossamer-500 mt-3 ms-3 lh16">15min</div>
+                                <div class="position-absolute bottom-0 end-0 d-flex me-3 mb-4">
+                                    <i class="heart bi bi-heart me-1" id="heart20"></i>
+                                    <p class="text-white">385</p>
+                                </div>
+                            </div>
+                            <ul class="list-unstyled d-grid gap-1">
+                                <li class="d-flex flex-column">
+                                    <div class="d-flex">
+                                        <p class="fw-700">綠橄欖鷹嘴豆泥</p>
+                                        <i class="bookmark bi bi-bookmark ms-auto" id="bookmark20"></i>
+                                    </div>
+                                    <ul class="d-flex list-unstyled d-grid gap-2 text-text-600 text-body-2">
+                                        <p>難度：中</p>
+                                        <p>〡</p>
+                                        <p>150 kcal</p>
+                                    </ul>
+                                    <div class="d-flex">
+                                        <img class="rounded-circle me-2" src="/AAPD-13-foodStudent/assets/Avatar-6-1d30d3ea.png" alt="people-img" style="width: 28px;height: 28px;">
+                                        <p class="text-text-600 text-body-2 fw-700">美味匠人</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="foodBookBox">
+                            <div class="position-relative border-radius-16px mb-4" style="background-image: url(/AAPD-13-foodStudent/assets/燕麥核桃香蕉鬆餅-b95fa2c4.png);background-size: cover;background-position: center;height: 171px;">
+                                <div class="mt-3 ms-3 d-flex position-absolute">
+                                    <div class="badge rounded-pill py-2px px-2 bg-gossamer-500 me-1 lh16 text-white text-body-3">30min</div>
+                                    <div class="badge rounded-pill py-2px px-2 bg-gossamer-500 me-1 lh16 text-white text-body-3">無乳製品</div>
+                                </div>
+                                <div class="position-absolute bottom-0 end-0 d-flex me-3 mb-4">
+                                    <i class="heart bi bi-heart me-1" id="heart21"></i>
+                                    <p class="text-white">1327</p>
+                                </div>
+                            </div>
+                            <ul class="list-unstyled d-grid gap-1">
+                                <li class="d-flex flex-column">
+                                    <div class="d-flex">
+                                        <p class="fw-700">燕麥核桃香蕉鬆餅</p>
+                                        <i class="bookmark bi bi-bookmark ms-auto" id="bookmark21"></i>
+                                    </div>
+                                    <ul class="d-flex list-unstyled d-grid gap-2 text-text-600 text-body-2">
+                                        <p>難度：中</p>
+                                        <p>〡</p>
+                                        <p>148 kcal</p>
+                                    </ul>
+                                    <div class="d-flex">
+                                        <img class="rounded-circle me-2" src="/AAPD-13-foodStudent/assets/Avatar-9-8c22e7cf.png" alt="people-img" style="width: 28px;height: 28px;">
+                                        <p class="text-text-600 text-body-2 fw-700">冰冰好料理</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <!-- 教學內容 -->
+                <div class="tab-pane fade" id="learn" role="tabpanel" aria-labelledby="profile-tab">
+                    <div class="position-absolute top-0 mt-30 ms-27">
+                        <img class="mb-6" src="/AAPD-13-foodStudent/assets/no found-98d1e31b.png" alt="nofund">
+                        <div class="text-body-5 text-pampas-400 w-100 text-center">目前沒有資料</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer fixed-bottom bg-pampas-100 d-flex justify-content-around" style="max-width: 390px; margin: 0 auto; padding-bottom: 34px; border-top: 0.5px solid #D1D1D1">
+        <a href="index.html" class="d-flex flex-column gap-1">
+            <span class="majesticons--home mt-2 active"></span>
+            <p class="text-body-4 text-text-400 text-center active">首頁</p>
+        </a>
+        <a href="search.html" class="d-flex flex-column gap-1">
+            <span class="majesticons--search-line mt-2"></span>
+            <p class="text-body-4 text-text-400 text-center">探索</p>
+        </a>
+        <a href="favorites.html" class="d-flex flex-column gap-1">
+            <span class="material-symbols--bookmark-outline mt-2"></span>
+            <p class="text-body-4 text-text-400 text-center">收藏</p>
+        </a>
+        <a href="homepage.html" class="d-flex flex-column gap-1">
+            <span class="ion--person-circle-outline mt-2"></span>
+            <p class="text-body-4 text-text-400 text-center">我的</p>
+        </a>
+    </footer>
+
+    
+</body>
+</html>

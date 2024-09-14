@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="zh-hant">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>搜尋</title>
+    
+  <script type="module" crossorigin src="/AAPD-13-foodStudent/assets/main-81a095cc.js"></script>
+  <link rel="stylesheet" href="/AAPD-13-foodStudent/assets/main-7ec42a8f.css">
+</head>
+
+<body class="bg-pampas-100">
+    <div class="search">
+        <div class="search-container">
+            <div class="position-relative">
+                <form class="position-relative mb-4" id="searchForm">
+                    <i class="bi bi-search position-absolute top-50 start-0 translate-middle-y ms-2"></i>
+                    <input id="searchInput" class="w-100 border-0" type="search" placeholder="搜尋" aria-label="Search"
+                        style="background-color: #7676801F; padding: 7px 8px 7px 32px; border-radius: 12px;">
+                </form>
+
+                <ul class="list-unstyled pt-6 pb-4 pe-9 bg-pampas-100" id="searchResults"
+                    style="display: none; position: absolute; top: 100%; left: 0; width: 390px; background-color: white; z-index: 1000;">
+                    <p class="text-text-950 h5 pb-4">最近搜尋</p>
+                    <li class="d-flex align-items-center mb-2 justify-content-between">
+                        <div class="d-flex align-items-center gap-2">
+                            <i class="fs-2 bi bi-clock" style="line-height: 1;"></i>
+                            <span class="text-body-1">沙拉</span>
+                        </div>
+                        <i class="bi bi-x-lg" style="font-style: 16px; line-height: 1;"></i>
+                    </li>
+                    <li class="d-flex align-items-center mb-2 justify-content-between">
+                        <div class="d-flex align-items-center gap-2">
+                            <i class="fs-2 bi bi-clock" style="line-height: 1;"></i>
+                            <span class="text-body-1">舒芙蕾</span>
+                        </div>
+                        <i class="bi bi-x-lg" style="font-style: 16px; line-height: 1;"></i>
+                    </li>
+                    <li class="d-flex align-items-center mb-2 justify-content-between">
+                        <div class="d-flex align-items-center gap-2">
+                            <i class="fs-2 bi bi-clock" style="line-height: 1;"></i>
+                            <span class="text-body-1">減脂</span>
+                        </div>
+                        <i class="bi bi-x-lg" style="font-style: 16px; line-height: 1;"></i>
+                    </li>
+                    <div id="moreItems" style="display: none;">
+                        <!-- 更多項目 -->
+                        <li class="d-flex align-items-center mb-2 justify-content-between">
+                            <div class="d-flex align-items-center gap-2">
+                                <i class="fs-2 bi bi-clock" style="line-height: 1;"></i>
+                                <span class="text-body-1">沙拉</span>
+                            </div>
+                            <i class="bi bi-x-lg" style="font-style: 16px; line-height: 1;"></i>
+                        </li>
+                        <li class="d-flex align-items-center mb-2 justify-content-between">
+                            <div class="d-flex align-items-center gap-2">
+                                <i class="fs-2 bi bi-clock" style="line-height: 1;"></i>
+                                <span class="text-body-1">蕃茄燉肉</span>
+                            </div>
+                            <i class="bi bi-x-lg" style="font-style: 16px; line-height: 1;"></i>
+                        </li>
+                        <li class="d-flex align-items-center mb-2 justify-content-between">
+                            <div class="d-flex align-items-center gap-2">
+                                <i class="fs-2 bi bi-clock" style="line-height: 1;"></i>
+                                <span class="text-body-1">雞胸肉</span>
+                            </div>
+                            <i class="bi bi-x-lg" style="font-style: 16px; line-height: 1;"></i>
+                        </li>
+                        <li class="d-flex align-items-center mb-2 justify-content-between">
+                            <div class="d-flex align-items-center gap-2">
+                                <i class="fs-2 bi bi-clock" style="line-height: 1;"></i>
+                                <span class="text-body-1">清爽</span>
+                            </div>
+                            <i class="bi bi-x-lg" style="font-style: 16px; line-height: 1;"></i>
+                        </li>
+                        <li class="d-flex align-items-center mb-2 justify-content-between">
+                            <div class="d-flex align-items-center gap-2">
+                                <i class="fs-2 bi bi-clock" style="line-height: 1;"></i>
+                                <span class="text-body-1">低鹽</span>
+                            </div>
+                            <i class="bi bi-x-lg" style="font-style: 16px; line-height: 1;"></i>
+                        </li>
+                        <li class="d-flex align-items-center mb-2 justify-content-between">
+                            <div class="d-flex align-items-center gap-2">
+                                <i class="fs-2 bi bi-clock" style="line-height: 1;"></i>
+                                <span class="text-body-1">滾刀切</span>
+                            </div>
+                            <i class="bi bi-x-lg" style="font-style: 16px; line-height: 1;"></i>
+                        </li>
+                        <li class="d-flex align-items-center mb-2 justify-content-between">
+                            <div class="d-flex align-items-center gap-2">
+                                <i class="fs-2 bi bi-clock" style="line-height: 1;"></i>
+                                <span class="text-body-1">滷味</span>
+                            </div>
+                            <i class="bi bi-x-lg" style="font-style: 16px; line-height: 1;"></i>
+                        </li>
+                    </div>
+                    <button id="showMoreBtn" class="py-1 px-4 btn btn-pampas-100 text-text-600 mx-auto d-block"
+                        style="border-radius: 20px; border: 1px solid #DDD8CB;">顯示更多</button>
+                </ul>
+                <ul class="list-unstyled d-none pt-4 pb-4 pe-9 bg-pampas-100"
+                    style="position: absolute; top: 100%; left: 0; width: 390px; height: 100vh; background-color: white; z-index: 1000;">
+                    <li class="text-body-1 text-text-950" style="border-bottom: 1px solid #b0b0b0;">沙拉</li>
+                    <li class="text-body-1 text-text-950" style="border-bottom: 1px solid #b0b0b0;">番茄沙拉</li>
+                    <li class="text-body-1 text-text-950" style="border-bottom: 1px solid #b0b0b0;">凱薩雞肉沙拉</li>
+                    <li class="text-body-1 text-text-950" style="border-bottom: 1px solid #b0b0b0;">清爽日式沙拉</li>
+                    <li class="text-body-1 text-text-950" style="border-bottom: 1px solid #b0b0b0;">無花果沙拉</li>
+                </ul>
+            </div>
+            <!-- 讀取圈圈 -->
+            <div class="loading-wrapper">
+                <div class="loading-circle"></div>
+            </div>
+            <div class="search-background-image mb-6">
+                <div class="pt-9 pb-4">
+                    <p class="fs-3 text-center fw-700" style="color: #F8F7F4; text-shadow: 0px 3px 4px #00000073;">
+                        沒有靈感嗎？讓我們幫你推薦！
+                    </p>
+                </div>
+                <a href="#" class="w-100 text-center"><button class="btn btn-light text-gossamer-500"
+                        style="border-radius: 99px;">開始</button></a>
+            </div>
+        </div>
+        <div class="search-main-content">
+            <div class="pb-6">
+                <h2 class="text-text-950 pb-4">最近看過</h2>
+                <div class="swiper searchSwiper mb-4">
+                    <div class="swiper-wrapper">
+                        <!-- 保存蔥的方法 -->
+                        <div class="swiper-slide">
+                            <div class="card border-0 bg-pampas-100" style="border-radius: 16px;">
+                                <div class="position-relative">
+                                    <div class="img-mask"></div>
+                                    <img src="/AAPD-13-foodStudent/assets/保存蔥的方法-fe76efc4.png" class="w-100" alt="保存蔥的方法"
+                                    style="height: 164px; object-fit: cover; object-position: center; border-radius: 16px;">
+                                    <div class="position-absolute bottom-0 end-0 me-3 mb-3 d-flex align-items-center">
+                                        <i class="heart bi bi-heart me-1" id="heart1"
+                                            style="height: 24px; width: 24px;"></i>
+                                        <p class="text-white" style="line-height: 1;">2863</p>
+                                    </div>
+                                </div>
+                                <div class="card-body px-0 pb-0">
+                                    <div class="card-text">
+                                        <div class="d-flex justify-content-between align-items-center pb-1">
+                                            <p class="text-body-1 fw-700" style="line-height: 1.6;">保存蔥的方法</p>
+                                            <i class="fs-4 bookmark bi bi-bookmark" style="line-height: 1;"></i>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex pb-1">
+                                        <p class="text-body-2 text-text-600 pe-2">難度：易</p>
+                                    </div>
+                                    <div class="d-flex align-items-center">
+                                        <img class="rounded-circle me-2" src="/AAPD-13-foodStudent/assets/Avatar-3-6b1de30f.png"
+                                            alt="people-img" style="width: 28px;height: 28px;">
+                                        <p class="text-text-600 text-body-2 fw-700">blue_lady</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 夏日藜麥沙拉 -->
+                        <div class="swiper-slide">
+                            <div class="card border-0 bg-pampas-100" style="border-radius: 12px;">
+                                <div class="position-relative">
+                                    <div class="img-mask"></div>
+                                    <img src="/AAPD-13-foodStudent/assets/夏日藜麥沙拉-31924de3.png" class="card-img-top" alt="夏日藜麥沙拉"
+                                        style="height: 164px; object-fit: cover; object-position: center; border-radius: 16px;">
+                                    <div class="position-absolute bottom-0 end-0 me-3 mb-3 d-flex align-items-center">
+                                        <i class="heart bi bi-heart me-1" id="heart1"
+                                            style="height: 24px; width: 24px;"></i>
+                                        <p class="text-white" style="line-height: 1;">24</p>
+                                    </div>
+                                </div>
+                                <div class="position-absolute start-0 d-flex gap-1 mt-3 ms-3">
+                                    <div class="text-body-3 bg-gossamer-500 text-white"
+                                        style="top:16px; line-height: 1.6; border-radius:999px; padding: 2px 8px;">
+                                        30min</div>
+                                    <div class="text-body-3 bg-gossamer-500 text-white"
+                                        style="top:16px; line-height: 1.6; border-radius:999px; padding: 2px 8px;">
+                                        全素</div>
+                                </div>
+                                <div class="card-body px-0 pb-0">
+                                    <div class="card-text">
+                                        <div class="d-flex justify-content-between align-items-center pb-1">
+                                            <p class="text-body-1 fw-700" style="line-height: 1.6;">夏日藜麥沙拉</p>
+                                            <i class="fs-4 bookmark bi bi-bookmark-fill" style="line-height: 1;"></i>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex pb-1">
+                                        <p class="metrics text-body-2 text-text-600 pe-2">難度：易</p>
+                                        <p class="text-body-2 text-text-600 px-2">265 kcal</p>
+                                    </div>
+                                    <div class="d-flex align-items-center">
+                                        <img class="rounded-circle me-2" src="/AAPD-13-foodStudent/assets/Avatar-8-9bc0ce98.png"
+                                            alt="people-img" style="width: 28px;height: 28px;">
+                                        <p class="text-text-600 text-body-2 fw-700">Ruby的廚房秘方</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 滾刀塊 -->
+                        <div class="swiper-slide">
+                            <div class="card border-0 bg-pampas-100" style="border-radius: 12px;">
+                                <div class="position-relative">
+                                    <div class="img-mask"></div>
+                                    <img src="/AAPD-13-foodStudent/assets/滾刀塊-a763e2cd.png" class="card-img-top" alt="滾刀塊"
+                                        style="height: 164px; object-fit: cover; object-position: center; border-radius: 16px;">
+                                    <div class="position-absolute bottom-0 end-0 me-3 mb-3 d-flex align-items-center">
+                                        <i class="heart bi bi-heart me-1" id="heart1"
+                                            style="height: 24px; width: 24px;"></i>
+                                        <p class="text-white" style="line-height: 1;">363</p>
+                                    </div>
+                                </div>
+                                <div class="card-body px-0 pb-0">
+                                    <div class="card-text">
+                                        <div class="d-flex justify-content-between align-items-center pb-1">
+                                            <p class="text-body-1 fw-700" style="line-height: 1.6;">滾刀塊</p>
+                                            <i class="fs-4 bookmark bi bi-bookmark" style="line-height: 1;"></i>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex pb-1">
+                                        <p class="text-body-2 text-text-600 pe-2">難度：易</p>
+                                    </div>
+                                    <div class="d-flex align-items-center">
+                                        <img class="rounded-circle me-2" src="/AAPD-13-foodStudent/assets/Avatar-5-d3d4e924.png"
+                                            alt="people-img" style="width: 28px;height: 28px;">
+                                        <p class="text-text-600 text-body-2 fw-700">Justin 廚藝教室</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cooking">
+                <h2 class="text-text-950 pb-4">熱門食譜類別</h2>
+                <div class="swiper cookingSwiper mb-4">
+                    <div class="swiper-wrapper">
+                        <!-- 地中海 -->
+                        <div class="swiper-slide">
+                            <img src="/AAPD-13-foodStudent/assets/地中海-200b3a0e.png" alt="料理類別">
+                        </div>
+                        <!-- 越式 -->
+                        <div class="swiper-slide">
+                            <img src="/AAPD-13-foodStudent/assets/越式-fd57a2d9.png" alt="料理類別">
+                        </div>
+                        <!-- 台菜 -->
+                        <div class="swiper-slide">
+                            <img src="/AAPD-13-foodStudent/assets/TW-84cb6f56.png" alt="料理類別">
+                        </div>
+                        <!-- 台菜 -->
+                        <div class="swiper-slide">
+                            <img src="/AAPD-13-foodStudent/assets/TW-84cb6f56.png" alt="料理類別">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <footer class="footer fixed-bottom bg-pampas-100 d-flex justify-content-around"
+        style="max-width: 390px; margin: 0 auto; padding-bottom: 34px; border-top: 0.5px solid #D1D1D1">
+        <a href="index.html" class="d-flex flex-column gap-1">
+            <span class="majesticons--home-line mt-2"></span>
+            <p class="text-body-4 text-text-400 text-center">首頁</p>
+        </a>
+        <a href="search.html" class="d-flex flex-column gap-1">
+            <span class="majesticons--search mt-2 active"></span>
+            <p class="text-body-4 text-text-400 text-center active">探索</p>
+        </a>
+        <a href="favorites.html" class="d-flex flex-column gap-1">
+            <span class="material-symbols--bookmark-outline mt-2"></span>
+            <p class="text-body-4 text-text-400 text-center">收藏</p>
+        </a>
+        <a href="homepage.html" class="d-flex flex-column gap-1">
+            <span class="ion--person-circle-outline mt-2"></span>
+            <p class="text-body-4 text-text-400 text-center">我的</p>
+        </a>
+    </footer>
+
+    
+</body>
+
+</html>

@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="zh-hant">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的收藏</title>
+    
+  <script type="module" crossorigin src="/AAPD-13-foodStudent/assets/main-81a095cc.js"></script>
+  <link rel="stylesheet" href="/AAPD-13-foodStudent/assets/main-7ec42a8f.css">
+</head>
+
+<body>
+
+    <div class="container-self-full bg-pampas-100 pt-12">
+        <div class="favorites-header">
+            <div class="position-relative" style="padding: 9px 0;">
+                <a href="javascript:history.back();"><i
+                        class="fs-2 bi bi-chevron-left position-absolute top-50 start-0 translate-middle-y ms-2"></i></a>
+                <h4 class="position-absolute top-50 start-50 translate-middle">我的收藏</h4>
+                <a href="#"><i
+                        class="fs-2 bi bi-plus-square position-absolute top-50 end-0 translate-middle-y me-2"></i></a>
+            </div>
+            <div class="pt-4 pb-8 ps-4">
+                <h4 class="mb-2">追蹤名單</h4>
+                <div class="swiper favoritesSwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="bookUser.html">
+                                <div class="d-flex flex-column align-items-center">
+                                    <img class="rounded-circle border border-gossamer-500"
+                                        src="/AAPD-13-foodStudent/assets/Avatar-5-d3d4e924.png" width="72" height="72"
+                                        style="padding: 5px; margin-bottom: 2px;">
+                                    <p class="text-body-4 text-text-950">Steven</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="d-flex flex-column align-items-center">
+                                <img class="rounded-circle border border-gossamer-500"
+                                    src="/AAPD-13-foodStudent/assets/Avatar-2-2580b4cc.png" width="72" height="72"
+                                    style="padding: 5px; margin-bottom: 2px;">
+                                <p class="text-body-4 text-text-950">FitSabrina</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="d-flex flex-column align-items-center">
+                                <img class="rounded-circle border border-gossamer-500"
+                                    src="/AAPD-13-foodStudent/assets/Avatar-3-6b1de30f.png" width="72" height="72"
+                                    style="padding: 5px; margin-bottom: 2px;">
+                                <p class="text-body-4 text-text-950">blue_lady</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="d-flex flex-column align-items-center">
+                                <img class="rounded-circle border border-gossamer-500"
+                                    src="/AAPD-13-foodStudent/assets/Avatar-4-f99b24b6.png" width="72" height="72"
+                                    style="padding: 5px; margin-bottom: 2px;">
+                                <p class="text-body-4 text-text-950"
+                                    style="width: 60px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+                                    LizHealthlymeal</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="d-flex flex-column align-items-center">
+                                <img class="rounded-circle border border-gossamer-500"
+                                    src="/AAPD-13-foodStudent/assets/Avatar-1-66eb2340.png" width="72" height="72"
+                                    style="padding: 5px; margin-bottom: 2px;">
+                                <p class="text-body-4 text-text-950">Ruby.cook</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="favorites-content mb-30">
+            <div class="main-background">
+                <div class="list-group flex-row mb-6" id="list-tab" role="tablist">
+                    <a class="list-group-item list-group-item-action active" id="recipe-list" data-bs-toggle="list"
+                        href="#recipe" role="tab" aria-controls="recipe">食譜</a>
+                    <a class="list-group-item list-group-item-action m-0" id="tutorial-list" data-bs-toggle="list"
+                        href="#tutorial" role="tab" aria-controls="tutorial">教學</a>
+                </div>
+                <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="recipe" role="tabpanel" aria-labelledby="recipe-list">
+                        <div class="container">
+                            <div class="row position-relative">
+                                <!-- 讀取圈圈 -->
+                                <div class="loading-wrapper">
+                                    <div class="loading-circle"></div>
+                                </div>
+                                <div class="col-6 ps-0 pe-2 hidden">
+                                    <!-- 夏日輕食 -->
+                                    <div class="card border-0 mb-6" style="border-radius: 12px;">
+                                        <a href="favoritesfolder.html">
+                                            <ul class="list-unstyled d-flex d-grid gap-1px flex-wrap mb-4">
+                                                <li class="foodBookPic radius-top-start"
+                                                    style="background-image: url(/AAPD-13-foodStudent/assets/燕麥核桃香蕉鬆餅-b95fa2c4.png);background-position: center;background-size: cover;">
+                                                </li>
+                                                <li class="foodBookPic radius-top-end"
+                                                    style="background-image: url(/AAPD-13-foodStudent/assets/日式野菜溫沙拉-ace10a0e.png);background-position: center;background-size: cover;">
+                                                </li>
+                                                <li class="foodBookPic radius-bottom-start"
+                                                    style="background-image: url(/AAPD-13-foodStudent/assets/夏日藜麥沙拉-31924de3.png);background-position: center;background-size: cover;">
+                                                </li>
+                                                <li class="foodBookPic radius-bottom-end"
+                                                    style="background-image: url(/AAPD-13-foodStudent/assets/草莓優格果昔-0689fd4c.png);background-position: center;background-size: cover;">
+                                                </li>
+                                            </ul>
+                                        </a>
+                                        <p class="text-body-1 text-text-950 fw-700">夏日輕食</p>
+                                        <p class="text-body-2 text-text-600">4 篇收藏</p>
+                                    </div>
+                                </div>
+                                <div class="col-6 ps-2 pe-0 hidden">
+                                    <!-- 三明治 -->
+                                    <ul class="list-unstyled d-flex d-grid gap-1px flex-wrap mb-4">
+                                        <li class="foodBookPic radius-top-start"
+                                            style="background-image: url(/AAPD-13-foodStudent/assets/三明治-c6d6e889.png);background-position: bottom;background-size: cover;">
+                                        </li>
+                                        <li class="foodBookPic bg-pampas-100 radius-top-end"></li>
+                                        <li class="foodBookPic bg-pampas-100 radius-bottom-start"></li>
+                                        <li class="foodBookPic bg-pampas-100 radius-bottom-end"></li>
+                                    </ul>
+                                    <p class="text-body-1 text-text-950 fw-700">三明治</p>
+                                    <p class="text-body-2 text-text-600">1 篇收藏</p>
+                                </div>
+                                <div class="col-6 ps-0 pe-2 hidden">
+                                    <!-- 綠橄欖鷹嘴豆泥 -->
+                                    <div class="card border-0" style="border-radius: 12px;">
+                                        <div class="position-relative">
+                                            <div class="img-mask"></div>
+                                            <img src="/AAPD-13-foodStudent/assets/綠橄欖鷹嘴豆泥-45e13096.png" class="card-img-top"
+                                                alt="綠橄欖鷹嘴豆泥"
+                                                style="height: 164px; object-fit: cover; object-position: center; border-radius: 16px;">
+                                            <div
+                                                class="position-absolute bottom-0 end-0 me-3 mb-3 d-flex align-items-center">
+                                                <i class="heart bi bi-heart me-1" id="heart1"
+                                                    style="height: 24px; width: 24px;"></i>
+                                                <p class="text-white" style="line-height: 1;">821</p>
+                                            </div>
+                                        </div>
+                                        <div class="position-absolute start-0 d-flex gap-1 mt-3 ms-3">
+                                            <div class="text-body-3 bg-gossamer-500 text-white"
+                                                style="top:16px; line-height: 1.6; border-radius:999px; padding: 2px 8px;">
+                                                15min</div>
+                                        </div>
+                                        <div class="card-body px-0 pb-0">
+                                            <div class="card-text">
+                                                <div class="d-flex justify-content-between align-items-center pb-1">
+                                                    <p class="text-body-1 fw-700" style="line-height: 1.6;">綠橄欖鷹嘴豆泥</p>
+                                                    <i class="fs-4 bookmark bi bi-bookmark-fill"
+                                                        style="line-height: 1;"></i>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex pb-1">
+                                                <p class="metrics text-body-2 text-text-600 pe-2">難度：中</p>
+                                                <p class="text-body-2 text-text-600 px-2">150 kcal</p>
+                                            </div>
+                                            <div class="d-flex align-items-center">
+                                                <img class="rounded-circle me-2"
+                                                    src="/AAPD-13-foodStudent/assets/Avatar-6-1d30d3ea.png" alt="people-img"
+                                                    style="width: 28px;height: 28px;">
+                                                <p class="text-text-600 text-body-2 fw-700">美味匠人</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 ps-2 pe-0 hidden">
+                                    <!-- 肉末蘑菇奶油燉飯 -->
+                                    <div class="card border-0" style="border-radius: 12px;">
+                                        <div class="position-relative">
+                                            <div class="img-mask"></div>
+                                            <img src="/AAPD-13-foodStudent/assets/肉末蘑菇奶油燉飯-95db6ced.png" class="card-img-top"
+                                                alt="肉末蘑菇奶油燉飯"
+                                                style="height: 164px; object-fit: cover; object-position: center; border-radius: 16px;">
+                                            <div
+                                                class="position-absolute bottom-0 end-0 me-3 mb-3 d-flex align-items-center">
+                                                <i class="heart bi bi-heart me-1" id="heart1"
+                                                    style="height: 24px; width: 24px;"></i>
+                                                <p class="text-white" style="line-height: 1;">254</p>
+                                            </div>
+                                        </div>
+                                        <div class="position-absolute start-0 d-flex gap-1 mt-3 ms-3">
+                                            <div class="text-body-3 bg-gossamer-500 text-white"
+                                                style="top:16px; line-height: 1.6; border-radius:999px; padding: 2px 8px;">
+                                                50min</div>
+                                        </div>
+                                        <div class="card-body px-0 pb-0">
+                                            <div class="card-text">
+                                                <div class="d-flex justify-content-between align-items-center pb-1">
+                                                    <p class="text-body-1 fw-700" style="line-height: 1.6;">肉末蘑菇奶油燉飯</p>
+                                                    <i class="fs-4 bookmark bi bi-bookmark-fill"
+                                                        style="line-height: 1;"></i>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex pb-1">
+                                                <p class="metrics text-body-2 text-text-600 pe-2">難度：中高</p>
+                                                <p class="text-body-2 text-text-600 px-2">445 kcal</p>
+                                            </div>
+                                            <div class="d-flex align-items-center">
+                                                <img class="rounded-circle me-2"
+                                                    src="/AAPD-13-foodStudent/assets/Avatar-6-1d30d3ea.png" alt="people-img"
+                                                    style="width: 28px;height: 28px;">
+                                                <p class="text-text-600 text-body-2 fw-700">美味匠人</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="tutorial" role="tabpanel" aria-labelledby="tutorial-list">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-6 ps-0 pe-2">
+                                    <!-- 切段 -->
+                                    <div class="card border-0 mb-6" style="border-radius: 12px;">
+                                        <div class="position-relative">
+                                            <div class="img-mask"></div>
+                                            <img src="/AAPD-13-foodStudent/assets/切段-7b7d21ef.png" class="card-img-top" alt="切段"
+                                                style="height: 164px; object-fit: cover; object-position: center; border-radius: 16px;">
+                                            <div
+                                                class="position-absolute bottom-0 end-0 me-3 mb-3 d-flex align-items-center">
+                                                <i class="heart bi bi-heart me-1" id="heart1"
+                                                    style="height: 24px; width: 24px;"></i>
+                                                <p class="text-white" style="line-height: 1;">221</p>
+                                            </div>
+                                        </div>
+                                        <div class="card-body px-0 pb-0">
+                                            <div class="card-text">
+                                                <div class="d-flex justify-content-between align-items-center pb-1">
+                                                    <p class="text-body-1 fw-700" style="line-height: 1.6;">切段</p>
+                                                    <i class="fs-4 bookmark bi bi-bookmark-fill"
+                                                        style="line-height: 1;"></i>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex pb-1">
+                                                <p class="text-body-2 text-text-600 pe-2">難度：易</p>
+                                            </div>
+                                            <div class="d-flex align-items-center">
+                                                <img class="rounded-circle me-2"
+                                                    src="/AAPD-13-foodStudent/assets/Avatar-5-d3d4e924.png" alt="people-img"
+                                                    style="width: 28px;height: 28px;">
+                                                <p class="text-text-600 text-body-2 fw-700">Justin 廚藝教室</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 ps-2 pe-0">
+                                    <!-- 刀子介紹與握法 -->
+                                    <div class="card border-0 mb-6" style="border-radius: 12px;">
+                                        <div class="position-relative">
+                                            <div class="img-mask"></div>
+                                            <img src="/AAPD-13-foodStudent/assets/刀子介紹與握法-2762935e.png" class="card-img-top"
+                                                alt="刀子介紹與握法"
+                                                style="height: 164px; object-fit: cover; object-position: center; border-radius: 16px;">
+                                            <div
+                                                class="position-absolute bottom-0 end-0 me-3 mb-3 d-flex align-items-center">
+                                                <i class="heart bi bi-heart me-1" id="heart1"
+                                                    style="height: 24px; width: 24px;"></i>
+                                                <p class="text-white" style="line-height: 1;">252</p>
+                                            </div>
+                                        </div>
+                                        <div class="card-body px-0 pb-0">
+                                            <div class="card-text">
+                                                <div class="d-flex justify-content-between align-items-center pb-1">
+                                                    <p class="text-body-1 fw-700" style="line-height: 1.6;">刀子介紹與握法</p>
+                                                    <i class="fs-4 bookmark bi bi-bookmark-fill"
+                                                        style="line-height: 1;"></i>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex pb-1">
+                                                <p class="text-body-2 text-text-600 pe-2">難度：易</p>
+                                            </div>
+                                            <div class="d-flex align-items-center">
+                                                <img class="rounded-circle me-2"
+                                                    src="/AAPD-13-foodStudent/assets/Avatar-6-1d30d3ea.png" alt="people-img"
+                                                    style="width: 28px;height: 28px;">
+                                                <p class="text-text-600 text-body-2 fw-700">美味匠人</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 ps-0 pe-2">
+                                    <!-- 保存蔥的方法 -->
+                                    <div class="card border-0" style="border-radius: 12px;">
+                                        <div class="position-relative">
+                                            <div class="img-mask"></div>
+                                            <img src="/AAPD-13-foodStudent/assets/保存蔥的方法-fe76efc4.png" class="card-img-top"
+                                                alt="保存蔥的方法"
+                                                style="height: 164px; object-fit: cover; object-position: center; border-radius: 16px;">
+                                            <div
+                                                class="position-absolute bottom-0 end-0 me-3 mb-3 d-flex align-items-center">
+                                                <i class="heart bi bi-heart me-1" id="heart1"
+                                                    style="height: 24px; width: 24px;"></i>
+                                                <p class="text-white" style="line-height: 1;">2863</p>
+                                            </div>
+                                        </div>
+                                        <div class="card-body px-0 pb-0">
+                                            <div class="card-text">
+                                                <div class="d-flex justify-content-between align-items-center pb-1">
+                                                    <p class="text-body-1 fw-700" style="line-height: 1.6;">保存蔥的方法</p>
+                                                    <i class="fs-4 bookmark bi bi-bookmark-fill"
+                                                        style="line-height: 1;"></i>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex pb-1">
+                                                <p class="text-body-2 text-text-600 pe-2">難度：易</p>
+                                            </div>
+                                            <div class="d-flex align-items-center">
+                                                <img class="rounded-circle me-2"
+                                                    src="/AAPD-13-foodStudent/assets/Avatar-3-6b1de30f.png" alt="people-img"
+                                                    style="width: 28px;height: 28px;">
+                                                <p class="text-text-600 text-body-2 fw-700">blue_lady</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 ps-2 pe-0">
+                                    <!-- 滾刀塊 -->
+                                    <a href="teach.html">
+                                        <div class="card border-0" style="border-radius: 12px;">
+                                            <div class="position-relative">
+                                                <div class="img-mask"></div>
+                                                <img src="/AAPD-13-foodStudent/assets/滾刀塊-a763e2cd.png" class="card-img-top"
+                                                    alt="滾刀塊"
+                                                    style="height: 164px; object-fit: cover; object-position: center; border-radius: 16px;">
+                                                <div
+                                                    class="position-absolute bottom-0 end-0 me-3 mb-3 d-flex align-items-center">
+                                                    <i class="heart bi bi-heart me-1" id="heart1"
+                                                        style="height: 24px; width: 24px;"></i>
+                                                    <p class="text-white" style="line-height: 1;">363</p>
+                                                </div>
+                                            </div>
+                                            <div class="card-body px-0 pb-0">
+                                                <div class="card-text">
+                                                    <div class="d-flex justify-content-between align-items-center pb-1">
+                                                        <p class="text-body-1 fw-700" style="line-height: 1.6;">滾刀塊
+                                                        </p>
+                                                        <i class="fs-4 bookmark bi bi-bookmark-fill"
+                                                            style="line-height: 1;"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex pb-1">
+                                                    <p class="metrics text-body-2 text-text-600 pe-2">難度：易</p>
+                                                </div>
+                                                <div class="d-flex align-items-center">
+                                                    <img class="rounded-circle me-2"
+                                                        src="/AAPD-13-foodStudent/assets/Avatar-5-d3d4e924.png" alt="people-img"
+                                                        style="width: 28px;height: 28px;">
+                                                    <p class="text-text-600 text-body-2 fw-700">Justin 廚藝教室</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    <footer class="footer fixed-bottom bg-pampas-100 d-flex justify-content-around"
+        style="max-width: 390px; margin: 0 auto; padding-bottom: 34px; border-top: 0.5px solid #D1D1D1">
+        <a href="index.html" class="d-flex flex-column gap-1">
+            <span class="majesticons--home-line mt-2 "></span>
+            <p class="text-body-4 text-text-400 text-center">首頁</p>
+        </a>
+        <a href="search.html" class="d-flex flex-column gap-1">
+            <span class="majesticons--search-line mt-2"></span>
+            <p class="text-body-4 text-text-400 text-center">探索</p>
+        </a>
+        <a href="favorites.html" class="d-flex flex-column gap-1">
+            <span class="material-symbols--bookmark mt-2 active"></span>
+            <p class="text-body-4 text-text-400 text-center active">收藏</p>
+        </a>
+        <a href="homepage.html" class="d-flex flex-column gap-1">
+            <span class="ion--person-circle-outline mt-2"></span>
+            <p class="text-body-4 text-text-400 text-center">我的</p>
+        </a>
+    </footer>
+
+    
+</body>
+
+</html>
