@@ -32,6 +32,10 @@ img {
     font-size: 18px !important;
 }
 
+.bi::before,[class*=" bi-"]::before,[class^=bi-]::before {
+    font-weight: 600!important;
+}
+
 // *,*::after,*::before{
 //     outline: 1px solid red;
 // }
