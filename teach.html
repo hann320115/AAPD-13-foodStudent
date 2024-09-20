@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>教學</title>
     
-  <script type="module" crossorigin src="/AAPD-13-foodStudent/assets/main-210c9b9c.js"></script>
-  <link rel="stylesheet" href="/AAPD-13-foodStudent/assets/main-bc3aaef4.css">
+  <script type="module" crossorigin src="/AAPD-13-foodStudent/assets/main-d77dce46.js"></script>
+  <link rel="stylesheet" href="/AAPD-13-foodStudent/assets/main-106b5c73.css">
 </head>
 <body>
     <header class="container-self-full">
@@ -66,8 +66,8 @@
                     <h2 class="text-center mb-6">滾刀塊</h2>
                     <div class="d-flex justify-content-center mb-6">
                         <p class="me-6">難度：易</p>
-                        <div class="badge border border-outline-gossamer-500 rounded-pill text-body-2 text-gossamer-500"><i class="bi bi-shield-fill-check me-1"></i>尚未學習
-                        </div>
+                        <button id="learnButton2" class="badge border border-outline-gossamer-500 rounded-pill text-body-2 text-gossamer-500"><i class="bi bi-shield-fill-check me-1"></i>尚未學習
+                        </button>
                     </div>
                     <div class="d-flex align-items-center">
                         <div class="d-flex align-items-center" id="profile">
@@ -235,6 +235,9 @@
         navbar.style.top = '';
     }
     });
+    document.getElementById('learnButton2').addEventListener('click', function() {
+    this.classList.toggle('active');
+});
     </script>
     
 </body>

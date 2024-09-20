@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>留言頁面</title>
     
-  <script type="module" crossorigin src="/AAPD-13-foodStudent/assets/main-210c9b9c.js"></script>
-  <link rel="stylesheet" href="/AAPD-13-foodStudent/assets/main-bc3aaef4.css">
+  <script type="module" crossorigin src="/AAPD-13-foodStudent/assets/main-d77dce46.js"></script>
+  <link rel="stylesheet" href="/AAPD-13-foodStudent/assets/main-106b5c73.css">
 </head>
 <body>
     <header class="container-self-full mb-4">
         <div class="d-flex">
-            <button class="btn btn-transparent p-0" onclick="history.back()"><i class="bi bi-chevron-left fs-3"></i></button>
+            <button class="ms-3 btn btn-transparent p-0" onclick="history.back()"><i class="bi bi-chevron-left fs-3"></i></button>
             <div class="text-body-5 fw-700 align-self-center ms-32">所有留言</div>
         </div>
     </header>
@@ -26,7 +26,7 @@
             </div>
             <p class="mb-1 ms-11">沒想到我也可以做出這道菜！比想像中的簡單呢！</p>
             <!-- 輪播 -->
-            <div class="swiper messageSwiper ms-11">
+            <div class="swiper messageSwiper ms-11 mb-3">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <img class="border-radius-12px" src="/AAPD-13-foodStudent/assets/comment-img-01-0207eaac.png" alt="pic">
@@ -54,7 +54,7 @@
         <!--    輸入框    -->
         <form id="messageForm" class="d-flex mb-22">
             <button class="btn btn-transparent border-0 border"><i class="bi bi-camera fz-2"></i></button>
-            <input type="text" class="form-control input-gray" id="message" placeholder="發佈留言">
+            <input type="text" class="form-control input-gray border-radius-12px" id="message" placeholder="發佈留言">
             <button type="submit" class="btn btn-transparent"><i class="bi bi-send-fill"></i></button>
         </form>
     </div>
@@ -160,6 +160,15 @@
             messageInput.value = "";
         }
     });
+    const inputField = document.getElementById('message');
+
+inputField.addEventListener('focus', function() {
+    this.placeholder = '輸入文字中';
+});
+
+inputField.addEventListener('blur', function() {
+    this.placeholder = '發佈留言';
+});
 </script>
 
 
