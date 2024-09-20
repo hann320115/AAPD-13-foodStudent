@@ -84,15 +84,15 @@
 .lh16{
     line-height: 1.6 !important;
 }
-.btn-radius-100{
-    border-radius: 100px;
+.btn-radius-100px{
+    border-radius: 100px !important;
 }
 // 愛心
 .heart,.bookmark {
     cursor: pointer;
 }
 .bi-heart-fill,.bi-bookmark-fill {
-    color: red; /* 實心愛心內部紅色 */
+    color: #EE5D54; /* 實心愛心內部紅色 */
 }
 .bi-heart{
     color: #fff;
@@ -117,4 +117,12 @@ li{
     height: 36px;
     margin-top: 10px;
     margin-left: 10px;
+}
+
+.cookBook-information{
+    .active {
+        background-color: #28a745; // 替換成你想要的色值
+        color: #fff !important;
+        border-color: #28a745;
+    }
 }

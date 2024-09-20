@@ -1,10 +1,13 @@
 // 預設輸入框背景色為灰色
 .input-gray {
-    background-color: #e0e0e0;
+    background-color: #7676801F !important;
 }
 // 當輸入框獲得焦點時變為白色
 .input-gray:focus {
-    background-color: #ffffff;
+    background-color: #ffffff !important;
+}
+.border-radius-12px{
+    border-radius: 12px !important;
 }
 #messageForm {
     position: fixed;
