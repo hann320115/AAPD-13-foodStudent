@@ -61,6 +61,10 @@
 .gap-1px{
     gap: 1px;
 }
-.A{
-
+.track{
+    .active {
+        background-color: #F3F1EC !important; // 替換成你想要的色值
+        color: #5D5D5D !important;
+        border-color: #DDD8CB;
+    }
 }
