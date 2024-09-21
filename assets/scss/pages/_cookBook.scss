@@ -136,8 +136,20 @@ li{
 
 .cookBook-information{
     .active {
-        background-color: #28a745; // 替換成你想要的色值
+        background-color: #32967D; // 替換成你想要的色值
         color: #fff !important;
         border-color: #28a745;
     }
+}
+// 設機師要求修改
+.cookBook-switch{
+    .form-check-input:checked {
+        background-color: #32967D !important;
+        border-color: #FFFFFF !important;
+    }
+}
+.learnBtn{
+    color: #32967D;
+    border:1px solid #32967D;
+    background: white;
 }
