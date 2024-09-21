@@ -277,8 +277,6 @@ document.getElementById('learnButton').addEventListener('click', function() {
     this.classList.toggle('active');
 });
 // 追蹤
-document.getElementById('trackButton').addEventListener('click', function() {
-    this.classList.toggle('active');
-});
+
 
 
