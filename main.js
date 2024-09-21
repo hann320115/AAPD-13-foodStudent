@@ -271,3 +271,12 @@ document.addEventListener('scroll', function () {
         navbar.style.top = '';
     }
 });
+
+// 尚未學習
+document.getElementById('learnButton').addEventListener('click', function() {
+    this.classList.toggle('active');
+});
+// 追蹤
+
+
+

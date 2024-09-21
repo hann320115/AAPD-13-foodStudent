@@ -22,10 +22,24 @@
             bottom: 0;
             left: 0;
             width: 100%;
-            height: 3px; /* 調整高度 */
-            background: #32967D; /* 調整顏色 */
+            height: 3px;
+            background: #32967D; 
             box-shadow: 0 3px 0 0 #32967D inset;
         }
+    }
+    .overlay{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        border-radius: 16px;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 56%, rgba(0, 0, 0, 0.3325) 100%);
+        z-index: 1; 
+    }
+    .heartNumber,.badge-min{
+        z-index: 2;
     }
 }
 .border-top-left-radius{
@@ -61,6 +75,10 @@
 .gap-1px{
     gap: 1px;
 }
-.A{
-
+.track{
+    .active {
+        background-color: #F3F1EC !important; 
+        color: #5D5D5D !important;
+        border-color: #DDD8CB;
+    }
 }

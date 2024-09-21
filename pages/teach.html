@@ -64,8 +64,8 @@
                     <h2 class="text-center mb-6">滾刀塊</h2>
                     <div class="d-flex justify-content-center mb-6">
                         <p class="me-6">難度：易</p>
-                        <div class="badge border border-outline-gossamer-500 rounded-pill text-body-2 text-gossamer-500"><i class="bi bi-shield-fill-check me-1"></i>尚未學習
-                        </div>
+                        <button id="learnButton2" class="learnBtn btn rounded-pill text-body-2"><i class="bi bi-shield-fill-check me-1"></i>尚未學習
+                        </button>
                     </div>
                     <div class="d-flex align-items-center">
                         <div class="d-flex align-items-center" id="profile">
@@ -100,7 +100,8 @@
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <div class="position-relative border-radius-16px knifeSkills-img mb-4" style="background-image: url(../assets/images/card-食譜教學/切花.png);background-size: cover;background-position: center;">
-                            <div class="position-absolute bottom-0 end-0 d-flex me-3 mb-4">
+                            <div class="overlay"></div>    
+                            <div class="heartNumber position-absolute bottom-0 end-0 d-flex me-3 mb-4">
                                 <i class="heart bi bi-heart me-1" id="heart1"></i>
                                 <p class="text-white">1183</p>
                             </div>
@@ -111,7 +112,7 @@
                                     <p class="fw-700">切花</p>
                                     <i class="bookmark bi bi-bookmark ms-auto" id="bookmark1"></i>
                                 </div>
-                                <p class="text-text-600 text-body-2">難度：易</p>
+                                <p class="text-text-600 text-body-2 mb-1">難度：易</p>
                                 <div class="d-flex">
                                     <img class="rounded-circle me-2" src="../assets/images/Avatar/Avatar-5.png" alt="people-img" style="width: 28px;height: 28px;">
                                     <p class="text-text-600 text-body-2 fw-700">Justin 廚藝教室</p>
@@ -121,7 +122,8 @@
                     </div>
                     <div class="swiper-slide">
                         <div class="position-relative border-radius-16px knifeSkills-img mb-4" style="background-image: url(../assets/images/card-食譜教學/刀子介紹與握法.png);background-size: cover;background-position: center;">
-                                <div class="position-absolute bottom-0 end-0 d-flex me-3 mb-4">
+                            <div class="overlay"></div>  
+                            <div class="heartNumber position-absolute bottom-0 end-0 d-flex me-3 mb-4">
                                 <i class="heart bi bi-heart me-1" id="heart2"></i>
                                 <p class="text-white">221</p>
                             </div>
@@ -132,7 +134,7 @@
                                     <p class="fw-700">刀子介紹與握法</p>
                                     <i class="bookmark bi bi-bookmark ms-auto" id="bookmark2"></i>
                                 </div>
-                                <p class="text-text-600 text-body-2">難度：易</p>
+                                <p class="text-text-600 text-body-2 mb-1">難度：易</p>
                                 <div class="d-flex">
                                     <img class="rounded-circle me-2" src="../assets/images/Avatar/Avatar-5.png" alt="people-img" style="width: 28px;height: 28px;">
                                     <p class="text-text-600 text-body-2 fw-700">Justin 廚藝教室</p>
@@ -142,7 +144,8 @@
                     </div>
                     <div class="swiper-slide">
                         <div class="position-relative border-radius-16px knifeSkills-img mb-4" style="background-image: url(../assets/images/card-食譜教學/切段.png);background-size: cover;background-position: center;">
-                            <div class="position-absolute bottom-0 end-0 d-flex me-3 mb-4">
+                            <div class="overlay"></div>  
+                            <div class="heartNumber position-absolute bottom-0 end-0 d-flex me-3 mb-4">
                                 <i class="heart bi bi-heart me-1" id="heart3"></i>
                                 <p class="text-white">363</p>
                             </div>
@@ -153,7 +156,7 @@
                                     <p class="fw-700">切斷</p>
                                     <i class="bookmark bi bi-bookmark ms-auto" id="bookmark3"></i>
                                 </div>
-                                <p class="text-text-600 text-body-2">難度：易</p>
+                                <p class="text-text-600 text-body-2 mb-1">難度：易</p>
                                 <div class="d-flex">
                                     <img class="rounded-circle me-2" src="../assets/images/Avatar/Avatar-5.png" alt="people-img" style="width: 28px;height: 28px;">
                                     <p class="text-text-600 text-body-2 fw-700">Justin 廚藝教室</p>
@@ -233,6 +236,9 @@
         navbar.style.top = '';
     }
     });
+    document.getElementById('learnButton2').addEventListener('click', function() {
+    this.classList.toggle('active');
+});
     </script>
     <script type="module" src="../main.js"></script>
 </body>

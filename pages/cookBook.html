@@ -62,8 +62,8 @@
                             <li>〡</li>
                             <li>難度：易</li>
                         </ul>
-                        <div class="badge border border-outline-gossamer-500 rounded-pill text-body-2 text-gossamer-500"><i class="bi bi-shield-fill-check me-1"></i>尚未學習
-                        </div>
+                        <button id="learnButton" class="learnBtn btn rounded-pill text-body-2"><i class="bi bi-shield-fill-check me-1"></i>尚未學習
+                        </button>
                     </div>
                     <div class="d-flex align-items-center">
                         <div class="d-flex align-items-center" id="profile">
@@ -147,7 +147,7 @@
                             <button id="increase" class="btn btn-gossamer-100"><i class="bi bi-plus-lg"></i></button>
                         </div>
                     </li>
-                    <li class="d-flex">
+                    <li class="cookBook-switch d-flex">
                         <p class="form-check-label text-gossamer-500" for="unit">公制單位</p>
                         <div class="form-check form-switch ms-auto">
                             <input class="form-check-input" type="checkbox" id="unit">
@@ -222,8 +222,9 @@
                 <div class="swiper addTeaching">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <div class="position-relative border-radius-16px addTeaching-img mb-4" style="background-image: url(../assets/images/card-食譜教學/滾刀塊.png);background-size: cover;background-position: center;">
-                                <div class="position-absolute bottom-0 end-0 d-flex me-3 mb-4">
+                            <div class="position-relative border-radius-16px addTeaching-img mb-4 overflow-hidden" style="background-image: url(../assets/images/card-食譜教學/滾刀塊.png);background-size: cover;background-position: center;">
+                                <div class="overlay"></div>
+                                <div class="heartNumber position-absolute bottom-0 end-0 d-flex me-3 mb-4">
                                     <i class="heart bi bi-heart me-1" id="heart1"></i>
                                     <p class="text-white">363</p>
                                 </div>
@@ -234,7 +235,7 @@
                                         <p class="fw-700">滾刀塊</p>
                                         <i class="bookmark bi bi-bookmark ms-auto" id="bookmark1"></i>
                                     </div>
-                                    <p class="text-text-600 text-body-2">難度：易</p>
+                                    <p class="text-text-600 text-body-2 mb-1">難度：易</p>
                                     <div class="d-flex">
                                         <img class="rounded-circle me-2" src="../assets/images/Avatar/Avatar-5.png" alt="people-img" style="width: 28px;height: 28px;">
                                         <p class="text-text-600 text-body-2 fw-700">Justin 廚藝教室</p>
@@ -243,8 +244,9 @@
                             </ul>
                         </div>
                         <div class="swiper-slide">
-                            <div class="position-relative border-radius-16px addTeaching-img mb-4" style="background-image: url(../assets/images/card-食譜教學/切花.png);background-size: cover;background-position: center;">
-                                <div class="position-absolute bottom-0 end-0 d-flex me-3 mb-4">
+                            <div class="position-relative border-radius-16px addTeaching-img mb-4 overflow-hidden" style="background-image: url(../assets/images/card-食譜教學/切花.png);background-size: cover;background-position: center;">
+                                <div class="overlay"></div>
+                                <div class="heartNumber position-absolute bottom-0 end-0 d-flex me-3 mb-4">
                                     <i class="heart bi bi-heart me-1" id="heart2"></i>
                                     <p class="text-white">1183</p>
                                 </div>
@@ -255,7 +257,7 @@
                                         <p class="fw-700">切花</p>
                                         <i class="bookmark bi bi-bookmark ms-auto" id="bookmark2"></i>
                                     </div>
-                                    <p class="text-text-600 text-body-2">難度：易</p>
+                                    <p class="text-text-600 text-body-2 mb-1">難度：易</p>
                                     <div class="d-flex">
                                         <img class="rounded-circle me-2" src="../assets/images/Avatar/Avatar-5.png" alt="people-img" style="width: 28px;height: 28px;">
                                         <p class="text-text-600 text-body-2 fw-700">Justin 廚藝教室</p>
@@ -264,8 +266,9 @@
                             </ul>
                         </div>
                         <div class="swiper-slide">
-                            <div class="position-relative border-radius-16px addTeaching-img mb-4" style="background-image: url(../assets/images/card-食譜教學/切段.png);background-size: cover;background-position: center;">
-                                <div class="position-absolute bottom-0 end-0 d-flex me-3 mb-4">
+                            <div class="position-relative border-radius-16px addTeaching-img mb-4 overflow-hidden" style="background-image: url(../assets/images/card-食譜教學/切段.png);background-size: cover;background-position: center;">
+                                <div class="overlay"></div>
+                                <div class="heartNumber position-absolute bottom-0 end-0 d-flex me-3 mb-4">
                                     <i class="heart bi bi-heart me-1" id="heart3"></i>
                                     <p class="text-white">363</p>
                                 </div>
@@ -276,7 +279,7 @@
                                         <p class="fw-700">切斷</p>
                                         <i class="bookmark bi bi-bookmark ms-auto" id="bookmark3"></i>
                                     </div>
-                                    <p class="text-text-600 text-body-2">難度：易</p>
+                                    <p class="text-text-600 text-body-2 mb-1">難度：易</p>
                                     <div class="d-flex">
                                         <img class="rounded-circle me-2" src="../assets/images/Avatar/Avatar-5.png" alt="people-img" style="width: 28px;height: 28px;">
                                         <p class="text-text-600 text-body-2 fw-700">Justin 廚藝教室</p>
@@ -290,7 +293,7 @@
             <!-- 開始烹飪 -->
             <div class="container-self py-6 bg-pampas-100 border border-text-200">
                 <h3 class="mb-4">開始烹飪</h3>
-                <iframe class="border-radius-16px mb-6" width="358" height="200" src="https://www.youtube.com/embed/ev-U6vl5Lek?si=cbbCp1CmN4vkbBeL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe class="video-container border-radius-16px mb-6" width="358" height="200" src="https://www.youtube.com/embed/ev-U6vl5Lek?si=cbbCp1CmN4vkbBeL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
             <hr class="border border-text-200 my-0">
             <div class="container-self py-4 bg-pampas-100 d-flex align-items-center">
@@ -369,7 +372,7 @@
             <div style="background-image: url(../assets/images/教學食譜頁/step-3.png);height: 200px; "></div>
             <div class="container-self py-8 bg-pampas-100 d-flex flex-column align-items-center border border-text-200">
                 <p class="text-body-5 text-gossamer-500 fw-700 mb-4">留下你的心得與成果吧 !</p>
-                <a class="btn btn-gossamer-500 text-white fw-700 text-body-5 py-3 px-8 btn-radis-100" href="./message.html">馬上留言分享</a>
+                <a class="btn btn-gossamer-500 text-white fw-700 text-body-5 py-3 px-8 btn-radius-100px" href="./message.html">馬上留言分享</a>
             </div>
             <!-- 留言與評論 -->
             <div class="container-self py-6">
@@ -404,8 +407,9 @@
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <div class="position-relative border-radius-16px recommendBook-img mb-4" style="background-image: url(../assets/images/card-食譜教學/日式野菜溫沙拉.png);background-size: cover;background-position: center;">
-                                <div class="badge rounded-pill py-2px px-2 text-white text-body-3 bg-gossamer-500 mt-3 ms-3 lh16">25min</div>
-                                <div class="position-absolute bottom-0 end-0 d-flex me-3 mb-4">
+                                <div class="overlay"></div>
+                                <div class="cookBook-badge badge rounded-pill py-2px px-2 text-white text-body-3 bg-gossamer-500 mt-3 ms-3 lh16">25min</div>
+                                <div class="heartNumber position-absolute bottom-0 end-0 d-flex me-3 mb-4">
                                     <i class="heart bi bi-heart me-1" id="heart5"></i>
                                     <p class="text-white">385</p>
                                 </div>
@@ -416,7 +420,7 @@
                                         <p class="fw-700">日式野菜溫沙拉</p>
                                         <i class="bookmark bi bi-bookmark ms-auto" id="bookmark5"></i>
                                     </div>
-                                    <ul class="d-flex list-unstyled d-grid gap-2 text-text-600 text-body-2">
+                                    <ul class="d-flex list-unstyled d-grid gap-2 text-text-600 text-body-2 mb-1">
                                         <p>難度：易</p>
                                         <p>〡</p>
                                         <p>375 kcal</p>
@@ -430,11 +434,12 @@
                         </div>
                         <div class="swiper-slide">
                             <div class="position-relative border-radius-16px recommendBook-img mb-4" style="background-image: url(../assets/images/card-食譜教學/燕麥核桃香蕉鬆餅.png);background-size: cover;background-position: center;">
-                                <div class="mt-3 ms-3 d-flex position-absolute">
+                                <div class="overlay"></div>
+                                <div class="cookBook-badge mt-3 ms-3 d-flex position-absolute">
                                     <div class="badge rounded-pill py-2px px-2 bg-gossamer-500 me-1 lh16 text-white text-body-3">25min</div>
                                     <div class="badge rounded-pill py-2px px-2 bg-gossamer-500 me-1 lh16 text-white text-body-3">無乳製品</div>
                                 </div>
-                                <div class="position-absolute bottom-0 end-0 d-flex me-3 mb-4">
+                                <div class="heartNumber position-absolute bottom-0 end-0 d-flex me-3 mb-4">
                                     <i class="heart bi bi-heart me-1" id="heart6"></i>
                                     <p class="text-white">1327</p>
                                 </div>
@@ -445,7 +450,7 @@
                                         <p class="fw-700">燕麥核桃香蕉鬆餅</p>
                                         <i class="bookmark bi bi-bookmark ms-auto" id="bookmark6"></i>
                                     </div>
-                                    <ul class="d-flex list-unstyled d-grid gap-2 text-text-600 text-body-2">
+                                    <ul class="d-flex list-unstyled d-grid gap-2 text-text-600 text-body-2 mb-1">
                                         <p>難度：中</p>
                                         <p>〡</p>
                                         <p>148 kcal</p>
@@ -459,8 +464,9 @@
                         </div>
                         <div class="swiper-slide">
                             <div class="position-relative border-radius-16px recommendBook-img mb-4" style="background-image: url(../assets/images/card-食譜教學/綠橄欖鷹嘴豆泥.png);background-size: cover;background-position: center;">
-                                <div class="badge rounded-pill py-2px px-2 text-white text-body-3 bg-gossamer-500 mt-3 ms-3 lh16">25min</div>
-                                <div class="position-absolute bottom-0 end-0 d-flex me-3 mb-4">
+                                <div class="overlay"></div>
+                                <div class="cookBook-badge badge rounded-pill py-2px px-2 text-white text-body-3 bg-gossamer-500 mt-3 ms-3 lh16">25min</div>
+                                <div class="heartNumber position-absolute bottom-0 end-0 d-flex me-3 mb-4">
                                     <i class="heart bi bi-heart me-1" id="heart7"></i>
                                     <p class="text-white">385</p>
                                 </div>
@@ -471,7 +477,7 @@
                                         <p class="fw-700">綠橄欖鷹嘴豆泥</p>
                                         <i class="bookmark bi bi-bookmark ms-auto" id="bookmark7"></i>
                                     </div>
-                                    <ul class="d-flex list-unstyled d-grid gap-2 text-text-600 text-body-2">
+                                    <ul class="d-flex list-unstyled d-grid gap-2 text-text-600 text-body-2 mb-1">
                                         <p>難度：易</p>
                                         <p>〡</p>
                                         <p>375 kcal</p>
@@ -487,8 +493,6 @@
                 </div>
             </div>
         </div>
-    </div>
-    <div>
     </div>
     <footer class="footer fixed-bottom bg-pampas-100 d-flex justify-content-around" style="max-width: 390px; margin: 0 auto; padding-bottom: 34px; border-top: 0.5px solid #D1D1D1">
         <a href="home.html" class="d-flex flex-column gap-1">

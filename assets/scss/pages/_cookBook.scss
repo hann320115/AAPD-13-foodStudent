@@ -2,7 +2,7 @@
     height: 266px;
     max-width: 390px;
     background-position: center;
-    
+
 }
 .cookBook-content{
     border-top-left-radius: 28px;
@@ -67,7 +67,22 @@
 .addTeaching-img,.recommendBook-img{
     width: 160px;
     height: 160px;
+    .overlay{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        border-radius: 16px;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 56%, rgba(0, 0, 0, 0.3325) 100%);
+        z-index: 1; 
+    }
+    .heartNumber,.cookBook-badge{
+        z-index: 2;
+    }
 }
+
 .border-radius-16px{
     border-radius: 16px;
     
@@ -84,15 +99,15 @@
 .lh16{
     line-height: 1.6 !important;
 }
-.btn-radius-100{
-    border-radius: 100px;
+.btn-radius-100px{
+    border-radius: 100px !important;
 }
 // 愛心
 .heart,.bookmark {
     cursor: pointer;
 }
 .bi-heart-fill,.bi-bookmark-fill {
-    color: red; /* 實心愛心內部紅色 */
+    color: #EE5D54; 
 }
 .bi-heart{
     color: #fff;
@@ -117,4 +132,24 @@ li{
     height: 36px;
     margin-top: 10px;
     margin-left: 10px;
+}
+
+.cookBook-information{
+    .active {
+        background-color: #32967D;
+        color: #fff !important;
+        border-color: #28a745;
+    }
+}
+// 設機師要求修改
+.cookBook-switch{
+    .form-check-input:checked {
+        background-color: #32967D !important;
+        border-color: #FFFFFF !important;
+    }
+}
+.learnBtn{
+    color: #32967D;
+    border:1px solid #32967D;
+    background: white;
 }

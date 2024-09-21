@@ -19,8 +19,8 @@
             </div>
             <p class="mb-2">熱愛生活、熱愛料理</p>
             <a class="text-gossamer-500 mb-4" href="#"><i class="bi bi-link-45deg"></i>instagram.com/justin.cook</a>
-            <div class="pb-21">
-                <button class="btn fw-700 bg-gossamer-500 border-radius-100 text-white w-100 py-1 btn-radius-100">追蹤中</button>
+            <div class="pb-21 track">
+                <button id="trackButton" class="btn fw-700 bg-gossamer-500 border-radius-100 text-white w-100 py-1 btn-radius-100">追蹤中</button>
             </div>
         </div>
         <div class="bookUser-content container-self-full bg-white position-absolute top-0 w-100">
@@ -57,8 +57,9 @@
                         </li>
                         <li class="foodBookBox">
                             <div class="position-relative border-radius-16px mb-4" style="background-image: url(../assets/images/card-食譜教學/綠橄欖鷹嘴豆泥.png);background-size: cover;background-position: center; height: 171px;">
-                                <div class="badge rounded-pill py-2px px-2 text-white text-body-3 bg-gossamer-500 mt-3 ms-3 lh16">15min</div>
-                                <div class="position-absolute bottom-0 end-0 d-flex me-3 mb-4">
+                                <div class="overlay"></div>
+                                <div class="badge-min badge rounded-pill py-2px px-2 text-white text-body-3 bg-gossamer-500 mt-3 ms-3 lh16">15min</div>
+                                <div class="heartNumber position-absolute bottom-0 end-0 d-flex me-3 mb-4">
                                     <i class="heart bi bi-heart me-1" id="heart20"></i>
                                     <p class="text-white">385</p>
                                 </div>
@@ -69,7 +70,7 @@
                                         <p class="fw-700">綠橄欖鷹嘴豆泥</p>
                                         <i class="bookmark bi bi-bookmark ms-auto" id="bookmark20"></i>
                                     </div>
-                                    <ul class="d-flex list-unstyled d-grid gap-2 text-text-600 text-body-2">
+                                    <ul class="d-flex list-unstyled d-grid gap-2 text-text-600 text-body-2 mb-1">
                                         <p>難度：中</p>
                                         <p>〡</p>
                                         <p>150 kcal</p>
@@ -83,11 +84,12 @@
                         </li>
                         <li class="foodBookBox">
                             <div class="position-relative border-radius-16px mb-4" style="background-image: url(../assets/images/card-食譜教學/燕麥核桃香蕉鬆餅.png);background-size: cover;background-position: center;height: 171px;">
-                                <div class="mt-3 ms-3 d-flex position-absolute">
+                                <div class="overlay"></div>
+                                <div class="badge-min mt-3 ms-3 d-flex position-absolute">
                                     <div class="badge rounded-pill py-2px px-2 bg-gossamer-500 me-1 lh16 text-white text-body-3">30min</div>
                                     <div class="badge rounded-pill py-2px px-2 bg-gossamer-500 me-1 lh16 text-white text-body-3">無乳製品</div>
                                 </div>
-                                <div class="position-absolute bottom-0 end-0 d-flex me-3 mb-4">
+                                <div class="heartNumber position-absolute bottom-0 end-0 d-flex me-3 mb-4">
                                     <i class="heart bi bi-heart me-1" id="heart21"></i>
                                     <p class="text-white">1327</p>
                                 </div>
@@ -98,7 +100,7 @@
                                         <p class="fw-700">燕麥核桃香蕉鬆餅</p>
                                         <i class="bookmark bi bi-bookmark ms-auto" id="bookmark21"></i>
                                     </div>
-                                    <ul class="d-flex list-unstyled d-grid gap-2 text-text-600 text-body-2">
+                                    <ul class="d-flex list-unstyled d-grid gap-2 text-text-600 text-body-2 mb-1">
                                         <p>難度：中</p>
                                         <p>〡</p>
                                         <p>148 kcal</p>
@@ -140,6 +142,11 @@
             <p class="text-body-4 text-text-400 text-center">我的</p>
         </a>
     </footer>
+    <script>
+        document.getElementById('trackButton').addEventListener('click', function() {
+    this.classList.toggle('active');
+});
+    </script>
 
     <script type="module" src="../main.js"></script>
 </body>
