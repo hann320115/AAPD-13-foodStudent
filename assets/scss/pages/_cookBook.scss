@@ -76,7 +76,7 @@
         bottom: 0;
         border-radius: 16px;
         background: linear-gradient(180deg, rgba(0, 0, 0, 0) 56%, rgba(0, 0, 0, 0.3325) 100%);
-        z-index: 1; /* 設定遮罩層級 */
+        z-index: 1; 
     }
     .heartNumber,.cookBook-badge{
         z-index: 2;
@@ -107,7 +107,7 @@
     cursor: pointer;
 }
 .bi-heart-fill,.bi-bookmark-fill {
-    color: #EE5D54; /* 實心愛心內部紅色 */
+    color: #EE5D54; 
 }
 .bi-heart{
     color: #fff;
@@ -136,7 +136,7 @@ li{
 
 .cookBook-information{
     .active {
-        background-color: #32967D; // 替換成你想要的色值
+        background-color: #32967D;
         color: #fff !important;
         border-color: #28a745;
     }
