@@ -141,7 +141,7 @@ li{
         border-color: #28a745;
     }
 }
-// 設機師要求修改
+// 設計師要求修改
 .cookBook-switch{
     .form-check-input:checked {
         background-color: #32967D !important;
@@ -152,4 +152,9 @@ li{
     color: #32967D;
     border:1px solid #32967D;
     background: white;
+}
+
+*,*::after,*::before{
+// outline: 1px solid red;
+
 }

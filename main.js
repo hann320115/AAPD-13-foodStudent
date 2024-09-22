@@ -278,5 +278,3 @@ document.getElementById('learnButton').addEventListener('click', function() {
 });
 // 追蹤
 
-
-
