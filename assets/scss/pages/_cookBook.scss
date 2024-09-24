@@ -143,10 +143,16 @@ li{
 }
 // 設計師要求修改
 .cookBook-switch{
+
+    .form-check-input {
+        background-color: #D1D1D1;
+        border-color: #D1D1D1;
+    }
     .form-check-input:checked {
         background-color: #32967D !important;
         border-color: #FFFFFF !important;
     }
+    
 }
 .learnBtn{
     color: #32967D;
@@ -157,4 +163,8 @@ li{
 *,*::after,*::before{
 // outline: 1px solid red;
 
+}
+.cookBook-switch input:focus {
+    outline: none !important;
+    box-shadow: none !important;
 }
